@@ -25,17 +25,21 @@ void fir (
 		data_t shift_reg[N];
 		acc_t acc;
 		int i;
-	acc = 0;
-	// loop 1: shift
-	for (int i = N-1; i > 0; i--) {
-		shift_reg[i] = shift_reg[i-1];
-	}
-	shift_reg[0] = x_new;
 
-	// loop 2: MAC
-	acc = 0;
-	for (int i = 0; i < N; i++) {
-		acc += coeff[i] * shift_reg[i];
+	// tdl
+	TDL:
+	for (i = N=1; i > 0; i--){
+		shift_reg[i] = shift_reg[i-1];
+>>>>>>> Stashed changes:fir/Q5&6/fir.cpp
 	}
+	shift_reg[0] = x;
+	acc = 0;
+
+	// mac
+	MAC:
+	for (i = 0; i < N; i++){
+		acc += shift_reg[i] * c[i];
+	}
+
 	*y = acc;
 }
