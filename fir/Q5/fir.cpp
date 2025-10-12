@@ -26,16 +26,16 @@ void fir (
 		acc_t acc;
 		int i;
 	acc = 0;
-	Shift_Accum_Loop:
-	for (i = N - 1; i >= 0; i--){
-		if ( i == 0) {
-			acc += x * c[0];
-			shift_reg[0] = x;
-		} else { 
-			shift_reg[i] = shift_reg[i-1];
-			acc += shift_reg[i] * c[i];
-		}
-	
+	// loop 1: shift
+	for (int i = N-1; i > 0; i--) {
+		shift_reg[i] = shift_reg[i-1];
+	}
+	shift_reg[0] = x_new;
+
+	// loop 2: MAC
+	acc = 0;
+	for (int i = 0; i < N; i++) {
+		acc += coeff[i] * shift_reg[i];
 	}
 	*y = acc;
 }

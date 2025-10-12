@@ -1,0 +1,204 @@
+<ENTRY>
+{
+ "thisFile": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.comp/fir.comp.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Oct 12 14:51:11 2025",
+ "timestampMillis": "1760305871728",
+ "buildStep": {
+  "cmdId": "b58053cb-832d-4301-978d-742c47e86985",
+  "name": "vitis-run",
+  "logFile": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/logs/hls_compile.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 12 14:51:11 2025",
+ "timestampMillis": "1760305871729",
+ "status": {
+  "cmdId": "b58053cb-832d-4301-978d-742c47e86985",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Oct 12 14:51:11 2025",
+ "timestampMillis": "1760305871730",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fir",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Oct 12 14:51:11 2025",
+ "timestampMillis": "1760305871730",
+ "buildStep": {
+  "cmdId": "1ee64206-9e73-4e36-9d65-2d846649ef0d",
+  "name": "csynth_design",
+  "logFile": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.comp/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 12 14:51:11 2025",
+ "timestampMillis": "1760305871731",
+ "status": {
+  "cmdId": "1ee64206-9e73-4e36-9d65-2d846649ef0d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 12 14:51:11 2025",
+ "timestampMillis": "1760305871732",
+ "report": {
+  "path": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.comp/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 12 14:51:11 2025",
+ "timestampMillis": "1760305871733",
+ "report": {
+  "path": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.comp/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 12 14:51:11 2025",
+ "timestampMillis": "1760305871734",
+ "report": {
+  "path": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.comp/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 12 14:51:12 2025",
+ "timestampMillis": "1760305872877",
+ "report": {
+  "path": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.comp/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 12 14:51:12 2025",
+ "timestampMillis": "1760305872878",
+ "report": {
+  "path": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.comp/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 12 14:51:12 2025",
+ "timestampMillis": "1760305872879",
+ "report": {
+  "path": "/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.comp/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 12 14:51:12 2025",
+ "timestampMillis": "1760305872879",
+ "status": {
+  "cmdId": "1ee64206-9e73-4e36-9d65-2d846649ef0d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 12 14:51:12 2025",
+ "timestampMillis": "1760305872890",
+ "status": {
+  "cmdId": "b58053cb-832d-4301-978d-742c47e86985",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

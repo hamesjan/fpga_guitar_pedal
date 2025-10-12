@@ -1,0 +1,35 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/fir/Q6/fir.comp/hls/.autopilot/db/fir.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>error</string>
+      <key>filename</key>
+      <string>fir.cpp</string>
+      <key>line</key>
+      <integer>33</integer>
+      <key>column</key>
+      <integer>17</integer>
+      <key>message</key>
+      <string>use of undeclared identifier &apos;x_new&apos;</string>
+      <key>ID</key>
+      <integer>3776</integer>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>error</string>
+      <key>filename</key>
+      <string>fir.cpp</string>
+      <key>line</key>
+      <integer>38</integer>
+      <key>column</key>
+      <integer>10</integer>
+      <key>message</key>
+      <string>use of undeclared identifier &apos;coeff&apos;</string>
+      <key>ID</key>
+      <integer>3776</integer>
+    </dict>
+  </array>
+</dict>
