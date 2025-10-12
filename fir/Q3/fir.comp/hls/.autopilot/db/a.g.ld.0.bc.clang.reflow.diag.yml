@@ -1,0 +1,21 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_fir_ir
+Args:            
+  - Callee:          'fir(int*, int)'
+    DebugLoc:        { File: fir.cpp, Line: 19, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_fir_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Shift_Accum_Loop
+  - String:          '> at '
+  - LoopLoc:         'fir.cpp:29:2'
+  - String:          ' '
+...

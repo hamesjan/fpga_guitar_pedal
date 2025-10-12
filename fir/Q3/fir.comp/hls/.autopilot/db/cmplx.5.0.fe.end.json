@@ -1,0 +1,34 @@
+{
+    "1": {
+        "name": "fir_Pipeline_Shift_Accum_Loop",
+        "file": "fir.cpp",
+        "fileloc": "24",
+        "instructions": "35",
+        "total_instructions": "35",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "G": "2",
+            "L": "2"
+        },
+        "stores": {
+            "G": "2",
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "fir",
+        "file": "fir.cpp",
+        "fileloc": "15",
+        "instructions": "17",
+        "total_instructions": "52",
+        "calls": "1",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    }
+}
