@@ -1,0 +1,4 @@
+<pragmas>
+<pragma file="fir.cpp" line="41" pragmaType="unroll" parentfunction="fir" factor="40" skip_exit_check="0"/>
+<pragma file="fir.cpp" line="32" pragmaType="unroll" parentfunction="fir" factor="10" skip_exit_check="0"/>
+</pragmas>
