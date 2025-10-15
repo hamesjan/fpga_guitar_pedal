@@ -27,8 +27,8 @@ void fir (
 		int i;
 
 	// tdl
-	#pragma HLS ARRAY_PARTITION variable=c         cyclic factor=2 dim=1 // Change factors 2,8,16 to check 
-	#pragma HLS ARRAY_PARTITION variable=shift_reg cyclic factor=2 dim=1
+	//#pragma HLS ARRAY_PARTITION variable=c         cyclic factor=2 dim=1 // Change factors 2,8,16 to check 
+	//#pragma HLS ARRAY_PARTITION variable=shift_reg cyclic factor=2 dim=1
 	TDL:
 	for (i = N-1; i > 0; i--){
 		shift_reg[i] = shift_reg[i-1];
