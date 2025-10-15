@@ -1,7 +1,4 @@
-fa25-cse237c-projects/fir/Q1/fir.comp
-fa25-cse237c-projects/fir/Q2/fir.comp
-fa25-cse237c-projects/fir/Q3/fir.comp
-fa25-cse237c-projects/fir/Q4/fir.comp
-fa25-cse237c-projects/fir/Q5/fir.comp
-fa25-cse237c-projects/fir/Q6/fir.comp
-fa25-cse237c-projects/fir/Q7/fir.comp
+# Generated
+**/logs/
+**/fir.comp/
+out.dat

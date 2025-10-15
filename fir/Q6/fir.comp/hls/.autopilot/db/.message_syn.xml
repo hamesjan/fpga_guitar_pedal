@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Messages>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.12 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.7 seconds; current allocated memory: 658.988 MB." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;fir.cpp&apos; ..." resolution=""/>
-	<Message severity="ERROR" prefix="[HLS 207-3776]" key="HLS 207-3776" tag="" content="use of undeclared identifier &apos;x_new&apos; (fir.cpp:33:17)" resolution=""/>
-	<Message severity="ERROR" prefix="[HLS 207-3776]" key="HLS 207-3776" tag="" content="use of undeclared identifier &apos;coeff&apos; (fir.cpp:38:10)" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-2161]" key="HLS 200-2161" tag="" content="Finished Command csynth_design Elapsed time: 00:00:03; Allocated memory: 16.938 MB." resolution=""/>
-</Messages>

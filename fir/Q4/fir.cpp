@@ -27,15 +27,12 @@ void fir (
 		int i;
 	acc = 0;
 	Shift_Accum_Loop:
-	for (i = N - 1; i >= 0; i--){
-		if ( i == 0) {
-			acc += x * c[0];
-			shift_reg[0] = x;
-		} else { 
-			shift_reg[i] = shift_reg[i-1];
-			acc += shift_reg[i] * c[i];
-		}
-	
+	for (i = N - 1; i >= 1; i--){
+		#pragma HLS pipeline off 
+		shift_reg[i] = shift_reg[i-1];
+		acc += shift_reg[i] * c[i];
 	}
+	acc += x * c[0];
+	shift_reg[0] = x;
 	*y = acc;
 }

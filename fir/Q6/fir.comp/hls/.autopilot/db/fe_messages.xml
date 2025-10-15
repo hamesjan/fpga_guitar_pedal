@@ -1,9 +1,0 @@
-<xilinx:hls_fe_msgs>
-    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="fir.cpp:33:17" msg_body="use of undeclared identifier 'x_new'">
-        <args/>
-    </msg>
-    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="fir.cpp:38:10" msg_body="use of undeclared identifier 'coeff'">
-        <args/>
-    </msg>
-</xilinx:hls_fe_msgs>
-
