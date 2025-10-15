@@ -25,17 +25,21 @@ void fir (
 		data_t shift_reg[N];
 		acc_t acc;
 		int i;
-	acc = 0;
-	// loop 1: shift
-	for (int i = N-1; i > 0; i--) {
+
+	// tdl
+	#pragma HLS ARRAY_PARTITION variable=c         cyclic factor=2 dim=1 // Change factors 2,8,16 to check 
+	#pragma HLS ARRAY_PARTITION variable=shift_reg cyclic factor=2 dim=1
+	TDL:
+	for (i = N-1; i > 0; i--){
 		shift_reg[i] = shift_reg[i-1];
 	}
-	shift_reg[0] = x_new;
-
-	// loop 2: MAC
+	shift_reg[0] = x;
 	acc = 0;
-	for (int i = 0; i < N; i++) {
-		acc += coeff[i] * shift_reg[i];
+	// mac, use 64 for unroll factor
+	MAC: // 2, 4, 8, 16, 32, 64, 128, 256
+	for (i = N-1; i >= 0; i--){
+		#pragma HLS unroll factor = 80
+		acc += shift_reg[i] * c[i];
 	}
 	*y = acc;
 }
