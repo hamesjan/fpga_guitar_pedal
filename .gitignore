@@ -1,4 +1,5 @@
 # Generated
 **/logs/
 **/fir.comp/
+**/fir.comp/hls/**
 out.dat
