@@ -3,25 +3,31 @@
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fir" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir.cpp:32:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 10" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir.cpp:41:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 40" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir.cpp:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 80" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="fir.cpp:20:0" msg_body="Unrolling loop 'MAC' (fir.cpp:40:2) in function 'fir' partially with a factor of 40">
-        <args Factor="40" LoopLoc="fir.cpp:40:2" LoopName="MAC"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir.cpp:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="fir.cpp:20:0" msg_body="Unrolling loop 'TDL' (fir.cpp:31:2) in function 'fir' partially with a factor of 10">
-        <args Factor="10" LoopLoc="fir.cpp:31:2" LoopName="TDL"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="fir.cpp:20:0" msg_body="Unrolling loop 'MAC' (fir.cpp:41:2) in function 'fir' partially with a factor of 80">
+        <args Factor="80" LoopLoc="fir.cpp:41:2" LoopName="MAC"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="fir.cpp:25:0" msg_body="array_partition dim=1 type=cyclic factor=20 variable=_ZZ3firPiiE9shift_reg 1 fir fir.cpp:25:0 fir(int*, int)::shift_reg">
-        <args PragmaFunction="fir" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=20 variable=_ZZ3firPiiE9shift_reg" PragmaType="array_partition" VarName="fir(int*, int)::shift_reg" varLoc="fir.cpp:25:0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fir.cpp:20:0" msg_body="Unrolling loop 'TDL' (fir.cpp:31:2) in function 'fir' completely with a factor of 127">
+        <args Factor="127" LoopLoc="fir.cpp:31:2" LoopName="TDL"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="fir.cpp:25:0" msg_body="Inferring pragma 'array_partition type=cyclic factor=20 dim=1' for array 'fir(int*, int)::shift_reg' due to pipeline pragma">
-        <args Dim="1" Factor="20" Mode="cyclic" Name="fir(int*, int)::shift_reg" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="fir.cpp:43:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'fir(int*, int)::c' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="fir(int*, int)::c" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="fir.cpp:25:0" msg_body="Applying array_partition to '_ZZ3firPiiE9shift_reg': Cyclic partitioning with factor 20 on dimension 1.">
-        <args Dim="1" Factor="20" Mode="Cyclic" UOName="_ZZ3firPiiE9shift_reg"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="fir.cpp:25:0" msg_body="array_partition dim=1 type=complete  variable=_ZZ3firPiiE9shift_reg 1 fir fir.cpp:25:0 fir.cpp:43:9fir(int*, int)::shift_reg">
+        <args PragmaFunction="fir" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=_ZZ3firPiiE9shift_reg" PragmaSrcLoc="fir.cpp:43:9" PragmaSrcLoc-DebugLoc="File fir.cpp Line 43 Column 9" PragmaType="array_partition" VarName="fir(int*, int)::shift_reg" varLoc="fir.cpp:25:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="fir.cpp:43:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'fir(int*, int)::shift_reg' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="fir(int*, int)::shift_reg" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="fir.cpp:25:0" msg_body="Applying array_partition to '_ZZ3firPiiE9shift_reg': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ3firPiiE9shift_reg"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

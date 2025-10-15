@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'fir'
 ================================================================
 + General Information: 
-    * Date:           Sun Oct 12 20:24:35 2025
+    * Date:           Tue Oct 14 18:11:28 2025
     * Version:        2024.2 (Build 5238294 on Nov  8 2024)
     * Project:        fir.comp
     * Solution:       hls (Vivado IP Flow Target)
@@ -15,16 +15,12 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +---------------------+------+------+---------+-----------+----------+---------+------+----------+------+-----------+-------------+--------------+-----+
-    |       Modules       | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |           |             |              |     |
-    |       & Loops       | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP    |      FF     |      LUT     | URAM|
-    +---------------------+------+------+---------+-----------+----------+---------+------+----------+------+-----------+-------------+--------------+-----+
-    |+ fir                |     -|  0.07|      130|  1.300e+03|         -|      131|     -|        no|     -|  176 (80%)|  97335 (91%)|  66156 (124%)|    -|
-    | + fir_Pipeline_TDL  |     -|  0.25|       98|    980.000|         -|       98|     -|        no|     -|   96 (43%)|  14573 (13%)|   13769 (25%)|    -|
-    |  o TDL              |    II|  7.30|       96|    960.000|        71|        2|    13|       yes|     -|          -|            -|             -|    -|
-    | + fir_Pipeline_MAC  |     -|  0.07|       27|    270.000|         -|       27|     -|        no|     -|   80 (36%)|  81442 (76%)|   50959 (95%)|    -|
-    |  o MAC              |    II|  7.30|       25|    250.000|        21|        2|     3|       yes|     -|          -|            -|             -|    -|
-    +---------------------+------+------+---------+-----------+----------+---------+------+----------+------+-----------+-------------+--------------+-----+
+    +--------+------+------+---------+---------+----------+---------+------+----------+------+---------+-------------+------------+-----+
+    | Modules| Issue|      | Latency | Latency | Iteration|         | Trip |          |      |         |             |            |     |
+    | & Loops| Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |      FF     |     LUT    | URAM|
+    +--------+------+------+---------+---------+----------+---------+------+----------+------+---------+-------------+------------+-----+
+    |+ fir   |     -|  0.38|       11|  110.000|         -|        1|     -|       yes|     -|  16 (7%)|  12722 (11%)|  7614 (14%)|    -|
+    +--------+------+------+---------+---------+----------+---------+------+----------+------+---------+-------------+------------+-----+
 
 
 ================================================================
@@ -72,320 +68,81 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+---------------------------------+-----+--------+-------------+-----------+--------------------------+---------+
-| Name                            | DSP | Pragma | Variable    | Op        | Impl                     | Latency |
-+---------------------------------+-----+--------+-------------+-----------+--------------------------+---------+
-| + fir                           | 176 |        |             |           |                          |         |
-|  + fir_Pipeline_TDL             | 96  |        |             |           |                          |         |
-|    mul_64ns_66ns_129_5_1_U5     | 16  |        | mul_ln27    | mul       | auto                     | 4       |
-|    urem_64ns_6ns_5_68_1_U7      |     |        | urem_ln27   | urem      | auto                     | 67      |
-|    add_ln33_fu_2189_p2          |     |        | add_ln33    | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U1     | 16  |        | mul_ln33    | mul       | auto                     | 4       |
-|    sparsemux_41_5_32_1_1_U8     |     |        | tmp         | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln33_1_fu_2194_p2        |     |        | add_ln33_1  | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U2     | 16  |        | mul_ln33_1  | mul       | auto                     | 4       |
-|    add_ln33_2_fu_2199_p2        |     |        | add_ln33_2  | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U3     | 16  |        | mul_ln33_2  | mul       | auto                     | 4       |
-|    add_ln33_3_fu_2204_p2        |     |        | add_ln33_3  | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U4     | 16  |        | mul_ln33_3  | mul       | auto                     | 4       |
-|    add_ln33_4_fu_2209_p2        |     |        | add_ln33_4  | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U5     | 16  |        | mul_ln33_4  | mul       | auto                     | 4       |
-|    add_ln33_5_fu_2214_p2        |     |        | add_ln33_5  | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U6     | 16  |        | mul_ln33_5  | mul       | auto                     | 4       |
-|    add_ln33_6_fu_2158_p2        |     |        | add_ln33_6  | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U1     | 16  |        | mul_ln33_6  | mul       | auto                     | 4       |
-|    sparsemux_41_5_32_1_1_U9     |     |        | tmp_1       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_32_1_1_U10    |     |        | tmp_2       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_32_1_1_U11    |     |        | tmp_3       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_32_1_1_U12    |     |        | tmp_4       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_32_1_1_U13    |     |        | tmp_5       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_32_1_1_U14    |     |        | tmp_6       | sparsemux | compactencoding_dontcare | 0       |
-|    icmp_ln31_fu_2164_p2         |     |        | icmp_ln31   | setgt     | auto                     | 0       |
-|    add_ln33_7_fu_2179_p2        |     |        | add_ln33_7  | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U2     | 16  |        | mul_ln33_7  | mul       | auto                     | 4       |
-|    sparsemux_41_5_32_1_1_U15    |     |        | tmp_7       | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln33_8_fu_2184_p2        |     |        | add_ln33_8  | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U3     | 16  |        | mul_ln33_8  | mul       | auto                     | 4       |
-|    add_ln33_9_fu_2169_p2        |     |        | add_ln33_9  | add       | fabric                   | 0       |
-|    mul_64ns_66ns_129_5_1_U4     | 16  |        | mul_ln33_9  | mul       | auto                     | 4       |
-|    sparsemux_41_5_32_1_1_U16    |     |        | tmp_8       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_32_1_1_U17    |     |        | tmp_9       | sparsemux | compactencoding_dontcare | 0       |
-|  + fir_Pipeline_MAC             | 80  |        |             |           |                          |         |
-|    mul_7ns_9ns_15_1_1_U50       |     |        | mul_ln26    | mul       | auto                     | 0       |
-|    urem_7ns_6ns_5_11_1_U51      |     |        | urem_ln26   | urem      | auto                     | 10      |
-|    sparsemux_41_5_32_1_1_x_U131 |     |        | tmp_s       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U91     |     |        | tmp_1       | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_fu_14904_p2         |     |        | add_ln40    | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U52       |     |        | mul_ln42_40 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U132   |     |        | tmp_2       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U92     |     |        | tmp_3       | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_1_fu_14910_p2       |     |        | add_ln40_1  | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U53       |     |        | mul_ln42_41 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U133   |     |        | tmp_4       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U93     |     |        | tmp_5       | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_2_fu_14916_p2       |     |        | add_ln40_2  | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U54       |     |        | mul_ln42_42 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U134   |     |        | tmp_6       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U94     |     |        | tmp_7       | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_3_fu_14922_p2       |     |        | add_ln40_3  | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U55       |     |        | mul_ln42_43 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U135   |     |        | tmp_8       | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U95     |     |        | tmp_9       | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_4_fu_14928_p2       |     |        | add_ln40_4  | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U56       |     |        | mul_ln42_44 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U136   |     |        | tmp_10      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U96     |     |        | tmp_11      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_5_fu_14934_p2       |     |        | add_ln40_5  | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U57       |     |        | mul_ln42_45 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U137   |     |        | tmp_12      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U97     |     |        | tmp_13      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_6_fu_14940_p2       |     |        | add_ln40_6  | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U58       |     |        | mul_ln42_46 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U138   |     |        | tmp_14      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U98     |     |        | tmp_15      | sparsemux | compactencoding_dontcare | 0       |
-|    mul_5s_32s_32_2_1_U172       | 2   |        | mul_ln42    | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U173       | 2   |        | mul_ln42_1  | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U174       | 2   |        | mul_ln42_2  | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U175       | 2   |        | mul_ln42_3  | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U176       | 2   |        | mul_ln42_4  | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U177       | 2   |        | mul_ln42_5  | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U178       | 2   |        | mul_ln42_6  | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U179       | 2   |        | mul_ln42_7  | mul       | auto                     | 1       |
-|    add_ln42_1_fu_26568_p2       |     |        | add_ln42_1  | add       | fabric                   | 0       |
-|    add_ln42_4_fu_26578_p2       |     |        | add_ln42_4  | add       | fabric                   | 0       |
-|    add_ln40_7_fu_14946_p2       |     |        | add_ln40_7  | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U59       |     |        | mul_ln26_1  | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U139   |     |        | tmp_16      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U99     |     |        | tmp_17      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_8_fu_14960_p2       |     |        | add_ln40_8  | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U60       |     |        | mul_ln42_47 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U140   |     |        | tmp_18      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U100    |     |        | tmp_19      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_9_fu_14966_p2       |     |        | add_ln40_9  | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U61       |     |        | mul_ln42_48 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U141   |     |        | tmp_20      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U101    |     |        | tmp_21      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_10_fu_15483_p2      |     |        | add_ln40_10 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U62       |     |        | mul_ln42_49 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U142 |     |        | tmp_22      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U102    |     |        | tmp_23      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_11_fu_15508_p2      |     |        | add_ln40_11 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U63       |     |        | mul_ln42_50 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U143 |     |        | tmp_24      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U103    |     |        | tmp_25      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_12_fu_15533_p2      |     |        | add_ln40_12 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U64       |     |        | mul_ln42_51 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U144 |     |        | tmp_26      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U104    |     |        | tmp_27      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_13_fu_15558_p2      |     |        | add_ln40_13 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U65       |     |        | mul_ln42_52 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U145 |     |        | tmp_28      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U105    |     |        | tmp_29      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_14_fu_15583_p2      |     |        | add_ln40_14 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U66       |     |        | mul_ln42_53 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U146 |     |        | tmp_30      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U106    |     |        | tmp_31      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_15_fu_15608_p2      |     |        | add_ln40_15 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U67       |     |        | mul_ln42_54 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U147 |     |        | tmp_32      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U107    |     |        | tmp_33      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_16_fu_15633_p2      |     |        | add_ln40_16 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U68       |     |        | mul_ln42_55 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U148 |     |        | tmp_34      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U108    |     |        | tmp_35      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_17_fu_15658_p2      |     |        | add_ln40_17 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U69       |     |        | mul_ln42_56 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U149 |     |        | tmp_36      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U109    |     |        | tmp_37      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_18_fu_14972_p2      |     |        | add_ln40_18 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U70       |     |        | mul_ln42_57 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U150 |     |        | tmp_38      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U110    |     |        | tmp_39      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_19_fu_14978_p2      |     |        | add_ln40_19 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U71       |     |        | mul_ln42_58 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U151 |     |        | tmp_40      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U111    |     |        | tmp_41      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_20_fu_14984_p2      |     |        | add_ln40_20 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U72       |     |        | mul_ln42_59 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U152   |     |        | tmp_42      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U112    |     |        | tmp_43      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_21_fu_14990_p2      |     |        | add_ln40_21 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U73       |     |        | mul_ln42_60 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U153   |     |        | tmp_44      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U113    |     |        | tmp_45      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_22_fu_15855_p2      |     |        | add_ln40_22 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U74       |     |        | mul_ln42_61 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U154   |     |        | tmp_46      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U114    |     |        | tmp_47      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_23_fu_15880_p2      |     |        | add_ln40_23 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U75       |     |        | mul_ln42_62 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U155   |     |        | tmp_48      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U115    |     |        | tmp_49      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_24_fu_15905_p2      |     |        | add_ln40_24 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U76       |     |        | mul_ln42_63 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U156   |     |        | tmp_50      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U116    |     |        | tmp_51      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_25_fu_15930_p2      |     |        | add_ln40_25 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U77       |     |        | mul_ln42_64 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U157   |     |        | tmp_52      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U117    |     |        | tmp_53      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_26_fu_15955_p2      |     |        | add_ln40_26 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U78       |     |        | mul_ln42_65 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U158   |     |        | tmp_54      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U118    |     |        | tmp_55      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_27_fu_15980_p2      |     |        | add_ln40_27 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U79       |     |        | mul_ln42_66 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U159   |     |        | tmp_56      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U119    |     |        | tmp_57      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_28_fu_16005_p2      |     |        | add_ln40_28 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U80       |     |        | mul_ln42_67 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U160   |     |        | tmp_58      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U120    |     |        | tmp_59      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_29_fu_16030_p2      |     |        | add_ln40_29 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U81       |     |        | mul_ln42_68 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_U161   |     |        | tmp_60      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U121    |     |        | tmp_61      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_30_fu_16055_p2      |     |        | add_ln40_30 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U82       |     |        | mul_ln42_69 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U162 |     |        | tmp_62      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U122    |     |        | tmp_63      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_31_fu_16080_p2      |     |        | add_ln40_31 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U83       |     |        | mul_ln42_70 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U163 |     |        | tmp_64      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U123    |     |        | tmp_65      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_32_fu_16105_p2      |     |        | add_ln40_32 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U84       |     |        | mul_ln42_71 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U164 |     |        | tmp_66      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U124    |     |        | tmp_67      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_33_fu_16130_p2      |     |        | add_ln40_33 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U85       |     |        | mul_ln42_72 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U165 |     |        | tmp_68      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U125    |     |        | tmp_69      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_34_fu_14996_p2      |     |        | add_ln40_34 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U86       |     |        | mul_ln42_73 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U166 |     |        | tmp_70      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U126    |     |        | tmp_71      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_35_fu_15002_p2      |     |        | add_ln40_35 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U87       |     |        | mul_ln42_74 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U167 |     |        | tmp_72      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U127    |     |        | tmp_73      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_36_fu_15008_p2      |     |        | add_ln40_36 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U88       |     |        | mul_ln42_75 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U168 |     |        | tmp_74      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U128    |     |        | tmp_75      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_37_fu_15014_p2      |     |        | add_ln40_37 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U89       |     |        | mul_ln42_76 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U169 |     |        | tmp_76      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U129    |     |        | tmp_77      | sparsemux | compactencoding_dontcare | 0       |
-|    add_ln40_38_fu_15020_p2      |     |        | add_ln40_38 | add       | fabric                   | 0       |
-|    mul_7ns_9ns_15_1_1_U90       |     |        | mul_ln42_77 | mul       | auto                     | 0       |
-|    sparsemux_41_5_32_1_1_x_U170 |     |        | tmp_78      | sparsemux | compactencoding_dontcare | 0       |
-|    sparsemux_41_5_5_1_1_U130    |     |        | tmp_79      | sparsemux | compactencoding_dontcare | 0       |
-|    mul_5s_32s_32_2_1_U180       | 2   |        | mul_ln42_8  | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U181       | 2   |        | mul_ln42_9  | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U171       | 2   |        | mul_ln42_10 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U182       | 2   |        | mul_ln42_11 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U183       | 2   |        | mul_ln42_12 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U184       | 2   |        | mul_ln42_13 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U185       | 2   |        | mul_ln42_14 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U186       | 2   |        | mul_ln42_15 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U187       | 2   |        | mul_ln42_16 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U188       | 2   |        | mul_ln42_17 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U189       | 2   |        | mul_ln42_18 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U190       | 2   |        | mul_ln42_19 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U191       | 2   |        | mul_ln42_20 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U192       | 2   |        | mul_ln42_21 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U193       | 2   |        | mul_ln42_22 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U194       | 2   |        | mul_ln42_23 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U195       | 2   |        | mul_ln42_24 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U196       | 2   |        | mul_ln42_25 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U197       | 2   |        | mul_ln42_26 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U198       | 2   |        | mul_ln42_27 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U199       | 2   |        | mul_ln42_28 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U200       | 2   |        | mul_ln42_29 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U201       | 2   |        | mul_ln42_30 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U202       | 2   |        | mul_ln42_31 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U203       | 2   |        | mul_ln42_32 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U204       | 2   |        | mul_ln42_33 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U205       | 2   |        | mul_ln42_34 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U206       | 2   |        | mul_ln42_35 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U207       | 2   |        | mul_ln42_36 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U208       | 2   |        | mul_ln42_37 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U209       | 2   |        | mul_ln42_38 | mul       | auto                     | 1       |
-|    mul_5s_32s_32_2_1_U210       | 2   |        | mul_ln42_39 | mul       | auto                     | 1       |
-|    add_ln42_12_fu_26605_p2      |     |        | add_ln42_12 | add       | fabric                   | 0       |
-|    add_ln42_15_fu_26615_p2      |     |        | add_ln42_15 | add       | fabric                   | 0       |
-|    add_ln42_16_fu_26619_p2      |     |        | add_ln42_16 | add       | fabric                   | 0       |
-|    add_ln42_19_fu_26627_p2      |     |        | add_ln42_19 | add       | fabric                   | 0       |
-|    add_ln42_24_fu_26641_p2      |     |        | add_ln42_24 | add       | fabric                   | 0       |
-|    add_ln42_27_fu_26655_p2      |     |        | add_ln42_27 | add       | fabric                   | 0       |
-|    add_ln42_30_fu_26665_p2      |     |        | add_ln42_30 | add       | fabric                   | 0       |
-|    add_ln42_31_fu_26669_p2      |     |        | add_ln42_31 | add       | fabric                   | 0       |
-|    add_ln40_39_fu_16370_p2      |     |        | add_ln40_39 | add       | fabric                   | 0       |
-+---------------------------------+-----+--------+-------------+-----------+--------------------------+---------+
++---------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                      | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++---------------------------+-----+--------+--------------+-----+--------+---------+
+| + fir                     | 16  |        |              |     |        |         |
+|   mul_32s_3s_32_2_1_U8    |     |        | mul_ln44_2   | mul | auto   | 1       |
+|   sub_ln44_7_fu_2419_p2   |     |        | sub_ln44_7   | sub | fabric | 0       |
+|   sub_ln44_12_fu_2434_p2  |     |        | sub_ln44_12  | sub | fabric | 0       |
+|   mul_32s_3s_32_2_1_U1    |     |        | mul_ln44_4   | mul | auto   | 1       |
+|   mul_32s_5s_32_2_1_U2    | 2   |        | mul_ln44_6   | mul | auto   | 1       |
+|   mul_32s_5s_32_2_1_U9    | 2   |        | mul_ln44_7   | mul | auto   | 1       |
+|   add_ln44_17_fu_1365_p2  |     |        | add_ln44_17  | add | fabric | 0       |
+|   mul_32s_5s_32_2_1_U10   | 2   |        | mul_ln44_13  | mul | auto   | 1       |
+|   sub_ln44_17_fu_2762_p2  |     |        | sub_ln44_17  | sub | fabric | 0       |
+|   add_ln44_95_fu_2533_p2  |     |        | add_ln44_95  | add | fabric | 0       |
+|   add_ln44_106_fu_2575_p2 |     |        | add_ln44_106 | add | fabric | 0       |
+|   add_ln44_109_fu_2023_p2 |     |        | add_ln44_109 | add | fabric | 0       |
+|   add_ln44_114_fu_2969_p2 |     |        | add_ln44_114 | add | fabric | 0       |
+|   mul_32s_3s_32_2_1_U11   |     |        | mul_ln44_15  | mul | auto   | 1       |
+|   sub_ln44_25_fu_2601_p2  |     |        | sub_ln44_25  | sub | fabric | 0       |
+|   mul_32s_3s_32_2_1_U3    |     |        | mul_ln44_19  | mul | auto   | 1       |
+|   add_ln44_116_fu_1461_p2 |     |        | add_ln44_116 | add | fabric | 0       |
+|   add_ln44_117_fu_2991_p2 |     |        | add_ln44_117 | add | fabric | 0       |
+|   add_ln44_49_fu_1473_p2  |     |        | add_ln44_49  | add | fabric | 0       |
+|   add_ln44_118_fu_3012_p2 |     |        | add_ln44_118 | add | fabric | 0       |
+|   add_ln44_52_fu_1485_p2  |     |        | add_ln44_52  | add | fabric | 0       |
+|   add_ln44_119_fu_3034_p2 |     |        | add_ln44_119 | add | fabric | 0       |
+|   add_ln44_55_fu_1497_p2  |     |        | add_ln44_55  | add | fabric | 0       |
+|   add_ln44_59_fu_1509_p2  |     |        | add_ln44_59  | add | fabric | 0       |
+|   mul_32s_5s_32_2_1_U12   | 2   |        | mul_ln44_20  | mul | auto   | 1       |
+|   add_ln44_63_fu_1515_p2  |     |        | add_ln44_63  | add | fabric | 0       |
+|   add_ln44_64_fu_1521_p2  |     |        | add_ln44_64  | add | fabric | 0       |
+|   add_ln44_67_fu_1533_p2  |     |        | add_ln44_67  | add | fabric | 0       |
+|   add_ln44_70_fu_1545_p2  |     |        | add_ln44_70  | add | fabric | 0       |
+|   mul_32s_5s_32_2_1_U13   | 2   |        | mul_ln44_23  | mul | auto   | 1       |
+|   sub_ln44_36_fu_2072_p2  |     |        | sub_ln44_36  | sub | fabric | 0       |
+|   mul_32s_5s_32_2_1_U4    | 2   |        | mul_ln44_5   | mul | auto   | 1       |
+|   sub_ln44_37_fu_2627_p2  |     |        | sub_ln44_37  | sub | fabric | 0       |
+|   mul_32s_5s_32_2_1_U5    | 2   |        | mul_ln44_9   | mul | auto   | 1       |
+|   add_ln44_121_fu_2642_p2 |     |        | add_ln44_121 | add | fabric | 0       |
+|   add_ln44_124_fu_3086_p2 |     |        | add_ln44_124 | add | fabric | 0       |
+|   mul_32s_3s_32_2_1_U6    |     |        | mul_ln44_21  | mul | auto   | 1       |
+|   mul_32s_3s_32_2_1_U7    |     |        | mul_ln44     | mul | auto   | 1       |
+|   add_ln44_125_fu_3064_p2 |     |        | add_ln44_125 | add | fabric | 0       |
+|   add_ln44_7_fu_1731_p2   |     |        | add_ln44_7   | add | fabric | 0       |
+|   mul_32s_5s_32_2_1_U14   | 2   |        | mul_ln44_24  | mul | auto   | 1       |
+|   add_ln44_131_fu_1761_p2 |     |        | add_ln44_131 | add | fabric | 0       |
+|   add_ln44_135_fu_3107_p2 |     |        | add_ln44_135 | add | fabric | 0       |
+|   add_ln44_39_fu_1791_p2  |     |        | add_ln44_39  | add | fabric | 0       |
+|   sub_ln44_52_fu_2698_p2  |     |        | sub_ln44_52  | sub | fabric | 0       |
+|   add_ln44_80_fu_1809_p2  |     |        | add_ln44_80  | add | fabric | 0       |
++---------------------------+-----+--------+--------------+-----+--------+---------+
 
 
 ================================================================
 == Storage Report
 ================================================================
-+-------------------------------+--------+------+------+------+--------+---------------------------+------+---------+------------------+
-| Name                          | Usage  | Type | BRAM | URAM | Pragma | Variable                  | Impl | Latency | Bitwidth, Depth, |
-|                               |        |      |      |      |        |                           |      |         | Banks            |
-+-------------------------------+--------+------+------+------+--------+---------------------------+------+---------+------------------+
-| + fir                         |        |      | 0    | 0    |        |                           |      |         |                  |
-|   fir_int_int_shift_reg_U     | ram_2p |      |      |      |        | fir_int_int_shift_reg     | auto | 1       | 32, 7, 1         |
-|   fir_int_int_shift_reg_10_U  | ram_2p |      |      |      |        | fir_int_int_shift_reg_10  | auto | 1       | 32, 7, 1         |
-|   fir_int_int_shift_reg_11_U  | ram_2p |      |      |      |        | fir_int_int_shift_reg_11  | auto | 1       | 32, 7, 1         |
-|   fir_int_int_shift_reg_12_U  | ram_2p |      |      |      |        | fir_int_int_shift_reg_12  | auto | 1       | 32, 7, 1         |
-|   fir_int_int_shift_reg_13_U  | ram_2p |      |      |      |        | fir_int_int_shift_reg_13  | auto | 1       | 32, 7, 1         |
-|   fir_int_int_shift_reg_14_U  | ram_2p |      |      |      |        | fir_int_int_shift_reg_14  | auto | 1       | 32, 7, 1         |
-|   fir_int_int_shift_reg_15_U  | ram_2p |      |      |      |        | fir_int_int_shift_reg_15  | auto | 1       | 32, 7, 1         |
-|   fir_int_int_shift_reg_16_U  | ram_2p |      |      |      |        | fir_int_int_shift_reg_16  | auto | 1       | 32, 7, 1         |
-|   fir_int_int_shift_reg_17_U  | ram_2p |      |      |      |        | fir_int_int_shift_reg_17  | auto | 1       | 32, 7, 1         |
-|   fir_int_int_shift_reg_18_U  | ram_2p |      |      |      |        | fir_int_int_shift_reg_18  | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_10_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_10 | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_11_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_11 | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_12_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_12 | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_13_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_13 | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_14_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_14 | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_15_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_15 | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_16_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_16 | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_17_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_17 | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_18_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_18 | auto | 1       | 32, 7, 1         |
-|   p_ZZ3firPiiE9shift_reg_19_U | ram_2p |      |      |      |        | p_ZZ3firPiiE9shift_reg_19 | auto | 1       | 32, 7, 1         |
-|  + fir_Pipeline_MAC           |        |      | 0    | 0    |        |                           |      |         |                  |
-|    fir_int_int_c_U            | rom_np |      |      |      |        | fir_int_int_c             | auto | 1       | 32, 7, 1         |
-|    fir_int_int_c_1_U          | rom_np |      |      |      |        | fir_int_int_c_1           | auto | 1       | 32, 7, 1         |
-|    fir_int_int_c_2_U          | rom_np |      |      |      |        | fir_int_int_c_2           | auto | 1       | 32, 7, 1         |
-|    fir_int_int_c_3_U          | rom_np |      |      |      |        | fir_int_int_c_3           | auto | 1       | 32, 7, 1         |
-|    fir_int_int_c_4_U          | rom_np |      |      |      |        | fir_int_int_c_4           | auto | 1       | 32, 7, 1         |
-|    fir_int_int_c_5_U          | rom_np |      |      |      |        | fir_int_int_c_5           | auto | 1       | 32, 7, 1         |
-|    fir_int_int_c_6_U          | rom_np |      |      |      |        | fir_int_int_c_6           | auto | 1       | 32, 7, 1         |
-|    fir_int_int_c_7_U          | rom_np |      |      |      |        | fir_int_int_c_7           | auto | 1       | 32, 7, 1         |
-|    fir_int_int_c_8_U          | rom_np |      |      |      |        | fir_int_int_c_8           | auto | 1       | 32, 7, 1         |
-|    fir_int_int_c_9_U          | rom_np |      |      |      |        | fir_int_int_c_9           | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_10_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_10         | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_11_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_11         | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_12_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_12         | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_13_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_13         | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_14_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_14         | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_15_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_15         | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_16_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_16         | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_17_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_17         | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_18_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_18         | auto | 1       | 32, 7, 1         |
-|    p_ZZ3firPiiE1c_19_U        | rom_np |      |      |      |        | p_ZZ3firPiiE1c_19         | auto | 1       | 32, 7, 1         |
-+-------------------------------+--------+------+------+------+--------+---------------------------+------+---------+------------------+
-
+  No bind storage info in design
 
 ================================================================
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+--------+-------------+-------------------+
-| Type   | Options     | Location          |
-+--------+-------------+-------------------+
-| unroll | factor = 10 | fir.cpp:32 in fir |
-| unroll | factor = 40 | fir.cpp:41 in fir |
-+--------+-------------+-------------------+
++----------+-------------+-------------------+
+| Type     | Options     | Location          |
++----------+-------------+-------------------+
+| unroll   |             | fir.cpp:32 in fir |
+| unroll   | factor = 80 | fir.cpp:42 in fir |
+| pipeline | II=1        | fir.cpp:43 in fir |
++----------+-------------+-------------------+
+
+* Inferred Pragmas
++----------------------+-----------------+-----------------------------------------------------+------------------------------------------------------+
+| Source               | Inferred Pragma | Options                                             | Location                                             |
++----------------------+-----------------+-----------------------------------------------------+------------------------------------------------------+
+| pipeline  fir.cpp:43 | array_partition | dim=1 type=complete  variable=_ZZ3firPiiE9shift_reg | variable fir(int*, int)::shift_reg in fir fir.cpp:25 |
++----------------------+-----------------+-----------------------------------------------------+------------------------------------------------------+
 
 

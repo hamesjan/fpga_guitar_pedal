@@ -5732,7 +5732,8 @@ __attribute__((sdx_kernel("fir", 0))) void fir (
 
  TDL:
  for (i = N-1; i > 0; i--){
-#pragma HLS unroll factor = 10
+#pragma HLS unroll
+
  shift_reg[i] = shift_reg[i-1];
  }
  shift_reg[0] = x;
@@ -5741,9 +5742,10 @@ __attribute__((sdx_kernel("fir", 0))) void fir (
 
  MAC:
  for (i = N-1; i >= 0; i--){
-#pragma HLS unroll factor = 40
+#pragma HLS unroll factor = 80
+#pragma HLS pipeline II=1
  acc += shift_reg[i] * c[i];
  }
-# 57 "fir.cpp"
+# 59 "fir.cpp"
  *y = acc;
 }

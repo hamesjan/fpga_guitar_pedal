@@ -29,16 +29,18 @@ void fir (
 	// tdl
 	TDL:
 	for (i = N-1; i > 0; i--){
-		#pragma HLS unroll factor = 10
+		#pragma HLS unroll
+		// #pragma HLS pipeline II=1
 		shift_reg[i] = shift_reg[i-1];
 	}
 	shift_reg[0] = x;
 	acc = 0;
 
-	// mac
-	MAC:
+	// mac, use 64 for unroll factor
+	MAC: // 2, 4, 8, 16, 32, 64, 128, 256
 	for (i = N-1; i >= 0; i--){
-		#pragma HLS unroll factor = 40
+		#pragma HLS unroll factor = 80
+		#pragma HLS pipeline II=1
 		acc += shift_reg[i] * c[i];
 	}
 

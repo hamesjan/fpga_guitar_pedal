@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fir'" level="0">
-<item name = "Date">Sun Oct 12 20:24:27 2025
+<item name = "Date">Tue Oct 14 18:11:26 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">fir.comp</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.234 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.923 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">130, 130, 1.300 us, 1.300 us, 131, 131, no</column>
+<column name="">11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Detail">
