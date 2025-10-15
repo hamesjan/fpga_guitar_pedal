@@ -20,22 +20,43 @@ void fir (
 {
 	coef_t c[N] = {10, 11, 11, 8, 3, -3, -8, -11, -11, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -11, -11, -8, -3, 3, 8, 11, 11, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 8, 3, -3, -8, -11, -11, -10, -10, -10, -10, -10, -10, -10, -10, -11, -11, -8, -3, 3, 8, 11, 11, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 8, 3, -3, -8, -11, -11, -10, -10, -10, -10, -10, -10, -10, -10, -11, -11, -8, -3, 3, 8, 11, 11, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
 	
+	#pragma HLS array_partition variable=c complete
 	// Write your code here
 	static
 		data_t shift_reg[N];
 		acc_t acc;
 		int i;
-	acc = 0;
-	Shift_Accum_Loop:
-	for (i = N - 1; i >= 0; i--){
-		if ( i == 0) {
-			acc += x * c[0];
-			shift_reg[0] = x;
-		} else { 
-			shift_reg[i] = shift_reg[i-1];
-			acc += shift_reg[i] * c[i];
-		}
-	
+
+	#pragma HLS array_partition variable=shift_reg complete
+	// tdl
+	TDL:
+	for (i = N-1; i > 0; i--){
+		#pragma HLS unroll
+		// #pragma HLS pipeline II=1
+		shift_reg[i] = shift_reg[i-1];
 	}
+	shift_reg[0] = x;
+	acc = 0;
+
+	// mac, use 64 for unroll factor
+	MAC: // 2, 4, 8, 16, 32, 64, 128, 256
+	for (i = N-1; i >= 0; i--){
+		#pragma HLS unroll factor=127
+		#pragma HLS pipeline II=1
+		acc += shift_reg[i] * c[i];
+	}
+
+	// acc = 0;
+	// Shift_Accum_Loop:
+	// for (i = N - 1; i >= 0; i--){
+	// 	if (i == 0) {
+	// 		acc += x * c[0];
+	// 		shift_reg[0] = x;
+	// 	} else {
+	// 		shift_reg[i] = shift_reg[i - 1];
+	// 		acc += shift_reg[i] * c[i];
+	// 	}
+	// }
+
 	*y = acc;
 }
