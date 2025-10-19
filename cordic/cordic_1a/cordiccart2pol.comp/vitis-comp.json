@@ -1,0 +1,9 @@
+{
+  "name": "cordiccart2pol.comp",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["hls_config.cfg"],
+    "work_dir": "."
+  }
+}

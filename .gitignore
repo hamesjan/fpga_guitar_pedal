@@ -2,4 +2,5 @@
 **/logs/
 **/fir.comp/
 **/fir.comp/hls/**
+**/hls/**
 out.dat
