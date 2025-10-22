@@ -7,9 +7,11 @@
 typedef int   coef_t;
 typedef float acc_t; // NOTE(mitch): what is this for?
 
-typedef ap_fixed<32,3> data_t;
-typedef ap_fixed<32,3> cos_sin_t;
-typedef ap_fixed<32,3> theta_t;
+typedef ap_fixed<4, 3> rot_t;
+
+typedef ap_fixed<16,3> data_t;
+typedef ap_fixed<16,3> cos_sin_t;
+typedef ap_fixed<16,3> theta_t;
 
 void cordic(data_t x, data_t y, theta_t &theta, cos_sin_t &c);
 void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta);
