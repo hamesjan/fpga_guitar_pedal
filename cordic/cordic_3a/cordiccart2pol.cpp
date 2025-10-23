@@ -39,13 +39,16 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
 		cos_sin_t cos_shift = current_cos >> j;
 		cos_sin_t sin_shift = current_sin >> j;
 
-		int sigma = (current_sin < 0) ? -1 : 1;
-
 		// rotation
-		current_cos = current_cos + sigma * sin_shift;
-		current_sin = current_sin - sigma * cos_shift;
-
-		new_theta = new_theta + sigma * angles[j];				
+		if (current_sin < 0) {
+			current_cos = current_cos - sin_shift;
+			current_sin = current_sin + cos_shift;
+			new_theta   = new_theta - angles[j];				
+		} else {
+			current_cos = current_cos + sin_shift;
+			current_sin = current_sin - cos_shift;
+			new_theta   = new_theta + angles[j];				
+		}
 	}
 
 	*r = current_cos * data_t(0.607252935);
