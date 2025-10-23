@@ -7,6 +7,48 @@ data_t angles[NO_ITER] = {0.785398163397448,	0.463647609000806,	0.24497866312686
 
 void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
 {
+	// #define NO_ITER 16
+
+	// typedef int   coef_t;
+	// typedef float data_t;
+	// typedef float acc_t;	
 	// Write your code here
+	// set by *r = discovered r;	
+	// set by *theta = discovered theta
+	
+	data_t new_x = x;
+	data_t new_y = y;
+	theta_t new_theta = 0.0;
+	if (x < 0){
+		new_x = x * -1;
+		new_y = y * -1;				
+		if (y < 0)
+			new_theta = -3.141592;
+		else
+			new_theta = 3.141592;
+	}
+	cos_sin_t final_y;
+	cos_sin_t final_x;
+
+	cos_sin_t current_cos = new_x;
+	cos_sin_t current_sin = new_y;
+	cos_sin_t factor = 1.0;
+
+	for (int j = 0; j < NO_ITER; j++){
+
+		cos_sin_t cos_shift = current_cos >> j;
+		cos_sin_t sin_shift = current_sin >> j;
+
+		int sigma = (current_sin < 0) ? -1 : 1;
+
+		// rotation
+		current_cos = current_cos + sigma * sin_shift;
+		current_sin = current_sin - sigma * cos_shift;
+
+		new_theta = new_theta + sigma * angles[j];				
+	}
+
+	*r = current_cos * data_t(0.607252935);
+	*theta = new_theta;
 	
 }
