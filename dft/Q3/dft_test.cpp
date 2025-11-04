@@ -34,7 +34,10 @@ struct Rmse
 
 Rmse rmse_R,  rmse_I;
 
-DTYPE In_R[SIZE], In_I[SIZE];
+// DTYPE In_R[SIZE], In_I[SIZE];
+// added seperate input/ output arrays
+DTYPE input_real[SIZE], input_img[SIZE];
+DTYPE output_real[SIZE], output_img[SIZE]; 
 
 int main()
 {
@@ -46,22 +49,22 @@ int main()
 	// getting input data
 	for(int i=0; i<SIZE; i++)
 	{
-		In_R[i] = i;
-		In_I[i] = 0.0;
+		input_real[i] = i;
+		input_img[i] = 0.0;
 
 	}
 	
 
 	// DFT
-	dft(In_R, In_I);
+	dft(input_real, input_img, output_real, output_img);
 
 
 	// comparing with golden output
 	for(int i=0; i<SIZE; i++)
 	{
 		fscanf(fp, "%d %f %f", &index, &gold_R, &gold_I);
-		rmse_R.add_value((float)In_R[i] - gold_R);
-		rmse_I.add_value((float)In_I[i] - gold_I);
+		rmse_R.add_value((float)output_real[i] - gold_R);
+		rmse_I.add_value((float)output_img[i] - gold_I);
 	}
 	fclose(fp);
 
