@@ -1,0 +1,204 @@
+<ENTRY>
+{
+ "thisFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.comp/dft.comp.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Nov  4 11:32:06 2025",
+ "timestampMillis": "1762284726497",
+ "buildStep": {
+  "cmdId": "d8c03b8a-f1ac-4586-86cd-7880212de2ed",
+  "name": "vitis-run",
+  "logFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/logs/hls_compile.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov  4 11:32:06 2025",
+ "timestampMillis": "1762284726498",
+ "status": {
+  "cmdId": "d8c03b8a-f1ac-4586-86cd-7880212de2ed",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Nov  4 11:32:06 2025",
+ "timestampMillis": "1762284726498",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dft",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Nov  4 11:32:06 2025",
+ "timestampMillis": "1762284726499",
+ "buildStep": {
+  "cmdId": "773c7fe2-6967-4a8b-9bf0-3f7e93e255d8",
+  "name": "csynth_design",
+  "logFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.comp/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov  4 11:32:06 2025",
+ "timestampMillis": "1762284726500",
+ "status": {
+  "cmdId": "773c7fe2-6967-4a8b-9bf0-3f7e93e255d8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov  4 11:32:06 2025",
+ "timestampMillis": "1762284726501",
+ "report": {
+  "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.comp/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov  4 11:32:06 2025",
+ "timestampMillis": "1762284726502",
+ "report": {
+  "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.comp/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov  4 11:32:06 2025",
+ "timestampMillis": "1762284726503",
+ "report": {
+  "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.comp/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov  4 11:32:25 2025",
+ "timestampMillis": "1762284745392",
+ "report": {
+  "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.comp/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov  4 11:32:25 2025",
+ "timestampMillis": "1762284745393",
+ "report": {
+  "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.comp/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov  4 11:32:25 2025",
+ "timestampMillis": "1762284745394",
+ "report": {
+  "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/dft/Q2/dft.comp/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov  4 11:32:25 2025",
+ "timestampMillis": "1762284745395",
+ "status": {
+  "cmdId": "773c7fe2-6967-4a8b-9bf0-3f7e93e255d8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov  4 11:32:25 2025",
+ "timestampMillis": "1762284745461",
+ "status": {
+  "cmdId": "d8c03b8a-f1ac-4586-86cd-7880212de2ed",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

@@ -14,8 +14,16 @@ void dft(DTYPE real_sample[SIZE], DTYPE imag_sample[SIZE])
         DTYPE sum_imag = 0;
         dot_product_loop:
         for (int n = 0; n < SIZE; n++){
-            sum_real += real_sample[n] * cos((2*PI*k*n) / SIZE) + imag_sample[n] * sin((2*PI*k*n) / SIZE );
-            sum_imag += -1 * real_sample[n] * sin((2*PI*k*n) / SIZE) + imag_sample[n] * cos((2*PI*k*n) / SIZE );
+            // use LUTs for cosine and sine values
+            DTYPE cos_val = cos_coeff_table[k][n];
+            DTYPE sin_val = sin_coeff_table[k][n];
+
+            // fetch real and imaginary parts
+            DTYPE real_part = real_sample[n];
+            DTYPE imag_part = imag_sample[n];
+
+            sum_real += real_part * cos_val + imag_part * sin_val;
+            sum_imag += -1 * real_part * sin_val + imag_part * cos_val;
         }
         temp_real[k] = sum_real;
         temp_imag[k] = sum_imag;
