@@ -1,7 +1,16 @@
 #include <ap_int.h>
+#include <hls_stream.h>
+#include <ap_axi_sdata.h>
 
 typedef float DTYPE;
+
+
 #define SIZE 1024 		/* SIZE OF DFT */
 
-void dft(DTYPE real_sample[SIZE], DTYPE imag_sample[SIZE],DTYPE real_op[SIZE], DTYPE imag_op[SIZE]);
-// Use streaming interface for demo
+typedef hls::axis<float, 0,0,0> transPkt;
+
+void dft( 
+		hls::stream<transPkt>&rs,
+		hls::stream<transPkt>&is,
+		hls::stream<transPkt>&ro,
+		hls::stream<transPkt>&io) ;// Use streaming interface for demo
