@@ -4,28 +4,16 @@
 
 // real and imaginary parts doubled as both inputs and outputs
 // 
-void dft(const DTYPE input_real[SIZE], const DTYPE input_img[SIZE])
+void dft(const DTYPE input_real[SIZE], const DTYPE input_img[SIZE],
+        DTYPE output_real[SIZE], DTYPE output_img[SIZE])
 {
-    // 1D arrays: partition along their only dimension (dim=1)
-    #pragma HLS ARRAY_PARTITION variable=input_real  block factor=16 dim=1
-    #pragma HLS ARRAY_PARTITION variable=input_img  block factor=16 dim=1
-    #pragma HLS ARRAY_PARTITION variable=output_real block factor=16 dim=1
-    #pragma HLS ARRAY_PARTITION variable=output_img block factor=16 dim=1
-    DTYPE output_real[SIZE], DTYPE output_img[SIZE]
-    // 2D tables [k][n] we iterate n in the inner loop (partition dim=2)
-    #pragma HLS ARRAY_PARTITION variable=cos_coeff_table block factor=16 dim=2
-    #pragma HLS ARRAY_PARTITION variable=sin_coeff_table block factor=16 dim=2
-
     data_loop:
     for (int k = 0; k < SIZE; k++){
-        #pragma HLS PIPELINE II=1
         DTYPE sum_real = 0;
         DTYPE sum_imag = 0;
 
         dot_product_loop:
         for (int n = 0; n < SIZE; n++){
-
-            int idx = (k*n)&(SIZE - 1);
             // use LUTs for cosine and sine values
             DTYPE cos_val = cos_coeff_table[k][n];
             DTYPE sin_val = sin_coeff_table[k][n];
@@ -39,10 +27,5 @@ void dft(const DTYPE input_real[SIZE], const DTYPE input_img[SIZE])
         }
         output_real[k] = sum_real;
         output_img[k] = sum_imag;
-    }
-
-    for (int i = 0; i < SIZE; i++) {
-        real_sample[i] = temp_real[i];
-        imag_sample[i] = temp_imag[i];
     }
 }
