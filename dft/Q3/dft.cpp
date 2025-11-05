@@ -23,7 +23,7 @@ void dft(const DTYPE input_real[SIZE], const DTYPE input_img[SIZE],
             DTYPE imag_part = input_img[n];
 
             sum_real += real_part * cos_val + imag_part * sin_val;
-            sum_imag += -1 * real_part * sin_val + imag_part * cos_val;
+            sum_imag += real_part * sin_val + imag_part * cos_val;
         }
         output_real[k] = sum_real;
         output_img[k] = sum_imag;
