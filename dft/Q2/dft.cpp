@@ -23,7 +23,7 @@ void dft(DTYPE real_sample[SIZE], DTYPE imag_sample[SIZE])
             DTYPE imag_part = imag_sample[n];
 
             sum_real += real_part * cos_val + imag_part * sin_val;
-            sum_imag += -1 * real_part * sin_val + imag_part * cos_val;
+            sum_imag += real_part * sin_val + imag_part * cos_val;
         }
         temp_real[k] = sum_real;
         temp_imag[k] = sum_imag;
