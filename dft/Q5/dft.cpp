@@ -19,13 +19,12 @@ void dft(const DTYPE input_real[SIZE], const DTYPE input_img[SIZE],
 
     data_loop:
     for (int k = 0; k < SIZE; k++){
-        #pragma HLS PIPELINE II=1
         DTYPE sum_real = 0;
         DTYPE sum_imag = 0;
 
         dot_product_loop:
         for (int n = 0; n < SIZE; n++){
-            #pragma HLS PIPELINE II=1
+            #pragma HLS UNROLL factor = 8
             // use LUTs for cosine and sine values
             DTYPE cos_val = cos_coeff_table[k][n];
             DTYPE sin_val = sin_coeff_table[k][n];
