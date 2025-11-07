@@ -10,7 +10,7 @@ typedef float DTYPE;
 typedef hls::axis<float, 0,0,0> transPkt;
 
 void dft( 
-		hls::stream<transPkt>&rs,
-		hls::stream<transPkt>&is,
-		hls::stream<transPkt>&ro,
-		hls::stream<transPkt>&io) ;// Use streaming interface for demo
+		hls::stream<transPkt>&A,
+		hls::stream<transPkt>&B,
+		hls::stream<transPkt>&C,
+		hls::stream<transPkt>&D) ;// Use streaming interface for demo

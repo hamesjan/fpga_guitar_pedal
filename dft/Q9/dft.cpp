@@ -2,13 +2,13 @@
 #include "dft.h"
 #include"coefficients1024.h"
 
-void dft( hls::stream<transPkt>&rs,
-                hls::stream<transPkt>&is,
-                hls::stream<transPkt>&ro,
-                hls::stream<transPkt>&io)
+void dft( hls::stream<transPkt>&A,
+                hls::stream<transPkt>&B,
+                hls::stream<transPkt>&C,
+                hls::stream<transPkt>&D)
 {
 
-	#pragma HLS INTERFACE mode=axis port=rs,is,ro,io
+	#pragma HLS INTERFACE mode=axis port=A,B,C,D
 	#pragma HLS INTERFACE mode=s_axilite port=return
 	transPkt real_sample, imag_sample, real_op, imag_op;
 	float real_sample_data[SIZE];
@@ -18,8 +18,8 @@ void dft( hls::stream<transPkt>&rs,
 
 	read_loop:
 	for (int i =0; i < SIZE; i++){
-		real_sample = rs.read();
-		imag_sample = is.read();
+		real_sample = A.read();
+		imag_sample = B.read();
 
 		real_sample_data[i] = real_sample.data;
 		imag_sample_data[i] = imag_sample.data;
@@ -54,13 +54,12 @@ void dft( hls::stream<transPkt>&rs,
 
 		real_sample.data = real_op_data[i];
 		imag_sample.data = imag_op_data[i];
-		
-		ro.write(real_op);
-		io.write(imag_op);
-	}
-
-	if (real_sample.last == 1 || imag_sample.last == 1){
-		return;
+		if (i == SIZE - 1){
+			real_op.last = 1;
+			imag_op.last = 1;
+		}
+		C.write(real_op);
+		D.write(imag_op);
 	}
 
 	return;
