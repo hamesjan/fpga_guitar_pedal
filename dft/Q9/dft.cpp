@@ -16,7 +16,6 @@ void dft( hls::stream<transPkt>&rs,
         float real_op_data[SIZE];
 	float imag_op_data[SIZE];
 
-
 	read_loop:
 	for (int i =0; i < SIZE; i++){
 		real_sample = rs.read();
@@ -52,10 +51,17 @@ void dft( hls::stream<transPkt>&rs,
 	for (int i =0; i < SIZE; i++){
 		real_op.data = real_op_data[i];
 		imag_op.data = imag_op_data[i];
+
+		real_sample.data = real_op_data[i];
+		imag_sample.data = imag_op_data[i];
+		
 		ro.write(real_op);
 		io.write(imag_op);
 	}
 
+	if (real_sample.last == 1 || imag_sample.last == 1){
+		return;
+	}
 
 	return;
 }

@@ -1,0 +1,120 @@
+<ENTRY>
+{
+ "thisFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q7/dft.comp/dft.comp.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Nov  6 17:08:22 2025",
+ "timestampMillis": "1762477702505",
+ "buildStep": {
+  "cmdId": "2e4e52fe-01f6-4fb6-bc1c-b4188e0db833",
+  "name": "vitis-run",
+  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q7/logs/hls_run_package.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q7/export_dft.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q7"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Nov  6 17:08:22 2025",
+ "timestampMillis": "1762477702507",
+ "status": {
+  "cmdId": "2e4e52fe-01f6-4fb6-bc1c-b4188e0db833",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Nov  6 17:08:22 2025",
+ "timestampMillis": "1762477702508",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dft",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q7/dft.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Nov  6 17:08:22 2025",
+ "timestampMillis": "1762477702510",
+ "buildStep": {
+  "cmdId": "bb415cc3-acb0-4bfc-b20f-df595f5ba5c1",
+  "name": "export_design",
+  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q7/dft.comp/hls/hls.log",
+  "commandLine": "export_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q7"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Nov  6 17:08:22 2025",
+ "timestampMillis": "1762477702512",
+ "status": {
+  "cmdId": "bb415cc3-acb0-4bfc-b20f-df595f5ba5c1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Nov  6 17:09:15 2025",
+ "timestampMillis": "1762477755607",
+ "status": {
+  "cmdId": "bb415cc3-acb0-4bfc-b20f-df595f5ba5c1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Nov  6 17:09:15 2025",
+ "timestampMillis": "1762477755614",
+ "status": {
+  "cmdId": "2e4e52fe-01f6-4fb6-bc1c-b4188e0db833",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
