@@ -2,6 +2,8 @@
 #include "dft.h"
 #include"coefficients1024.h"
 
+
+
 void dft( hls::stream<transPkt>&A,
                 hls::stream<transPkt>&B,
                 hls::stream<transPkt>&C,
@@ -13,21 +15,22 @@ void dft( hls::stream<transPkt>&A,
 	transPkt real_sample, imag_sample, real_op, imag_op;
 	float real_sample_data[SIZE];
 	float imag_sample_data[SIZE];
-        float real_op_data[SIZE];
-	float imag_op_data[SIZE];
-
-	read_loop:
-	for (int i =0; i < SIZE; i++){
+        float out_data_real[SIZE];
+	float out_data_imag[SIZE];
+	
+	for (int i = 0; i <SIZE - 1; i++){
 		real_sample = A.read();
 		imag_sample = B.read();
-
+		
 		real_sample_data[i] = real_sample.data;
 		imag_sample_data[i] = imag_sample.data;
+
 	}
-
-
+	
+	
 	data_loop:
 	for (int n = 0; n < SIZE; n++){
+
 	    float temp_real;
 	    float temp_imag;
 		dot_product_loop:
@@ -42,25 +45,14 @@ void dft( hls::stream<transPkt>&A,
 		temp_imag += real_sample_data[n] * sin_val + imag_sample_data[n] * cos_val;
 	    }
 
-	    real_op_data[n] = temp_real;
-	    imag_op_data[n] = temp_imag;
+	    real_sample.data = temp_real;
+	    imag_sample.data = temp_imag;
+	    
+	    C.write(real_sample);
+	    D.write(imag_sample);	    
 	   
 	}
 	
-	write_loop:
-	for (int i =0; i < SIZE; i++){
-		real_op.data = real_op_data[i];
-		imag_op.data = imag_op_data[i];
-
-		real_sample.data = real_op_data[i];
-		imag_sample.data = imag_op_data[i];
-		if (i == SIZE - 1){
-			real_op.last = 1;
-			imag_op.last = 1;
-		}
-		C.write(real_op);
-		D.write(imag_op);
-	}
 
 	return;
 }
