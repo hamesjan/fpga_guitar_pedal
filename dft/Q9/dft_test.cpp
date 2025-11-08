@@ -89,9 +89,20 @@ int main()
 		// Read the results from output streams
 		pktC = C.read();
 		pktD = D.read();
+		if (i == SIZE - 1){
+			if (pktC.last != 1  || pktD.last != 1) {
+		 	printf("expected tlast");
+			}
+		} else {
+		if (pktC.last != 0 || pktD.last != 0){
+		  printf("not expecting tlast");
+		}
+		}
 		dataC = pktC.data;
 		dataD = pktD.data;
 		// Print the results
+		printf("data c: %.3f\n", dataC);
+		printf("data d: %.3f\n", dataD);
 		fscanf(fp, "%d %f %f", &index, &gold_R, &gold_I);
 		rmse_R.add_value((float)dataC - gold_R);
 		rmse_I.add_value((float)dataD - gold_I);
@@ -102,6 +113,7 @@ int main()
 
 	fclose(fp);
 
+	printf("test");
 
 	// printing error results
 	printf("----------------------------------------------\n");
