@@ -1040,3 +1040,392 @@ synth_1: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.
 [Fri Nov  7 16:33:42 2025] Launched impl_1...
 Run output will be captured here: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.runs/impl_1/runme.log
 launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 11133.223 ; gain = 240.000 ; free physical = 5368 ; free virtual = 18206
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/impl/ip'.
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets dft_0_D] [get_bd_intf_nets dft_0_C] [get_bd_intf_nets axi_smc_M02_AXI] [get_bd_intf_nets axi_dma_1_M_AXIS_MM2S] [get_bd_cells dft_0]
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/impl/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/impl/ip'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dft:1.0 dft_0
+endgroup
+set_property location {1 104 -592} [get_bd_cells dft_0]
+connect_bd_intf_net [get_bd_intf_pins dft_0/A] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins dft_0/C] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins dft_0/B] [get_bd_intf_pins axi_dma_1/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins dft_0/D] [get_bd_intf_pins axi_dma_1/S_AXIS_S2MM]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/dft_0/s_axi_control} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins dft_0/s_axi_control]
+Slave segment '/dft_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+save_bd_design
+Wrote  : </home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 5-943] Reserving offset range <0x41E0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x41E1_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4000_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: IP design_1_axi_smc_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /design_1_axi_smc_0]
+Wrote  : </home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+Verilog Output written to : /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+Verilog Output written to : /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(146) to pin: '/s00_nodes/S_SC_AR_payld'(142) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(146) to pin: '/s00_nodes/S_SC_AW_payld'(142) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(55) to pin: '/m00_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(9) to pin: '/m00_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(55) to pin: '/m01_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(9) to pin: '/m01_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(55) to pin: '/m02_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(9) to pin: '/m02_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(53) to pin: '/s00_nodes/M_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(7) to pin: '/s00_nodes/M_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(142) to pin: '/m00_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(142) to pin: '/m00_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(142) to pin: '/m01_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(142) to pin: '/m01_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(142) to pin: '/m02_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(142) to pin: '/m02_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(146) to pin: '/s00_nodes/S_SC_AR_payld'(142) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(146) to pin: '/s00_nodes/S_SC_AW_payld'(142) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(55) to pin: '/m00_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(9) to pin: '/m00_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(55) to pin: '/m01_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(9) to pin: '/m01_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(55) to pin: '/m02_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(9) to pin: '/m02_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(53) to pin: '/s00_nodes/M_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(7) to pin: '/s00_nodes/M_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(142) to pin: '/m00_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(142) to pin: '/m00_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(142) to pin: '/m01_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(142) to pin: '/m01_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(142) to pin: '/m02_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(142) to pin: '/m02_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+Exporting to file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Hardware Definition File /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dft_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s03_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_us_3
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_smc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_dft_0_3
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry eee36533d4c97dbe to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_pc_0, cache-ID = eee36533d4c97dbe; cache size = 29.641 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry a1f4e854dde34f3e to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_us_0, cache-ID = a1f4e854dde34f3e; cache size = 29.641 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry aaaeba6229806ef7 to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_us_1, cache-ID = aaaeba6229806ef7; cache size = 29.641 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry a1f4e854dde34f3e to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_us_2, cache-ID = a1f4e854dde34f3e; cache size = 29.641 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_us_3
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry aaaeba6229806ef7 to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_us_3, cache-ID = aaaeba6229806ef7; cache size = 29.641 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_smc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 8aa41e5d37746b9f to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 8aa41e5d37746b9f; cache size = 29.641 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_dft_0_3
+[Fri Nov  7 17:02:35 2025] Launched design_1_dft_0_3_synth_1, synth_1...
+Run output will be captured here:
+design_1_dft_0_3_synth_1: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.runs/design_1_dft_0_3_synth_1/runme.log
+synth_1: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.runs/synth_1/runme.log
+[Fri Nov  7 17:02:35 2025] Launched impl_1...
+Run output will be captured here: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:00 ; elapsed = 00:01:13 . Memory (MB): peak = 11477.070 ; gain = 317.891 ; free physical = 4723 ; free virtual = 17612
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/impl/ip/component.xml. It will be created.
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets dft_0_C] [get_bd_intf_nets axi_smc_M02_AXI] [get_bd_intf_nets axi_dma_1_M_AXIS_MM2S] [get_bd_intf_nets dft_0_D] [get_bd_cells dft_0]
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/impl/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/impl/ip'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dft:1.0 dft_0
+endgroup
+set_property location {1.5 176 -547} [get_bd_cells dft_0]
+connect_bd_intf_net [get_bd_intf_pins dft_0/A] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins dft_0/C] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins dft_0/B] [get_bd_intf_pins axi_dma_1/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins dft_0/D] [get_bd_intf_pins axi_dma_1/S_AXIS_S2MM]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/dft_0/s_axi_control} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins dft_0/s_axi_control]
+Slave segment '/dft_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+save_bd_design
+Wrote  : </home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+validate_bd_design
+INFO: [BD 5-943] Reserving offset range <0x41E0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x41E1_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4000_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: IP design_1_axi_smc_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /design_1_axi_smc_0]
+xit::source_ipfile: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 11477.070 ; gain = 0.000 ; free physical = 3501 ; free virtual = 16545
+validate_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 11477.070 ; gain = 0.000 ; free physical = 3415 ; free virtual = 16457
+save_bd_design
+Wrote  : </home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.srcs/sources_1/bd/design_1/design_1.bd> 
+save_bd_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 11477.070 ; gain = 0.000 ; free physical = 3469 ; free virtual = 16523
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+Verilog Output written to : /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+Verilog Output written to : /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(146) to pin: '/s00_nodes/S_SC_AR_payld'(142) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(146) to pin: '/s00_nodes/S_SC_AW_payld'(142) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(55) to pin: '/m00_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(9) to pin: '/m00_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(55) to pin: '/m01_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(9) to pin: '/m01_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(55) to pin: '/m02_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(9) to pin: '/m02_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(53) to pin: '/s00_nodes/M_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(7) to pin: '/s00_nodes/M_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(142) to pin: '/m00_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(142) to pin: '/m00_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(142) to pin: '/m01_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(142) to pin: '/m01_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(142) to pin: '/m02_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(142) to pin: '/m02_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(146) to pin: '/s00_nodes/S_SC_AR_payld'(142) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(146) to pin: '/s00_nodes/S_SC_AW_payld'(142) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(55) to pin: '/m00_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(9) to pin: '/m00_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(55) to pin: '/m01_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(9) to pin: '/m01_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(55) to pin: '/m02_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(9) to pin: '/m02_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(53) to pin: '/s00_nodes/M_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(7) to pin: '/s00_nodes/M_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(142) to pin: '/m00_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(142) to pin: '/m00_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(142) to pin: '/m01_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(142) to pin: '/m01_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(142) to pin: '/m02_nodes/M_SC_AR_payld'(146) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(142) to pin: '/m02_nodes/M_SC_AW_payld'(146) - Only lower order bits will be connected.
+Exporting to file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Hardware Definition File /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dft_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s03_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_mem_intercon_imp_auto_us_3
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_smc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_dft_0_4
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry eee36533d4c97dbe to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/e/e/eee36533d4c97dbe/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_pc_0, cache-ID = eee36533d4c97dbe; cache size = 32.573 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry a1f4e854dde34f3e to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_us_0, cache-ID = a1f4e854dde34f3e; cache size = 32.573 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry aaaeba6229806ef7 to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_us_1, cache-ID = aaaeba6229806ef7; cache size = 32.573 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry a1f4e854dde34f3e to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/1/a1f4e854dde34f3e/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_us_2, cache-ID = a1f4e854dde34f3e; cache size = 32.573 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_mem_intercon_imp_auto_us_3
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry aaaeba6229806ef7 to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/a/a/aaaeba6229806ef7/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_us_3, cache-ID = aaaeba6229806ef7; cache size = 32.573 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_smc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 8aa41e5d37746b9f to dir: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0.dcp to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0_stub.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0_stub.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0_sim_netlist.v to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.cache/ip/2024.2/8/a/8aa41e5d37746b9f/design_1_axi_smc_0_sim_netlist.vhdl to /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 8aa41e5d37746b9f; cache size = 32.573 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_dft_0_4
+config_ip_cache: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 11477.070 ; gain = 0.000 ; free physical = 3401 ; free virtual = 16442
+[Fri Nov  7 17:56:46 2025] Launched design_1_dft_0_4_synth_1, synth_1...
+Run output will be captured here:
+design_1_dft_0_4_synth_1: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.runs/design_1_dft_0_4_synth_1/runme.log
+synth_1: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.runs/synth_1/runme.log
+[Fri Nov  7 17:56:46 2025] Launched impl_1...
+Run output will be captured here: /home/linux/ieng6/students/298/jjhan/Downloads/project_3_3/project_3_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:26 ; elapsed = 00:01:10 . Memory (MB): peak = 11694.809 ; gain = 217.738 ; free physical = 3328 ; free virtual = 16362

@@ -43,26 +43,63 @@ int main()
 
 	FILE * fp = fopen("out.gold.dat","r");
 
-	// getting input data
-	for(int i=0; i<SIZE; i++)
-	{
-		In_R[i] = i;
-		In_I[i] = 0.0;
+		hls::stream<transPkt> A, B, C, D;
+		transPkt pktA, pktB, pktC, pktD;
+	//fp_int dataA, dataB, dataC, dataD;
+	float dataA, dataB, dataC, dataD;
 
+	float inputA[SIZE];
+	float inputB[SIZE];
+
+	for (int i = 0; i < SIZE; i++) {
+		inputA[i] = i;
+		inputB[i] = 0.0;
 	}
+
+//	for(int i=0; i<SIZE; i++)
+//	{
+//		In_R[i] = i;
+	//	In_I[i] = 0.0;
+
+	//}
 	
 
 	// DFT
-	dft(In_R, In_I,Out_R,Out_I);
-
-
-	// comparing with golden output
-	for(int i=0; i<SIZE; i++)
-	{
-		fscanf(fp, "%d %f %f", &index, &gold_R, &gold_I);
-		rmse_R.add_value((float)Out_R[i] - gold_R);
-		rmse_I.add_value((float)Out_I[i] - gold_I);
+	//
+	for (int i = 0; i < SIZE; i++) {
+		pktA.data = inputA[i];
+		pktB.data = inputB[i];
+		// Prepare tlast signal
+		if (i == SIZE -1) {
+			pktA.last = 1;
+			pktB.last = 1;
+		} else {
+			pktA.last = 0;
+			pktB.last = 0;
+		}
+		A.write(pktA);
+		B.write(pktB);
 	}
+
+	dft(A,B,C,D);
+
+
+	for (int i = 0; i < SIZE; i++) {
+
+		// Read the results from output streams
+		pktC = C.read();
+		pktD = D.read();
+		dataC = pktC.data;
+		dataD = pktD.data;
+		// Print the results
+		fscanf(fp, "%d %f %f", &index, &gold_R, &gold_I);
+		rmse_R.add_value((float)dataC - gold_R);
+		rmse_I.add_value((float)dataD - gold_I);
+	
+	}
+
+
+
 	fclose(fp);
 
 

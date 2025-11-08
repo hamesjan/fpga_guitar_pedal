@@ -151,3 +151,43 @@ save_bd_design
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets dft_0_D] [get_bd_intf_nets dft_0_C] [get_bd_intf_nets axi_smc_M02_AXI] [get_bd_intf_nets axi_dma_1_M_AXIS_MM2S] [get_bd_cells dft_0]
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/impl/ip [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dft:1.0 dft_0
+endgroup
+set_property location {1 104 -592} [get_bd_cells dft_0]
+connect_bd_intf_net [get_bd_intf_pins dft_0/A] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins dft_0/C] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins dft_0/B] [get_bd_intf_pins axi_dma_1/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins dft_0/D] [get_bd_intf_pins axi_dma_1/S_AXIS_S2MM]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/dft_0/s_axi_control} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins dft_0/s_axi_control]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets dft_0_C] [get_bd_intf_nets axi_smc_M02_AXI] [get_bd_intf_nets axi_dma_1_M_AXIS_MM2S] [get_bd_intf_nets dft_0_D] [get_bd_cells dft_0]
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/impl/ip [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dft:1.0 dft_0
+endgroup
+set_property location {1.5 176 -547} [get_bd_cells dft_0]
+connect_bd_intf_net [get_bd_intf_pins dft_0/A] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins dft_0/C] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins dft_0/B] [get_bd_intf_pins axi_dma_1/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins dft_0/D] [get_bd_intf_pins axi_dma_1/S_AXIS_S2MM]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/dft_0/s_axi_control} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins dft_0/s_axi_control]
+save_bd_design
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

@@ -3,7 +3,6 @@
 #include"coefficients1024.h"
 
 
-
 void dft( hls::stream<transPkt>&A,
                 hls::stream<transPkt>&B,
                 hls::stream<transPkt>&C,
@@ -12,13 +11,11 @@ void dft( hls::stream<transPkt>&A,
 
 	#pragma HLS INTERFACE mode=axis port=A,B,C,D
 	#pragma HLS INTERFACE mode=s_axilite port=return
-	transPkt real_sample, imag_sample, real_op, imag_op;
-	float real_sample_data[SIZE];
-	float imag_sample_data[SIZE];
-        float out_data_real[SIZE];
-	float out_data_imag[SIZE];
+	transPkt real_sample, imag_sample;
+	float real_sample_data[SIZE] = {0};
+	float imag_sample_data[SIZE] = {0};
 	
-	for (int i = 0; i <SIZE; i++){
+	for (int i = 0; i < SIZE; i++){
 		real_sample = A.read();
 		imag_sample = B.read();
 		
@@ -39,11 +36,12 @@ void dft( hls::stream<transPkt>&A,
 		int idx = (k* n) % SIZE;
 		
 		    
-		DTYPE cos_val = cos_coefficients_table[idx];
-		DTYPE sin_val = sin_coefficients_table[idx];
+		float cos_val = cos_coefficients_table[idx];
+		float sin_val = sin_coefficients_table[idx];
 
 		// fetch real and imaginary parts
 		temp_real += real_sample_data[n] * cos_val + imag_sample_data[n] * sin_val;
+
 		temp_imag += real_sample_data[n] * sin_val + imag_sample_data[n] * cos_val;
 	    }
 
