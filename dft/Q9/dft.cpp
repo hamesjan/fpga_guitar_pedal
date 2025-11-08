@@ -18,7 +18,7 @@ void dft( hls::stream<transPkt>&A,
         float out_data_real[SIZE];
 	float out_data_imag[SIZE];
 	
-	for (int i = 0; i <SIZE - 1; i++){
+	for (int i = 0; i <SIZE; i++){
 		real_sample = A.read();
 		imag_sample = B.read();
 		
