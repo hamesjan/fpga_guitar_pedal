@@ -31,12 +31,14 @@ void dft( hls::stream<transPkt>&A,
 	data_loop:
 	for (int n = 0; n < SIZE; n++){
 
-	    float temp_real;
-	    float temp_imag;
+	    float temp_real = 0;
+	    float temp_imag = 0;
 		dot_product_loop:
 	    for (int k = 0; k < SIZE; k++){
 		// use LUTs for cosine and sine values
-		int idx = (k * n) % SIZE;
+		int idx = (k* n) % SIZE;
+		
+		    
 		DTYPE cos_val = cos_coefficients_table[idx];
 		DTYPE sin_val = sin_coefficients_table[idx];
 
