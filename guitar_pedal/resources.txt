@@ -1,0 +1,14 @@
+These are a list of resources to construct the guitar pedal ip.
+
+https://github.com/Xilinx/PYNQ/tree/master/boards/ip/audio_codec_ctrl_v1.0
+
+https://github.com/Xilinx/PYNQ/blob/master/docs/source/pynq_libraries/audio.rst
+
+https://pynq.readthedocs.io/en/v2.0/pynq_package/pynq.lib/pynq.lib.audio.html
+
+IP WE NEED
+
+I2S Receiver - Transmit in audio input
+I2S Transmitter - Transmit out audio data
+Audio Clock Recovery Unit - For syncing timings for high quality audio data
+Audio Formatter - For passing analog data to audio processing unit
