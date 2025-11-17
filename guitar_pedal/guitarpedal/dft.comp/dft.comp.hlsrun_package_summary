@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/dft.comp.hlsrun_package_summary",
+ "thisFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/dft.comp/dft.comp.hlsrun_package_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,26 +9,26 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Fri Nov  7 18:45:15 2025",
- "timestampMillis": "1762569915332",
+ "dateTimestamp": "Sun Nov 16 21:28:30 2025",
+ "timestampMillis": "1763357310006",
  "buildStep": {
-  "cmdId": "2cf53d62-4f72-4814-b9e3-ef3a43ba4e4c",
+  "cmdId": "4934180f-cd6c-419b-b68c-b641a757e1a9",
   "name": "vitis-run",
-  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/logs/hls_run_package.log",
-  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/export_dft.tcl",
+  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/logs/hls_run_package.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/export_dft.tcl",
   "args": [],
   "iniFiles": [],
-  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9"
+  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Nov  7 18:45:15 2025",
- "timestampMillis": "1762569915333",
+ "dateTimestamp": "Sun Nov 16 21:28:30 2025",
+ "timestampMillis": "1763357310007",
  "status": {
-  "cmdId": "2cf53d62-4f72-4814-b9e3-ef3a43ba4e4c",
+  "cmdId": "4934180f-cd6c-419b-b68c-b641a757e1a9",
   "state": "CS_RUNNING"
  }
 }
@@ -36,8 +36,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Fri Nov  7 18:45:15 2025",
- "timestampMillis": "1762569915334",
+ "dateTimestamp": "Sun Nov 16 21:28:30 2025",
+ "timestampMillis": "1763357310007",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -56,7 +56,7 @@
      "uuid": ""
     },
     "sources": [
-     "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.cpp"
+     "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/dft.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -72,26 +72,26 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Nov  7 18:45:15 2025",
- "timestampMillis": "1762569915335",
+ "dateTimestamp": "Sun Nov 16 21:28:30 2025",
+ "timestampMillis": "1763357310008",
  "buildStep": {
-  "cmdId": "35d9ec12-128f-4d67-88cf-8c611d0e949d",
+  "cmdId": "2ed047af-984f-4392-b09b-6e58099dbf55",
   "name": "export_design",
-  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9/dft.comp/hls/hls.log",
+  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/dft.comp/hls/hls.log",
   "commandLine": "export_design",
   "args": [],
   "iniFiles": [],
-  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/dft/Q9"
+  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Nov  7 18:45:15 2025",
- "timestampMillis": "1762569915336",
+ "dateTimestamp": "Sun Nov 16 21:28:30 2025",
+ "timestampMillis": "1763357310008",
  "status": {
-  "cmdId": "35d9ec12-128f-4d67-88cf-8c611d0e949d",
+  "cmdId": "2ed047af-984f-4392-b09b-6e58099dbf55",
   "state": "CS_RUNNING"
  }
 }
@@ -99,10 +99,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Nov  7 18:45:59 2025",
- "timestampMillis": "1762569959412",
+ "dateTimestamp": "Sun Nov 16 21:29:26 2025",
+ "timestampMillis": "1763357366287",
  "status": {
-  "cmdId": "35d9ec12-128f-4d67-88cf-8c611d0e949d",
+  "cmdId": "2ed047af-984f-4392-b09b-6e58099dbf55",
   "state": "CS_PASSED"
  }
 }
@@ -110,10 +110,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Nov  7 18:45:59 2025",
- "timestampMillis": "1762569959422",
+ "dateTimestamp": "Sun Nov 16 21:29:26 2025",
+ "timestampMillis": "1763357366298",
  "status": {
-  "cmdId": "2cf53d62-4f72-4814-b9e3-ef3a43ba4e4c",
+  "cmdId": "4934180f-cd6c-419b-b68c-b641a757e1a9",
   "state": "CS_PASSED"
  }
 }
