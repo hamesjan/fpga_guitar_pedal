@@ -1,0 +1,481 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Nov 21 09:29:16 2025
+# Process ID: 15420
+# Current directory: C:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_1_synth_1
+# Command line: vivado.exe -log base_io_switch_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_io_switch_1.tcl
+# Log file: C:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_1_synth_1/base_io_switch_1.vds
+# Journal file: C:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_1_synth_1\vivado.jou
+# Running On        :gt-1
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 7 7735HS with Radeon Graphics        
+# CPU Frequency     :3194 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :15941 MB
+# Swap memory       :20401 MB
+# Total Virtual     :36342 MB
+# Available Virtual :16031 MB
+#-----------------------------------------------------------
+source base_io_switch_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 529.539 ; gain = 198.434
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/james/PYNQ/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: base_io_switch_1
+Command: synth_design -top base_io_switch_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19816
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1422.012 ; gain = 446.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_io_switch_1' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ip/base_io_switch_1/synth/base_io_switch_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'io_switch_v1_1' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1.v:4]
+INFO: [Synth 8-6157] synthesizing module 'io_switch_v1_1_S_AXI' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1_S_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'io_switch' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:7]
+INFO: [Synth 8-6157] synthesizing module 'io_switch_bit' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:57]
+WARNING: [Synth 8-324] index 1 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:159]
+WARNING: [Synth 8-324] index 2 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:160]
+WARNING: [Synth 8-324] index 3 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:161]
+WARNING: [Synth 8-324] index 4 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:162]
+WARNING: [Synth 8-324] index 5 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:163]
+WARNING: [Synth 8-324] index 1 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:164]
+WARNING: [Synth 8-324] index 1 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:167]
+WARNING: [Synth 8-324] index 2 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:168]
+WARNING: [Synth 8-324] index 3 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:169]
+WARNING: [Synth 8-324] index 4 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:170]
+WARNING: [Synth 8-324] index 5 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:171]
+WARNING: [Synth 8-324] index 6 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:172]
+WARNING: [Synth 8-324] index 7 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch_bit' (0#1) [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:57]
+WARNING: [Synth 8-7071] port 'uart1_rx_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'uart1_tx_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'ss0_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sck1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sck1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sck1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'miso1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'miso1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'miso1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'mosi1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'mosi1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'mosi1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'ss1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'ss1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'ss1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda0_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda0_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda0_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl0_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl0_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl0_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_1' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_2' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_3' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_4' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_5' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_6' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_7' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7023] instance 'd_i' of module 'io_switch_bit' has 58 connections declared, but only 24 given [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'uart1_rx_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'uart1_tx_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'ss0_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sck1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sck1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sck1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'miso1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'miso1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'miso1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'mosi1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'mosi1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'mosi1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'ss1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'ss1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'ss1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda0_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda0_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda0_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl0_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl0_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl0_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'sda1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'scl1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_1' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_2' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_3' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_4' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_5' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_6' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'timer_i_7' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7023] instance 'd_i' of module 'io_switch_bit' has 58 connections declared, but only 24 given [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:125]
+WARNING: [Synth 8-7071] port 'uart1_rx_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'uart1_tx_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'ss0_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'sck1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'sck1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'sck1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'miso1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'miso1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'miso1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'mosi1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'mosi1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'mosi1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'ss1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'ss1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'ss1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'sda1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'sda1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'sda1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'scl1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'scl1_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'scl1_t' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'timer_i_1' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'timer_i_2' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'timer_i_3' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'timer_i_4' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'timer_i_5' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'timer_i_6' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'timer_i_7' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7023] instance 'd_i' of module 'io_switch_bit' has 58 connections declared, but only 30 given [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'uart1_rx_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'uart1_tx_o' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'ss0_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7071] port 'sck1_i' of module 'io_switch_bit' is unconnected for instance 'd_i' [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'd_i' of module 'io_switch_bit' has 58 connections declared, but only 30 given [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:145]
+WARNING: [Synth 8-7023] instance 'd_i' of module 'io_switch_bit' has 58 connections declared, but only 24 given [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-7023] instance 'd_i' of module 'io_switch_bit' has 58 connections declared, but only 24 given [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:168]
+WARNING: [Synth 8-7023] instance 'd_i' of module 'io_switch_bit' has 58 connections declared, but only 30 given [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:189]
+WARNING: [Synth 8-7023] instance 'd_i' of module 'io_switch_bit' has 58 connections declared, but only 30 given [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:189]
+WARNING: [Synth 8-324] index 7 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:110]
+WARNING: [Synth 8-324] index 6 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:111]
+WARNING: [Synth 8-324] index 5 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:112]
+WARNING: [Synth 8-324] index 4 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:113]
+WARNING: [Synth 8-324] index 3 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:114]
+WARNING: [Synth 8-324] index 2 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:115]
+WARNING: [Synth 8-324] index 1 out of range [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch' (0#1) [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch_v1_1_S_AXI' (0#1) [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1_S_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch_v1_1' (0#1) [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'base_io_switch_1' (0#1) [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ip/base_io_switch_1/synth/base_io_switch_1.v:53]
+WARNING: [Synth 8-3848] Net uart1_rx_int in module/entity io_switch does not have driver. [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net sda1_int in module/entity io_switch does not have driver. [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net scl1_int in module/entity io_switch does not have driver. [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net sck1_int in module/entity io_switch does not have driver. [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net mosi1_int in module/entity io_switch does not have driver. [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net miso1_int in module/entity io_switch does not have driver. [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [c:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.gen/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1_S_AXI.v:301]
+WARNING: [Synth 8-7129] Port gpio_sel2[31] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[30] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[29] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[28] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[27] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[26] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[25] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[24] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[23] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[22] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[21] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[20] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[19] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[18] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[17] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[16] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[15] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[14] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[13] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[12] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[11] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[10] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[9] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[8] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[7] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[6] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[5] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[4] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[3] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[2] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[1] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel2[0] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[31] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[30] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[29] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[28] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[27] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[26] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[25] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[24] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[23] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[22] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[21] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[20] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[19] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[18] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[17] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[16] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[15] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[14] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[13] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[12] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[11] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[10] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[9] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[8] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[7] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[6] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[5] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[4] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[3] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[2] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[1] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel3[0] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[31] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[30] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[29] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[28] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[27] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[26] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[25] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[24] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[23] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[22] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[21] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[20] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[19] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[18] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[17] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[16] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[15] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[14] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[13] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[12] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[11] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[10] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[9] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[8] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[7] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[6] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[5] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[4] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[3] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[2] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[1] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel4[0] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel5[31] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel5[30] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel5[29] in module io_switch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_sel5[28] in module io_switch is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1545.012 ; gain = 569.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1545.012 ; gain = 569.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1545.012 ; gain = 569.770
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1545.012 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1620.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1620.809 ; gain = 0.383
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	  10 Input   32 Bit        Muxes := 8     
+	   2 Input   24 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |    23|
+|3     |LUT3 |    22|
+|4     |LUT4 |    55|
+|5     |LUT5 |    28|
+|6     |LUT6 |   223|
+|7     |FDRE |   301|
+|8     |FDSE |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1620.809 ; gain = 645.566
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 212 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1620.809 ; gain = 569.770
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1620.809 ; gain = 645.566
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1620.809 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1620.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 5bd907cf
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 236 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1620.809 ; gain = 1074.129
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1620.809 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_1_synth_1/base_io_switch_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_io_switch_1, cache-ID = 3ab5ff740352f5ad
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1620.809 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/james/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_1_synth_1/base_io_switch_1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file base_io_switch_1_utilization_synth.rpt -pb base_io_switch_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 21 09:30:38 2025...
