@@ -1,0 +1,50 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
+  **** SW Build 5238294 on Nov  8 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Nov 28 18:53:14 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /software/common/Xilinx_Vitis/Vitis/2024.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ablal' on host 'ieng6-201.ucsd.edu' (Linux_x86_64 version 6.8.0-83-generic) on Fri Nov 28 18:53:18 PST 2025
+INFO: [HLS 200-10] On os Linux Mint 22.1
+INFO: [HLS 200-10] In directory '/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/guitar_pedal/guitarpedal'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'audio_ip.tcl'
+INFO: [HLS 200-1510] Running: open_component audio.comp -reset 
+INFO: [HLS 200-10] Creating and opening project '/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp'.
+INFO: [HLS 200-10] Creating and opening solution '/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: add_files audio.cpp 
+INFO: [HLS 200-10] Adding design file 'audio.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb audio-top.cpp 
+WARNING: [HLS 200-40] Cannot find test bench file 'audio-top.cpp'
+INFO: [HLS 200-1510] Running: set_top audio 
+Running: set_top audio
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Running: set_part xc7z020clg400-1
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-1998] cannot find relative file path '../../audio-top.cpp' in directory(s): /home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/solution /home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/guitar_pedal/guitarpedal
+WARNING: [HLS 200-1998] cannot find relative file path '../../audio-top.cpp' in directory(s): /home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/solution /home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/guitar_pedal/guitarpedal
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.14 seconds. CPU system time: 0.04 seconds. Elapsed time: 7.75 seconds; current allocated memory: 666.852 MB.
+INFO: [HLS 200-10] Analyzing design file 'audio.cpp' ... 
+WARNING: [HLS 200-1986] Could not apply TOP directive, invalid function, label, or variable (/home/linux/ieng6/students/079/ablal/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio_ip.tcl:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.1 seconds. CPU system time: 0.94 seconds. Elapsed time: 6.98 seconds; current allocated memory: 668.219 MB.
+ERROR: [HLS 214-157] Top function not found: there is no function named 'audio'
+error: Top function not found: there is no function named 'audio'
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:19; Allocated memory: 17.707 MB.
+Error in opt
+    while executing
+"source audio_ip.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 14.74 seconds. Total CPU system time: 3.14 seconds. Total elapsed time: 34.51 seconds; peak allocated memory: 668.559 MB.
