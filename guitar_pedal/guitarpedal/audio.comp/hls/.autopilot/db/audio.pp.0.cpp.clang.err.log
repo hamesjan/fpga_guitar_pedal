@@ -1,16 +1,19 @@
-audio.cpp:37:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ping_pong_delay_XLX_SEP_ PragmaOptions=mode=s_axilite port=out_L_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite port=out_L
-        ^
-audio.cpp:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ping_pong_delay_XLX_SEP_ PragmaOptions=mode=s_axilite port=out_R_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite port=out_R
-        ^
-audio.cpp:40:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ping_pong_delay_XLX_SEP_ PragmaOptions=mode=s_axilite port=in_L_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite port=in_L
-        ^
-audio.cpp:41:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ping_pong_delay_XLX_SEP_ PragmaOptions=mode=s_axilite port=in_R_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite port=in_R
-        ^
 /home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=audio_XLX_SEP_ PragmaOptions=name=audio_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=audio
         ^
-5 warnings generated.
+audio.cpp:93:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=audio_XLX_SEP_ PragmaOptions=mode=s_axilite port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=return
+        ^
+audio.cpp:95:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=audio_XLX_SEP_ PragmaOptions=mode=s_axilite port=out_L_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=out_L
+        ^
+audio.cpp:96:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=audio_XLX_SEP_ PragmaOptions=mode=s_axilite port=out_R_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=out_R
+        ^
+audio.cpp:98:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=audio_XLX_SEP_ PragmaOptions=mode=s_axilite port=in_L_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=in_L
+        ^
+audio.cpp:99:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=audio_XLX_SEP_ PragmaOptions=mode=s_axilite port=in_R_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=in_R
+        ^
+6 warnings generated.

@@ -6091,14 +6091,8 @@ void ping_pong_delay(int32_t* out_L, int32_t* out_R,
                      uint32_t feedback_gain,
                      uint32_t wet_mix) {
 
-#pragma HLS INTERFACE mode=s_axilite port=out_L
-#pragma HLS INTERFACE mode=s_axilite port=out_R
 
-#pragma HLS INTERFACE mode=s_axilite port=in_L
-#pragma HLS INTERFACE mode=s_axilite port=in_R
-
-
- uint32_t read_index;
+    uint32_t read_index;
     if (write_index >= delay_samples) {
         read_index = write_index - delay_samples;
     } else {
@@ -6155,9 +6149,17 @@ __attribute__((sdx_kernel("audio", 0))) void audio(int32_t* out_L, int32_t* out_
 {
 #line 9 "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl"
 #pragma HLSDIRECTIVE TOP name=audio
-# 98 "audio.cpp"
+# 92 "audio.cpp"
 
-    ping_pong_delay(out_L, out_R,
+#pragma HLS INTERFACE mode=s_axilite port=return
+
+#pragma HLS INTERFACE mode=s_axilite port=out_L
+#pragma HLS INTERFACE mode=s_axilite port=out_R
+
+#pragma HLS INTERFACE mode=s_axilite port=in_L
+#pragma HLS INTERFACE mode=s_axilite port=in_R
+
+ ping_pong_delay(out_L, out_R,
                     in_L, in_R,
                     delay_samples,
                     feedback_gain,

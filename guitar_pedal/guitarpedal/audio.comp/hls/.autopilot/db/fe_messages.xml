@@ -1,21 +1,24 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="audio.cpp:37:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="ping_pong_delay" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=out_L" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="audio.cpp:38:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="ping_pong_delay" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=out_R" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="audio.cpp:40:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="ping_pong_delay" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=in_L" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="audio.cpp:41:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="ping_pong_delay" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=in_R" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl:9:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="audio" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=audio" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="audio.cpp:98:0" msg_body="Inlining function 'ping_pong_delay(int*, int*, int, int, unsigned int, unsigned int, unsigned int)' into 'audio(int*, int*, int, int, unsigned int, unsigned int, unsigned int)'">
-        <args Callee="ping_pong_delay(int*, int*, int, int, unsigned int, unsigned int, unsigned int)" Callee-DebugLoc="File audio.cpp Line 35 Column 0" Caller="audio(int*, int*, int, int, unsigned int, unsigned int, unsigned int)" Caller-DebugLoc="File audio.cpp Line 98 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="audio.cpp:93:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="audio" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="audio.cpp:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="audio" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=out_L" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="audio.cpp:96:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="audio" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=out_R" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="audio.cpp:98:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="audio" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=in_L" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="audio.cpp:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="audio" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=in_R" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="audio.cpp:92:0" msg_body="Inlining function 'ping_pong_delay(int*, int*, int, int, unsigned int, unsigned int, unsigned int)' into 'audio(int*, int*, int, int, unsigned int, unsigned int, unsigned int)'">
+        <args Callee="ping_pong_delay(int*, int*, int, int, unsigned int, unsigned int, unsigned int)" Callee-DebugLoc="File audio.cpp Line 35 Column 0" Caller="audio(int*, int*, int, int, unsigned int, unsigned int, unsigned int)" Caller-DebugLoc="File audio.cpp Line 92 Column 0"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

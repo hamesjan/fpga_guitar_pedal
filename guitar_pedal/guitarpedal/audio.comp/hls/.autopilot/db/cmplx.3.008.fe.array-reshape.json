@@ -3,8 +3,8 @@
     "basicblocks": 1,
     "calls": "",
     "file": "audio.cpp",
-    "fileloc": 93,
-    "instructions": 54,
+    "fileloc": 87,
+    "instructions": 59,
     "loads": {
       "G": 3
     },
@@ -13,6 +13,6 @@
       "G": 3,
       "T": 2
     },
-    "total_instructions": 54
+    "total_instructions": 59
   }
 }

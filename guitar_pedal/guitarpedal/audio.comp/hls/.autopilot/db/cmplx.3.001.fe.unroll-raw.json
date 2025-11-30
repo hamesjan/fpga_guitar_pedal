@@ -3,10 +3,10 @@
     "basicblocks": 1,
     "calls": "1",
     "file": "audio.cpp",
-    "fileloc": 93,
-    "instructions": 2,
+    "fileloc": 87,
+    "instructions": 7,
     "name": "audio",
-    "total_instructions": 77
+    "total_instructions": 82
   },
   "1": {
     "basicblocks": 14,

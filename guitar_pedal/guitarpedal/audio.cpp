@@ -33,12 +33,6 @@ void ping_pong_delay(int32_t* out_L, int32_t* out_R,
                      uint32_t delay_samples,
                      uint32_t feedback_gain,
                      uint32_t wet_mix) {
-
-    #pragma HLS INTERFACE mode=s_axilite port=out_L
-    #pragma HLS INTERFACE mode=s_axilite port=out_R
-
-    #pragma HLS INTERFACE mode=s_axilite port=in_L
-    #pragma HLS INTERFACE mode=s_axilite port=in_R
     
     // Step 1: calculate read index for circular buffer
     uint32_t read_index;
@@ -96,6 +90,14 @@ void audio(int32_t* out_L, int32_t* out_R,
            uint32_t feedback_gain,
            uint32_t wet_mix)
 {
+    #pragma HLS INTERFACE mode=s_axilite port=return
+
+    #pragma HLS INTERFACE mode=s_axilite port=out_L
+    #pragma HLS INTERFACE mode=s_axilite port=out_R
+
+    #pragma HLS INTERFACE mode=s_axilite port=in_L
+    #pragma HLS INTERFACE mode=s_axilite port=in_R
+
     ping_pong_delay(out_L, out_R,
                     in_L, in_R,
                     delay_samples,

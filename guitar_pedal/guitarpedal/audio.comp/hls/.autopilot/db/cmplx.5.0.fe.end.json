@@ -2,9 +2,9 @@
     "0": {
         "name": "audio",
         "file": "audio.cpp",
-        "fileloc": "93",
-        "instructions": "91",
-        "total_instructions": "91",
+        "fileloc": "87",
+        "instructions": "96",
+        "total_instructions": "96",
         "calls": "",
         "basicblocks": "1",
         "loads": {
