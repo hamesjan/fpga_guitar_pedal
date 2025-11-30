@@ -158,7 +158,7 @@ def get_script_parameters(input_file, config, id_tag=None):
         "part": config["DEFAULTS"]["part"],
         "period": config["DEFAULTS"]["period"],
         "files": file_basename,
-        "tb_files": f"{file_rootname}-top.{file_suffix}",
+        "tb_files": f"{file_rootname}.{file_suffix}",
     }
 
     # update each parameter if it is defined in the config file and
