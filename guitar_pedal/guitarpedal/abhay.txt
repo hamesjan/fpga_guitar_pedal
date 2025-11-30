@@ -63,9 +63,10 @@ HLS_CONFIG_FILE = $(CURDIR)/__hls_config__.ini
 #	dft_precompute.c \
 
 
-CXX_HLS_TARGET_FILES = audio.cpp
+CXX_HLS_TARGET_FILES = \
+	$(TOP).cpp
 
-HLS_TARGETS = audio.comp
+HLS_TARGETS = $(patsubst %.cpp,%.comp,$(CXX_HLS_TARGET_FILES))
 
 %.comp: %.tcl
 	$(HLS_COMPILER) $< || { s=$$?; echo "$(HLS_COMPILER) $< failed $$s" >&2; exit $$s; }
@@ -103,4 +104,5 @@ clean:
 
 # Prevent make from deleting the .bin intermediate files
 .PRECIOUS: %.bin %.tcl 
+
 

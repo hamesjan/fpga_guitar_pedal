@@ -1,3 +1,8 @@
+// #include "ap_int.h"
+// #include "hls_stream.h"
+// #include <stdint.h>
+
+#include "audio.h"
 #include "ap_int.h"
 #include "hls_stream.h"
 #include <stdint.h>
@@ -75,6 +80,21 @@ void ping_pong_delay(int32_t* out_L, int32_t* out_R,
     if (write_index >= MAX_DELAY_SAMPLES) {
         write_index = 0;
     }
+}
+
+// Top-level function for HLS
+// NOTE: match the signature used in audio_hls_test.cpp!
+void audio(int32_t* out_L, int32_t* out_R,
+           int32_t in_L, int32_t in_R,
+           uint32_t delay_samples,
+           uint32_t feedback_gain,
+           uint32_t wet_mix)
+{
+    ping_pong_delay(out_L, out_R,
+                    in_L, in_R,
+                    delay_samples,
+                    feedback_gain,
+                    wet_mix);
 }
 
 // // Test function with typical settings
