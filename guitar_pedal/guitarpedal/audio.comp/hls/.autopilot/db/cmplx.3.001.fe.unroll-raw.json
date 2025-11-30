@@ -1,0 +1,27 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "audio.cpp",
+    "fileloc": 87,
+    "instructions": 2,
+    "name": "audio",
+    "total_instructions": 77
+  },
+  "1": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "audio.cpp",
+    "fileloc": 31,
+    "instructions": 75,
+    "loads": {
+      "G": 8
+    },
+    "name": "ping_pong_delay",
+    "stores": {
+      "G": 3,
+      "L": 2
+    },
+    "total_instructions": 75
+  }
+}

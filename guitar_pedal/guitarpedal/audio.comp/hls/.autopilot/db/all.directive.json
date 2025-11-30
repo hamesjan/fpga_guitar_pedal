@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "audio",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "audio"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl",
+    "sourceLine": 9,
+    "success": true
+  }
+]

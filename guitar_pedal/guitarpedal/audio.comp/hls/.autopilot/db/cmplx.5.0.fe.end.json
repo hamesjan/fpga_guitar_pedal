@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "audio",
+        "file": "audio.cpp",
+        "fileloc": "87",
+        "instructions": "91",
+        "total_instructions": "91",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "3"
+        },
+        "stores": {
+            "G": "3"
+        }
+    }
+}
