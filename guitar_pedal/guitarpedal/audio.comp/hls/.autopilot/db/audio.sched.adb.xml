@@ -70,10 +70,10 @@ entry:2 %delay_samples_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %delay_sa
 
 <Node id="16" bw="16" op_0_bw="32">
 <![CDATA[
-entry:5 %trunc_ln87 = trunc i32 %delay_samples_read
+entry:5 %trunc_ln93 = trunc i32 %delay_samples_read
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln87"/></StgValue>
+<StgValue><ssdm name="trunc_ln93"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -100,10 +100,10 @@ entry:21 %write_index_load = load i16 %write_index
 
 <Node id="33" bw="32" op_0_bw="16">
 <![CDATA[
-entry:22 %zext_ln39 = zext i16 %write_index_load
+entry:22 %zext_ln45 = zext i16 %write_index_load
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln39"/></StgValue>
+<StgValue><ssdm name="zext_ln45"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -115,10 +115,10 @@ entry:22 %zext_ln39 = zext i16 %write_index_load
 
 <Node id="34" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:23 %icmp_ln39 = icmp_ult  i32 %zext_ln39, i32 %delay_samples_read
+entry:23 %icmp_ln45 = icmp_ult  i32 %zext_ln45, i32 %delay_samples_read
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln39"/></StgValue>
+<StgValue><ssdm name="icmp_ln45"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -130,10 +130,10 @@ entry:23 %icmp_ln39 = icmp_ult  i32 %zext_ln39, i32 %delay_samples_read
 
 <Node id="35" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-entry:24 %xor_ln39 = xor i1 %icmp_ln39, i1 1
+entry:24 %xor_ln45 = xor i1 %icmp_ln45, i1 1
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln39"/></StgValue>
+<StgValue><ssdm name="xor_ln45"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -145,7 +145,7 @@ entry:24 %xor_ln39 = xor i1 %icmp_ln39, i1 1
 
 <Node id="36" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-entry:25 %read_index = sub i16 %write_index_load, i16 %trunc_ln87
+entry:25 %read_index = sub i16 %write_index_load, i16 %trunc_ln93
 
 ]]></Node>
 <StgValue><ssdm name="read_index"/></StgValue>
@@ -160,10 +160,10 @@ entry:25 %read_index = sub i16 %write_index_load, i16 %trunc_ln87
 
 <Node id="37" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-entry:26 %sub_ln42 = sub i16 48000, i16 %trunc_ln87
+entry:26 %sub_ln48 = sub i16 48000, i16 %trunc_ln93
 
 ]]></Node>
-<StgValue><ssdm name="sub_ln42"/></StgValue>
+<StgValue><ssdm name="sub_ln48"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -175,7 +175,7 @@ entry:26 %sub_ln42 = sub i16 48000, i16 %trunc_ln87
 
 <Node id="38" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-entry:27 %read_index_1 = add i16 %write_index_load, i16 %sub_ln42
+entry:27 %read_index_1 = add i16 %write_index_load, i16 %sub_ln48
 
 ]]></Node>
 <StgValue><ssdm name="read_index_1"/></StgValue>
@@ -190,7 +190,7 @@ entry:27 %read_index_1 = add i16 %write_index_load, i16 %sub_ln42
 
 <Node id="39" bw="16" op_0_bw="1" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-entry:28 %read_index_2 = select i1 %xor_ln39, i16 %read_index, i16 %read_index_1
+entry:28 %read_index_2 = select i1 %xor_ln45, i16 %read_index, i16 %read_index_1
 
 ]]></Node>
 <StgValue><ssdm name="read_index_2"/></StgValue>
@@ -205,10 +205,10 @@ entry:28 %read_index_2 = select i1 %xor_ln39, i16 %read_index, i16 %read_index_1
 
 <Node id="97" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-entry:86 %add_ln79 = add i16 %write_index_load, i16 1
+entry:86 %add_ln85 = add i16 %write_index_load, i16 1
 
 ]]></Node>
-<StgValue><ssdm name="add_ln79"/></StgValue>
+<StgValue><ssdm name="add_ln85"/></StgValue>
 </operation>
 
 <operation id="19" st_id="1" stage="1" lat="1">
@@ -220,10 +220,10 @@ entry:86 %add_ln79 = add i16 %write_index_load, i16 1
 
 <Node id="98" bw="1" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-entry:87 %icmp_ln80 = icmp_ugt  i16 %add_ln79, i16 47999
+entry:87 %icmp_ln86 = icmp_ugt  i16 %add_ln85, i16 47999
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln80"/></StgValue>
+<StgValue><ssdm name="icmp_ln86"/></StgValue>
 </operation>
 
 <operation id="20" st_id="1" stage="1" lat="1">
@@ -235,10 +235,10 @@ entry:87 %icmp_ln80 = icmp_ugt  i16 %add_ln79, i16 47999
 
 <Node id="99" bw="16" op_0_bw="1" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-entry:88 %select_ln80 = select i1 %icmp_ln80, i16 0, i16 %add_ln79
+entry:88 %select_ln86 = select i1 %icmp_ln86, i16 0, i16 %add_ln85
 
 ]]></Node>
-<StgValue><ssdm name="select_ln80"/></StgValue>
+<StgValue><ssdm name="select_ln86"/></StgValue>
 </operation>
 
 <operation id="21" st_id="1" stage="1" lat="1">
@@ -250,10 +250,10 @@ entry:88 %select_ln80 = select i1 %icmp_ln80, i16 0, i16 %add_ln79
 
 <Node id="100" bw="0" op_0_bw="16" op_1_bw="16" op_2_bw="0">
 <![CDATA[
-entry:89 %store_ln80 = store i16 %select_ln80, i16 %write_index
+entry:89 %store_ln86 = store i16 %select_ln86, i16 %write_index
 
 ]]></Node>
-<StgValue><ssdm name="store_ln80"/></StgValue>
+<StgValue><ssdm name="store_ln86"/></StgValue>
 </operation>
 </state>
 
@@ -268,10 +268,10 @@ entry:89 %store_ln80 = store i16 %select_ln80, i16 %write_index
 
 <Node id="40" bw="64" op_0_bw="16">
 <![CDATA[
-entry:29 %zext_ln46 = zext i16 %read_index_2
+entry:29 %zext_ln52 = zext i16 %read_index_2
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln46"/></StgValue>
+<StgValue><ssdm name="zext_ln52"/></StgValue>
 </operation>
 
 <operation id="23" st_id="2" stage="1" lat="1">
@@ -283,7 +283,7 @@ entry:29 %zext_ln46 = zext i16 %read_index_2
 
 <Node id="41" bw="16" op_0_bw="24" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:30 %delay_buffer_L_addr = getelementptr i24 %delay_buffer_L, i64 0, i64 %zext_ln46
+entry:30 %delay_buffer_L_addr = getelementptr i24 %delay_buffer_L, i64 0, i64 %zext_ln52
 
 ]]></Node>
 <StgValue><ssdm name="delay_buffer_L_addr"/></StgValue>
@@ -313,7 +313,7 @@ entry:31 %delayed_L = load i16 %delay_buffer_L_addr
 
 <Node id="44" bw="16" op_0_bw="24" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:33 %delay_buffer_R_addr = getelementptr i24 %delay_buffer_R, i64 0, i64 %zext_ln46
+entry:33 %delay_buffer_R_addr = getelementptr i24 %delay_buffer_R, i64 0, i64 %zext_ln52
 
 ]]></Node>
 <StgValue><ssdm name="delay_buffer_R_addr"/></StgValue>
@@ -409,10 +409,10 @@ entry:1 %feedback_gain_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %feedback
 
 <Node id="43" bw="32" op_0_bw="24">
 <![CDATA[
-entry:32 %sext_ln46 = sext i24 %delayed_L
+entry:32 %sext_ln52 = sext i24 %delayed_L
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln46"/></StgValue>
+<StgValue><ssdm name="sext_ln52"/></StgValue>
 </operation>
 
 <operation id="32" st_id="4" stage="1" lat="1">
@@ -424,10 +424,10 @@ entry:32 %sext_ln46 = sext i24 %delayed_L
 
 <Node id="46" bw="32" op_0_bw="24">
 <![CDATA[
-entry:35 %sext_ln47 = sext i24 %delayed_R
+entry:35 %sext_ln53 = sext i24 %delayed_R
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln47"/></StgValue>
+<StgValue><ssdm name="sext_ln53"/></StgValue>
 </operation>
 
 <operation id="33" st_id="4" stage="2" lat="2">
@@ -439,10 +439,10 @@ entry:35 %sext_ln47 = sext i24 %delayed_R
 
 <Node id="47" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:36 %mul_ln51 = mul i32 %sext_ln47, i32 %feedback_gain_read
+entry:36 %mul_ln57 = mul i32 %sext_ln53, i32 %feedback_gain_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln51"/></StgValue>
+<StgValue><ssdm name="mul_ln57"/></StgValue>
 </operation>
 
 <operation id="34" st_id="4" stage="2" lat="2">
@@ -454,10 +454,10 @@ entry:36 %mul_ln51 = mul i32 %sext_ln47, i32 %feedback_gain_read
 
 <Node id="54" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:43 %mul_ln55 = mul i32 %sext_ln46, i32 %feedback_gain_read
+entry:43 %mul_ln61 = mul i32 %sext_ln52, i32 %feedback_gain_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln55"/></StgValue>
+<StgValue><ssdm name="mul_ln61"/></StgValue>
 </operation>
 
 <operation id="35" st_id="4" stage="2" lat="2">
@@ -469,10 +469,10 @@ entry:43 %mul_ln55 = mul i32 %sext_ln46, i32 %feedback_gain_read
 
 <Node id="78" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:67 %mul_ln69 = mul i32 %sext_ln46, i32 %wet_mix_read
+entry:67 %mul_ln75 = mul i32 %sext_ln52, i32 %wet_mix_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln69"/></StgValue>
+<StgValue><ssdm name="mul_ln75"/></StgValue>
 </operation>
 
 <operation id="36" st_id="4" stage="1" lat="1">
@@ -484,10 +484,10 @@ entry:67 %mul_ln69 = mul i32 %sext_ln46, i32 %wet_mix_read
 
 <Node id="81" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:70 %sub_ln70 = sub i32 256, i32 %wet_mix_read
+entry:70 %sub_ln76 = sub i32 256, i32 %wet_mix_read
 
 ]]></Node>
-<StgValue><ssdm name="sub_ln70"/></StgValue>
+<StgValue><ssdm name="sub_ln76"/></StgValue>
 </operation>
 
 <operation id="37" st_id="4" stage="2" lat="2">
@@ -499,10 +499,10 @@ entry:70 %sub_ln70 = sub i32 256, i32 %wet_mix_read
 
 <Node id="85" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:74 %mul_ln71 = mul i32 %sext_ln47, i32 %wet_mix_read
+entry:74 %mul_ln77 = mul i32 %sext_ln53, i32 %wet_mix_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln71"/></StgValue>
+<StgValue><ssdm name="mul_ln77"/></StgValue>
 </operation>
 </state>
 
@@ -547,10 +547,10 @@ entry:4 %in_L_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %in_L
 
 <Node id="47" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:36 %mul_ln51 = mul i32 %sext_ln47, i32 %feedback_gain_read
+entry:36 %mul_ln57 = mul i32 %sext_ln53, i32 %feedback_gain_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln51"/></StgValue>
+<StgValue><ssdm name="mul_ln57"/></StgValue>
 </operation>
 
 <operation id="41" st_id="5" stage="1" lat="1">
@@ -562,7 +562,7 @@ entry:36 %mul_ln51 = mul i32 %sext_ln47, i32 %feedback_gain_read
 
 <Node id="48" bw="24" op_0_bw="24" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry:37 %feedback_from_R = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln51, i32 8, i32 31
+entry:37 %feedback_from_R = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln57, i32 8, i32 31
 
 ]]></Node>
 <StgValue><ssdm name="feedback_from_R"/></StgValue>
@@ -577,10 +577,10 @@ entry:37 %feedback_from_R = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32,
 
 <Node id="54" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:43 %mul_ln55 = mul i32 %sext_ln46, i32 %feedback_gain_read
+entry:43 %mul_ln61 = mul i32 %sext_ln52, i32 %feedback_gain_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln55"/></StgValue>
+<StgValue><ssdm name="mul_ln61"/></StgValue>
 </operation>
 
 <operation id="43" st_id="5" stage="1" lat="1">
@@ -592,7 +592,7 @@ entry:43 %mul_ln55 = mul i32 %sext_ln46, i32 %feedback_gain_read
 
 <Node id="55" bw="24" op_0_bw="24" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry:44 %feedback_from_L = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln55, i32 8, i32 31
+entry:44 %feedback_from_L = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln61, i32 8, i32 31
 
 ]]></Node>
 <StgValue><ssdm name="feedback_from_L"/></StgValue>
@@ -607,10 +607,10 @@ entry:44 %feedback_from_L = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32,
 
 <Node id="78" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:67 %mul_ln69 = mul i32 %sext_ln46, i32 %wet_mix_read
+entry:67 %mul_ln75 = mul i32 %sext_ln52, i32 %wet_mix_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln69"/></StgValue>
+<StgValue><ssdm name="mul_ln75"/></StgValue>
 </operation>
 
 <operation id="45" st_id="5" stage="1" lat="1">
@@ -622,7 +622,7 @@ entry:67 %mul_ln69 = mul i32 %sext_ln46, i32 %wet_mix_read
 
 <Node id="79" bw="24" op_0_bw="24" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry:68 %tmp = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln69, i32 8, i32 31
+entry:68 %tmp = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln75, i32 8, i32 31
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -637,10 +637,10 @@ entry:68 %tmp = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln
 
 <Node id="82" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:71 %mul_ln70 = mul i32 %sub_ln70, i32 %in_L_read
+entry:71 %mul_ln76 = mul i32 %sub_ln76, i32 %in_L_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln70"/></StgValue>
+<StgValue><ssdm name="mul_ln76"/></StgValue>
 </operation>
 
 <operation id="47" st_id="5" stage="1" lat="2">
@@ -652,10 +652,10 @@ entry:71 %mul_ln70 = mul i32 %sub_ln70, i32 %in_L_read
 
 <Node id="85" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:74 %mul_ln71 = mul i32 %sext_ln47, i32 %wet_mix_read
+entry:74 %mul_ln77 = mul i32 %sext_ln53, i32 %wet_mix_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln71"/></StgValue>
+<StgValue><ssdm name="mul_ln77"/></StgValue>
 </operation>
 
 <operation id="48" st_id="5" stage="1" lat="1">
@@ -667,7 +667,7 @@ entry:74 %mul_ln71 = mul i32 %sext_ln47, i32 %wet_mix_read
 
 <Node id="86" bw="24" op_0_bw="24" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry:75 %tmp_2 = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln71, i32 8, i32 31
+entry:75 %tmp_2 = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln77, i32 8, i32 31
 
 ]]></Node>
 <StgValue><ssdm name="tmp_2"/></StgValue>
@@ -682,10 +682,10 @@ entry:75 %tmp_2 = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_
 
 <Node id="88" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:77 %mul_ln72 = mul i32 %sub_ln70, i32 %in_R_read
+entry:77 %mul_ln78 = mul i32 %sub_ln76, i32 %in_R_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln72"/></StgValue>
+<StgValue><ssdm name="mul_ln78"/></StgValue>
 </operation>
 </state>
 
@@ -700,10 +700,10 @@ entry:77 %mul_ln72 = mul i32 %sub_ln70, i32 %in_R_read
 
 <Node id="49" bw="32" op_0_bw="24">
 <![CDATA[
-entry:38 %zext_ln51_1 = zext i24 %feedback_from_R
+entry:38 %zext_ln57_1 = zext i24 %feedback_from_R
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln51_1"/></StgValue>
+<StgValue><ssdm name="zext_ln57_1"/></StgValue>
 </operation>
 
 <operation id="51" st_id="6" stage="1" lat="1">
@@ -715,10 +715,10 @@ entry:38 %zext_ln51_1 = zext i24 %feedback_from_R
 
 <Node id="50" bw="33" op_0_bw="24">
 <![CDATA[
-entry:39 %zext_ln51 = zext i24 %feedback_from_R
+entry:39 %zext_ln57 = zext i24 %feedback_from_R
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln51"/></StgValue>
+<StgValue><ssdm name="zext_ln57"/></StgValue>
 </operation>
 
 <operation id="52" st_id="6" stage="1" lat="1">
@@ -730,10 +730,10 @@ entry:39 %zext_ln51 = zext i24 %feedback_from_R
 
 <Node id="51" bw="33" op_0_bw="32">
 <![CDATA[
-entry:40 %sext_ln52 = sext i32 %in_L_read
+entry:40 %sext_ln58 = sext i32 %in_L_read
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln52"/></StgValue>
+<StgValue><ssdm name="sext_ln58"/></StgValue>
 </operation>
 
 <operation id="53" st_id="6" stage="1" lat="1">
@@ -745,10 +745,10 @@ entry:40 %sext_ln52 = sext i32 %in_L_read
 
 <Node id="52" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:41 %add_ln52 = add i32 %zext_ln51_1, i32 %in_L_read
+entry:41 %add_ln58 = add i32 %zext_ln57_1, i32 %in_L_read
 
 ]]></Node>
-<StgValue><ssdm name="add_ln52"/></StgValue>
+<StgValue><ssdm name="add_ln58"/></StgValue>
 </operation>
 
 <operation id="54" st_id="6" stage="1" lat="1">
@@ -760,7 +760,7 @@ entry:41 %add_ln52 = add i32 %zext_ln51_1, i32 %in_L_read
 
 <Node id="53" bw="33" op_0_bw="33" op_1_bw="33">
 <![CDATA[
-entry:42 %new_L = add i33 %zext_ln51, i33 %sext_ln52
+entry:42 %new_L = add i33 %zext_ln57, i33 %sext_ln58
 
 ]]></Node>
 <StgValue><ssdm name="new_L"/></StgValue>
@@ -775,10 +775,10 @@ entry:42 %new_L = add i33 %zext_ln51, i33 %sext_ln52
 
 <Node id="56" bw="32" op_0_bw="24">
 <![CDATA[
-entry:45 %zext_ln55_1 = zext i24 %feedback_from_L
+entry:45 %zext_ln61_1 = zext i24 %feedback_from_L
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln55_1"/></StgValue>
+<StgValue><ssdm name="zext_ln61_1"/></StgValue>
 </operation>
 
 <operation id="56" st_id="6" stage="1" lat="1">
@@ -790,10 +790,10 @@ entry:45 %zext_ln55_1 = zext i24 %feedback_from_L
 
 <Node id="57" bw="33" op_0_bw="24">
 <![CDATA[
-entry:46 %zext_ln55 = zext i24 %feedback_from_L
+entry:46 %zext_ln61 = zext i24 %feedback_from_L
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln55"/></StgValue>
+<StgValue><ssdm name="zext_ln61"/></StgValue>
 </operation>
 
 <operation id="57" st_id="6" stage="1" lat="1">
@@ -805,10 +805,10 @@ entry:46 %zext_ln55 = zext i24 %feedback_from_L
 
 <Node id="58" bw="33" op_0_bw="32">
 <![CDATA[
-entry:47 %sext_ln56 = sext i32 %in_R_read
+entry:47 %sext_ln62 = sext i32 %in_R_read
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln56"/></StgValue>
+<StgValue><ssdm name="sext_ln62"/></StgValue>
 </operation>
 
 <operation id="58" st_id="6" stage="1" lat="1">
@@ -820,10 +820,10 @@ entry:47 %sext_ln56 = sext i32 %in_R_read
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:48 %add_ln56 = add i32 %zext_ln55_1, i32 %in_R_read
+entry:48 %add_ln62 = add i32 %zext_ln61_1, i32 %in_R_read
 
 ]]></Node>
-<StgValue><ssdm name="add_ln56"/></StgValue>
+<StgValue><ssdm name="add_ln62"/></StgValue>
 </operation>
 
 <operation id="59" st_id="6" stage="1" lat="1">
@@ -835,7 +835,7 @@ entry:48 %add_ln56 = add i32 %zext_ln55_1, i32 %in_R_read
 
 <Node id="60" bw="33" op_0_bw="33" op_1_bw="33">
 <![CDATA[
-entry:49 %new_R = add i33 %zext_ln55, i33 %sext_ln56
+entry:49 %new_R = add i33 %zext_ln61, i33 %sext_ln62
 
 ]]></Node>
 <StgValue><ssdm name="new_R"/></StgValue>
@@ -865,10 +865,10 @@ entry:50 %tmp_4 = partselect i10 @_ssdm_op_PartSelect.i10.i33.i32.i32, i33 %new_
 
 <Node id="62" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-entry:51 %icmp_ln59 = icmp_sgt  i10 %tmp_4, i10 0
+entry:51 %icmp_ln65 = icmp_sgt  i10 %tmp_4, i10 0
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln59"/></StgValue>
+<StgValue><ssdm name="icmp_ln65"/></StgValue>
 </operation>
 
 <operation id="62" st_id="6" stage="1" lat="1">
@@ -895,10 +895,10 @@ entry:54 %tmp_5 = partselect i10 @_ssdm_op_PartSelect.i10.i33.i32.i32, i33 %new_
 
 <Node id="66" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-entry:55 %icmp_ln61 = icmp_sgt  i10 %tmp_5, i10 0
+entry:55 %icmp_ln67 = icmp_sgt  i10 %tmp_5, i10 0
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln61"/></StgValue>
+<StgValue><ssdm name="icmp_ln67"/></StgValue>
 </operation>
 
 <operation id="64" st_id="6" stage="1" lat="2">
@@ -910,10 +910,10 @@ entry:55 %icmp_ln61 = icmp_sgt  i10 %tmp_5, i10 0
 
 <Node id="82" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:71 %mul_ln70 = mul i32 %sub_ln70, i32 %in_L_read
+entry:71 %mul_ln76 = mul i32 %sub_ln76, i32 %in_L_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln70"/></StgValue>
+<StgValue><ssdm name="mul_ln76"/></StgValue>
 </operation>
 
 <operation id="65" st_id="6" stage="1" lat="1">
@@ -925,7 +925,7 @@ entry:71 %mul_ln70 = mul i32 %sub_ln70, i32 %in_L_read
 
 <Node id="83" bw="24" op_0_bw="24" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry:72 %tmp_1 = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln70, i32 8, i32 31
+entry:72 %tmp_1 = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln76, i32 8, i32 31
 
 ]]></Node>
 <StgValue><ssdm name="tmp_1"/></StgValue>
@@ -940,10 +940,10 @@ entry:72 %tmp_1 = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_
 
 <Node id="88" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:77 %mul_ln72 = mul i32 %sub_ln70, i32 %in_R_read
+entry:77 %mul_ln78 = mul i32 %sub_ln76, i32 %in_R_read
 
 ]]></Node>
-<StgValue><ssdm name="mul_ln72"/></StgValue>
+<StgValue><ssdm name="mul_ln78"/></StgValue>
 </operation>
 
 <operation id="67" st_id="6" stage="1" lat="1">
@@ -955,7 +955,7 @@ entry:77 %mul_ln72 = mul i32 %sub_ln70, i32 %in_R_read
 
 <Node id="89" bw="24" op_0_bw="24" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry:78 %tmp_3 = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln72, i32 8, i32 31
+entry:78 %tmp_3 = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_ln78, i32 8, i32 31
 
 ]]></Node>
 <StgValue><ssdm name="tmp_3"/></StgValue>
@@ -973,10 +973,10 @@ entry:78 %tmp_3 = partselect i24 @_ssdm_op_PartSelect.i24.i32.i32.i32, i32 %mul_
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-entry:6 %spectopmodule_ln87 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1
+entry:6 %spectopmodule_ln93 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln87"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln93"/></StgValue>
 </operation>
 
 <operation id="69" st_id="7" stage="1" lat="1">
@@ -1198,7 +1198,7 @@ entry:20 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %w
 
 <Node id="63" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-entry:52 %new_L_1 = select i1 %icmp_ln59, i32 8388607, i32 %add_ln52
+entry:52 %new_L_1 = select i1 %icmp_ln65, i32 8388607, i32 %add_ln58
 
 ]]></Node>
 <StgValue><ssdm name="new_L_1"/></StgValue>
@@ -1213,10 +1213,10 @@ entry:52 %new_L_1 = select i1 %icmp_ln59, i32 8388607, i32 %add_ln52
 
 <Node id="64" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:53 %icmp_ln60 = icmp_slt  i32 %new_L_1, i32 4286578688
+entry:53 %icmp_ln66 = icmp_slt  i32 %new_L_1, i32 4286578688
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln60"/></StgValue>
+<StgValue><ssdm name="icmp_ln66"/></StgValue>
 </operation>
 
 <operation id="85" st_id="7" stage="1" lat="1">
@@ -1228,7 +1228,7 @@ entry:53 %icmp_ln60 = icmp_slt  i32 %new_L_1, i32 4286578688
 
 <Node id="67" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-entry:56 %new_R_1 = select i1 %icmp_ln61, i32 8388607, i32 %add_ln56
+entry:56 %new_R_1 = select i1 %icmp_ln67, i32 8388607, i32 %add_ln62
 
 ]]></Node>
 <StgValue><ssdm name="new_R_1"/></StgValue>
@@ -1243,10 +1243,10 @@ entry:56 %new_R_1 = select i1 %icmp_ln61, i32 8388607, i32 %add_ln56
 
 <Node id="68" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:57 %icmp_ln62 = icmp_slt  i32 %new_R_1, i32 4286578688
+entry:57 %icmp_ln68 = icmp_slt  i32 %new_R_1, i32 4286578688
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln62"/></StgValue>
+<StgValue><ssdm name="icmp_ln68"/></StgValue>
 </operation>
 
 <operation id="87" st_id="7" stage="1" lat="1">
@@ -1258,10 +1258,10 @@ entry:57 %icmp_ln62 = icmp_slt  i32 %new_R_1, i32 4286578688
 
 <Node id="69" bw="24" op_0_bw="32">
 <![CDATA[
-entry:58 %trunc_ln65 = trunc i32 %new_L_1
+entry:58 %trunc_ln71 = trunc i32 %new_L_1
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln65"/></StgValue>
+<StgValue><ssdm name="trunc_ln71"/></StgValue>
 </operation>
 
 <operation id="88" st_id="7" stage="1" lat="1">
@@ -1273,10 +1273,10 @@ entry:58 %trunc_ln65 = trunc i32 %new_L_1
 
 <Node id="70" bw="24" op_0_bw="1" op_1_bw="24" op_2_bw="24">
 <![CDATA[
-entry:59 %select_ln65 = select i1 %icmp_ln60, i24 8388608, i24 %trunc_ln65
+entry:59 %select_ln71 = select i1 %icmp_ln66, i24 8388608, i24 %trunc_ln71
 
 ]]></Node>
-<StgValue><ssdm name="select_ln65"/></StgValue>
+<StgValue><ssdm name="select_ln71"/></StgValue>
 </operation>
 
 <operation id="89" st_id="7" stage="1" lat="1">
@@ -1288,10 +1288,10 @@ entry:59 %select_ln65 = select i1 %icmp_ln60, i24 8388608, i24 %trunc_ln65
 
 <Node id="71" bw="64" op_0_bw="16">
 <![CDATA[
-entry:60 %zext_ln65 = zext i16 %write_index_load
+entry:60 %zext_ln71 = zext i16 %write_index_load
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln65"/></StgValue>
+<StgValue><ssdm name="zext_ln71"/></StgValue>
 </operation>
 
 <operation id="90" st_id="7" stage="1" lat="1">
@@ -1303,7 +1303,7 @@ entry:60 %zext_ln65 = zext i16 %write_index_load
 
 <Node id="72" bw="16" op_0_bw="24" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:61 %delay_buffer_L_addr_1 = getelementptr i24 %delay_buffer_L, i64 0, i64 %zext_ln65
+entry:61 %delay_buffer_L_addr_1 = getelementptr i24 %delay_buffer_L, i64 0, i64 %zext_ln71
 
 ]]></Node>
 <StgValue><ssdm name="delay_buffer_L_addr_1"/></StgValue>
@@ -1318,10 +1318,10 @@ entry:61 %delay_buffer_L_addr_1 = getelementptr i24 %delay_buffer_L, i64 0, i64 
 
 <Node id="73" bw="0" op_0_bw="24" op_1_bw="16" op_2_bw="0">
 <![CDATA[
-entry:62 %store_ln65 = store i24 %select_ln65, i16 %delay_buffer_L_addr_1
+entry:62 %store_ln71 = store i24 %select_ln71, i16 %delay_buffer_L_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln65"/></StgValue>
+<StgValue><ssdm name="store_ln71"/></StgValue>
 </operation>
 
 <operation id="92" st_id="7" stage="1" lat="1">
@@ -1333,10 +1333,10 @@ entry:62 %store_ln65 = store i24 %select_ln65, i16 %delay_buffer_L_addr_1
 
 <Node id="74" bw="24" op_0_bw="32">
 <![CDATA[
-entry:63 %trunc_ln66 = trunc i32 %new_R_1
+entry:63 %trunc_ln72 = trunc i32 %new_R_1
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln66"/></StgValue>
+<StgValue><ssdm name="trunc_ln72"/></StgValue>
 </operation>
 
 <operation id="93" st_id="7" stage="1" lat="1">
@@ -1348,10 +1348,10 @@ entry:63 %trunc_ln66 = trunc i32 %new_R_1
 
 <Node id="75" bw="24" op_0_bw="1" op_1_bw="24" op_2_bw="24">
 <![CDATA[
-entry:64 %select_ln66 = select i1 %icmp_ln62, i24 8388608, i24 %trunc_ln66
+entry:64 %select_ln72 = select i1 %icmp_ln68, i24 8388608, i24 %trunc_ln72
 
 ]]></Node>
-<StgValue><ssdm name="select_ln66"/></StgValue>
+<StgValue><ssdm name="select_ln72"/></StgValue>
 </operation>
 
 <operation id="94" st_id="7" stage="1" lat="1">
@@ -1363,7 +1363,7 @@ entry:64 %select_ln66 = select i1 %icmp_ln62, i24 8388608, i24 %trunc_ln66
 
 <Node id="76" bw="16" op_0_bw="24" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:65 %delay_buffer_R_addr_1 = getelementptr i24 %delay_buffer_R, i64 0, i64 %zext_ln65
+entry:65 %delay_buffer_R_addr_1 = getelementptr i24 %delay_buffer_R, i64 0, i64 %zext_ln71
 
 ]]></Node>
 <StgValue><ssdm name="delay_buffer_R_addr_1"/></StgValue>
@@ -1378,10 +1378,10 @@ entry:65 %delay_buffer_R_addr_1 = getelementptr i24 %delay_buffer_R, i64 0, i64 
 
 <Node id="77" bw="0" op_0_bw="24" op_1_bw="16" op_2_bw="0">
 <![CDATA[
-entry:66 %store_ln66 = store i24 %select_ln66, i16 %delay_buffer_R_addr_1
+entry:66 %store_ln72 = store i24 %select_ln72, i16 %delay_buffer_R_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln66"/></StgValue>
+<StgValue><ssdm name="store_ln72"/></StgValue>
 </operation>
 
 <operation id="96" st_id="7" stage="1" lat="1">
@@ -1393,10 +1393,10 @@ entry:66 %store_ln66 = store i24 %select_ln66, i16 %delay_buffer_R_addr_1
 
 <Node id="80" bw="25" op_0_bw="24">
 <![CDATA[
-entry:69 %zext_ln70 = zext i24 %tmp
+entry:69 %zext_ln76 = zext i24 %tmp
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln70"/></StgValue>
+<StgValue><ssdm name="zext_ln76"/></StgValue>
 </operation>
 
 <operation id="97" st_id="7" stage="1" lat="1">
@@ -1408,10 +1408,10 @@ entry:69 %zext_ln70 = zext i24 %tmp
 
 <Node id="84" bw="25" op_0_bw="24">
 <![CDATA[
-entry:73 %zext_ln71 = zext i24 %tmp_1
+entry:73 %zext_ln77 = zext i24 %tmp_1
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln71"/></StgValue>
+<StgValue><ssdm name="zext_ln77"/></StgValue>
 </operation>
 
 <operation id="98" st_id="7" stage="1" lat="1">
@@ -1423,10 +1423,10 @@ entry:73 %zext_ln71 = zext i24 %tmp_1
 
 <Node id="87" bw="25" op_0_bw="24">
 <![CDATA[
-entry:76 %zext_ln72 = zext i24 %tmp_2
+entry:76 %zext_ln78 = zext i24 %tmp_2
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln72"/></StgValue>
+<StgValue><ssdm name="zext_ln78"/></StgValue>
 </operation>
 
 <operation id="99" st_id="7" stage="1" lat="1">
@@ -1438,10 +1438,10 @@ entry:76 %zext_ln72 = zext i24 %tmp_2
 
 <Node id="90" bw="25" op_0_bw="24">
 <![CDATA[
-entry:79 %zext_ln75_1 = zext i24 %tmp_3
+entry:79 %zext_ln81_1 = zext i24 %tmp_3
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln75_1"/></StgValue>
+<StgValue><ssdm name="zext_ln81_1"/></StgValue>
 </operation>
 
 <operation id="100" st_id="7" stage="1" lat="1">
@@ -1453,10 +1453,10 @@ entry:79 %zext_ln75_1 = zext i24 %tmp_3
 
 <Node id="91" bw="25" op_0_bw="25" op_1_bw="25">
 <![CDATA[
-entry:80 %add_ln75 = add i25 %zext_ln70, i25 %zext_ln71
+entry:80 %add_ln81 = add i25 %zext_ln76, i25 %zext_ln77
 
 ]]></Node>
-<StgValue><ssdm name="add_ln75"/></StgValue>
+<StgValue><ssdm name="add_ln81"/></StgValue>
 </operation>
 
 <operation id="101" st_id="7" stage="1" lat="1">
@@ -1468,10 +1468,10 @@ entry:80 %add_ln75 = add i25 %zext_ln70, i25 %zext_ln71
 
 <Node id="92" bw="32" op_0_bw="25">
 <![CDATA[
-entry:81 %zext_ln75 = zext i25 %add_ln75
+entry:81 %zext_ln81 = zext i25 %add_ln81
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln75"/></StgValue>
+<StgValue><ssdm name="zext_ln81"/></StgValue>
 </operation>
 
 <operation id="102" st_id="7" stage="1" lat="1">
@@ -1483,10 +1483,10 @@ entry:81 %zext_ln75 = zext i25 %add_ln75
 
 <Node id="93" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-entry:82 %write_ln75 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %out_L, i32 %zext_ln75
+entry:82 %write_ln81 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %out_L, i32 %zext_ln81
 
 ]]></Node>
-<StgValue><ssdm name="write_ln75"/></StgValue>
+<StgValue><ssdm name="write_ln81"/></StgValue>
 </operation>
 
 <operation id="103" st_id="7" stage="1" lat="1">
@@ -1498,10 +1498,10 @@ entry:82 %write_ln75 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %out_L, i3
 
 <Node id="94" bw="25" op_0_bw="25" op_1_bw="25">
 <![CDATA[
-entry:83 %add_ln76 = add i25 %zext_ln72, i25 %zext_ln75_1
+entry:83 %add_ln82 = add i25 %zext_ln78, i25 %zext_ln81_1
 
 ]]></Node>
-<StgValue><ssdm name="add_ln76"/></StgValue>
+<StgValue><ssdm name="add_ln82"/></StgValue>
 </operation>
 
 <operation id="104" st_id="7" stage="1" lat="1">
@@ -1513,10 +1513,10 @@ entry:83 %add_ln76 = add i25 %zext_ln72, i25 %zext_ln75_1
 
 <Node id="95" bw="32" op_0_bw="25">
 <![CDATA[
-entry:84 %zext_ln76 = zext i25 %add_ln76
+entry:84 %zext_ln82 = zext i25 %add_ln82
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln76"/></StgValue>
+<StgValue><ssdm name="zext_ln82"/></StgValue>
 </operation>
 
 <operation id="105" st_id="7" stage="1" lat="1">
@@ -1528,10 +1528,10 @@ entry:84 %zext_ln76 = zext i25 %add_ln76
 
 <Node id="96" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-entry:85 %write_ln76 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %out_R, i32 %zext_ln76
+entry:85 %write_ln82 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %out_R, i32 %zext_ln82
 
 ]]></Node>
-<StgValue><ssdm name="write_ln76"/></StgValue>
+<StgValue><ssdm name="write_ln82"/></StgValue>
 </operation>
 
 <operation id="106" st_id="7" stage="1" lat="1">
@@ -1543,10 +1543,10 @@ entry:85 %write_ln76 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %out_R, i3
 
 <Node id="101" bw="0">
 <![CDATA[
-entry:90 %ret_ln98 = ret
+entry:90 %ret_ln104 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln98"/></StgValue>
+<StgValue><ssdm name="ret_ln104"/></StgValue>
 </operation>
 </state>
 </state_list>

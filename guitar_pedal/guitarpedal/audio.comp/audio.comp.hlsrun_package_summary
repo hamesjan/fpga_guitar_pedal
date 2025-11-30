@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sat Nov 29 17:01:49 2025",
- "timestampMillis": "1764464509106",
+ "dateTimestamp": "Sat Nov 29 17:41:25 2025",
+ "timestampMillis": "1764466885272",
  "buildStep": {
-  "cmdId": "6c5b907e-a5ff-4dee-a786-624061e7f8c1",
+  "cmdId": "b7409060-9d40-4978-a353-18dc6a1b770f",
   "name": "vitis-run",
   "logFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/logs/hls_run_package.log",
   "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/export_audio.tcl",
@@ -25,10 +25,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 17:01:49 2025",
- "timestampMillis": "1764464509107",
+ "dateTimestamp": "Sat Nov 29 17:41:25 2025",
+ "timestampMillis": "1764466885274",
  "status": {
-  "cmdId": "6c5b907e-a5ff-4dee-a786-624061e7f8c1",
+  "cmdId": "b7409060-9d40-4978-a353-18dc6a1b770f",
   "state": "CS_RUNNING"
  }
 }
@@ -36,8 +36,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sat Nov 29 17:01:49 2025",
- "timestampMillis": "1764464509108",
+ "dateTimestamp": "Sat Nov 29 17:41:25 2025",
+ "timestampMillis": "1764466885275",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -72,10 +72,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sat Nov 29 17:01:49 2025",
- "timestampMillis": "1764464509109",
+ "dateTimestamp": "Sat Nov 29 17:41:25 2025",
+ "timestampMillis": "1764466885276",
  "buildStep": {
-  "cmdId": "90718dc4-12c8-4ce0-addc-81bfd21b6b0a",
+  "cmdId": "96281e34-0784-47e4-931f-48ccb65979ab",
   "name": "export_design",
   "logFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/hls.log",
   "commandLine": "export_design",
@@ -88,10 +88,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 17:01:49 2025",
- "timestampMillis": "1764464509110",
+ "dateTimestamp": "Sat Nov 29 17:41:25 2025",
+ "timestampMillis": "1764466885277",
  "status": {
-  "cmdId": "90718dc4-12c8-4ce0-addc-81bfd21b6b0a",
+  "cmdId": "96281e34-0784-47e4-931f-48ccb65979ab",
   "state": "CS_RUNNING"
  }
 }
@@ -99,10 +99,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 17:02:23 2025",
- "timestampMillis": "1764464543885",
+ "dateTimestamp": "Sat Nov 29 17:41:59 2025",
+ "timestampMillis": "1764466919019",
  "status": {
-  "cmdId": "90718dc4-12c8-4ce0-addc-81bfd21b6b0a",
+  "cmdId": "96281e34-0784-47e4-931f-48ccb65979ab",
   "state": "CS_PASSED"
  }
 }
@@ -110,10 +110,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 17:02:23 2025",
- "timestampMillis": "1764464543897",
+ "dateTimestamp": "Sat Nov 29 17:41:59 2025",
+ "timestampMillis": "1764466919031",
  "status": {
-  "cmdId": "6c5b907e-a5ff-4dee-a786-624061e7f8c1",
+  "cmdId": "b7409060-9d40-4978-a353-18dc6a1b770f",
   "state": "CS_PASSED"
  }
 }

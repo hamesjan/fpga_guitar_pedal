@@ -1,27 +1,27 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: audio.cpp, Line: 93, Column: 5 }
+DebugLoc:        { File: audio.cpp, Line: 99, Column: 5 }
 Function:        _Z5audioPiS_iijjj
 Args:            
   - Callee:          'ping_pong_delay(int*, int*, int, int, unsigned int, unsigned int, unsigned int)'
     DebugLoc:        { File: audio.cpp, Line: 35, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'audio(int*, int*, int, int, unsigned int, unsigned int, unsigned int)'
-    DebugLoc:        { File: audio.cpp, Line: 92, Column: 0 }
+    DebugLoc:        { File: audio.cpp, Line: 98, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: audio.cpp, Line: 93, Column: 5 }
+DebugLoc:        { File: audio.cpp, Line: 99, Column: 5 }
 Function:        _Z5audioPiS_iijjj
 Args:            
   - Callee:          'ping_pong_delay(int*, int*, int, int, unsigned int, unsigned int, unsigned int)'
     DebugLoc:        { File: audio.cpp, Line: 35, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'audio(int*, int*, int, int, unsigned int, unsigned int, unsigned int)'
-    DebugLoc:        { File: audio.cpp, Line: 92, Column: 0 }
+    DebugLoc:        { File: audio.cpp, Line: 98, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -30,7 +30,7 @@ Name:            NeverInline
 Function:        apatb_audio_ir
 Args:            
   - Callee:          'audio(int*, int*, int, int, unsigned int, unsigned int, unsigned int)'
-    DebugLoc:        { File: audio.cpp, Line: 92, Column: 0 }
+    DebugLoc:        { File: audio.cpp, Line: 98, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_audio_ir
   - String:          ' because it should never be inlined (cost=never)'
@@ -38,7 +38,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: audio.cpp, Line: 92, Column: 0 }
+DebugLoc:        { File: audio.cpp, Line: 98, Column: 0 }
 Function:        _Z5audioPiS_iijjj
 Args:            
   - String:          'Inlining function '''
@@ -46,6 +46,6 @@ Args:
     DebugLoc:        { File: audio.cpp, Line: 35, Column: 0 }
   - String:          ''' into '''
   - Caller:          'audio(int*, int*, int, int, unsigned int, unsigned int, unsigned int)'
-    DebugLoc:        { File: audio.cpp, Line: 92, Column: 0 }
+    DebugLoc:        { File: audio.cpp, Line: 98, Column: 0 }
   - String:          ''''
 ...

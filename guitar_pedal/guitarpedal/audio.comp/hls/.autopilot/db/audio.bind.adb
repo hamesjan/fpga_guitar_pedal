@@ -275,7 +275,7 @@
 						<name>wet_mix_read</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>93</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -291,7 +291,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>93</second>
 									</item>
 								</second>
 							</item>
@@ -332,7 +332,7 @@
 						<name>feedback_gain_read</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>93</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -348,7 +348,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>93</second>
 									</item>
 								</second>
 							</item>
@@ -389,7 +389,7 @@
 						<name>delay_samples_read</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>93</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -405,7 +405,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>93</second>
 									</item>
 								</second>
 							</item>
@@ -446,7 +446,7 @@
 						<name>in_R_read</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>93</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -462,7 +462,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>93</second>
 									</item>
 								</second>
 							</item>
@@ -503,7 +503,7 @@
 						<name>in_L_read</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>93</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -519,7 +519,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>93</second>
 									</item>
 								</second>
 							</item>
@@ -557,10 +557,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>trunc_ln87</name>
+						<name>trunc_ln93</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>93</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -576,7 +576,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>93</second>
 									</item>
 								</second>
 							</item>
@@ -616,7 +616,7 @@
 						<name>write_index_load</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -632,14 +632,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>39</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -676,10 +676,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>zext_ln39</name>
+						<name>zext_ln45</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -695,14 +695,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>39</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -739,10 +739,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>icmp_ln39</name>
+						<name>icmp_ln45</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -758,14 +758,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>39</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -803,10 +803,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>xor_ln39</name>
+						<name>xor_ln45</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -822,14 +822,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>39</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -870,7 +870,7 @@
 						<name>read_index</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -886,14 +886,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>40</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -931,10 +931,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>sub_ln42</name>
+						<name>sub_ln48</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -950,14 +950,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>42</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -998,7 +998,7 @@
 						<name>read_index_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1014,14 +1014,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>42</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -1062,7 +1062,7 @@
 						<name>read_index_2</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1078,14 +1078,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>39</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -1124,10 +1124,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>zext_ln46</name>
+						<name>zext_ln52</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1143,14 +1143,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>46</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1190,7 +1190,7 @@
 						<name>delay_buffer_L_addr</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1206,14 +1206,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>46</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1255,7 +1255,7 @@
 						<name>delayed_L</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1271,14 +1271,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>46</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1315,10 +1315,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>sext_ln46</name>
+						<name>sext_ln52</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1334,14 +1334,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>46</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1381,7 +1381,7 @@
 						<name>delay_buffer_R_addr</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>53</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1397,14 +1397,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>47</second>
+										<second>53</second>
 									</item>
 								</second>
 							</item>
@@ -1446,7 +1446,7 @@
 						<name>delayed_R</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>53</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1462,14 +1462,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>47</second>
+										<second>53</second>
 									</item>
 								</second>
 							</item>
@@ -1506,10 +1506,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>sext_ln47</name>
+						<name>sext_ln53</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>53</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1525,14 +1525,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>47</second>
+										<second>53</second>
 									</item>
 								</second>
 							</item>
@@ -1569,10 +1569,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>mul_ln51</name>
+						<name>mul_ln57</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1588,14 +1588,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>51</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -1636,7 +1636,7 @@
 						<name>feedback_from_R</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1652,14 +1652,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>51</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -1699,10 +1699,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>zext_ln51_1</name>
+						<name>zext_ln57_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1718,14 +1718,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>51</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -1762,10 +1762,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>zext_ln51</name>
+						<name>zext_ln57</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1781,14 +1781,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>51</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -1825,10 +1825,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>sext_ln52</name>
+						<name>sext_ln58</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1844,14 +1844,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>52</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -1888,10 +1888,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>add_ln52</name>
+						<name>add_ln58</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1907,14 +1907,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>52</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -1955,7 +1955,7 @@
 						<name>new_L</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -1971,14 +1971,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>52</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -2016,10 +2016,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>mul_ln55</name>
+						<name>mul_ln61</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2035,14 +2035,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>55</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -2083,7 +2083,7 @@
 						<name>feedback_from_L</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2099,14 +2099,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>55</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -2146,10 +2146,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>zext_ln55_1</name>
+						<name>zext_ln61_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2165,14 +2165,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>55</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -2209,10 +2209,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>zext_ln55</name>
+						<name>zext_ln61</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2228,14 +2228,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>55</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -2272,10 +2272,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>sext_ln56</name>
+						<name>sext_ln62</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2291,14 +2291,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>56</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -2335,10 +2335,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>add_ln56</name>
+						<name>add_ln62</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2354,14 +2354,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>56</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -2402,7 +2402,7 @@
 						<name>new_R</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2418,14 +2418,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>56</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -2466,7 +2466,7 @@
 						<name>tmp_4</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2482,14 +2482,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>59</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -2529,10 +2529,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>icmp_ln59</name>
+						<name>icmp_ln65</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2548,14 +2548,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>59</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -2596,7 +2596,7 @@
 						<name>new_L_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2612,14 +2612,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>59</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -2658,10 +2658,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>icmp_ln60</name>
+						<name>icmp_ln66</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2677,14 +2677,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>60</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -2725,7 +2725,7 @@
 						<name>tmp_5</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2741,14 +2741,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>61</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -2788,10 +2788,10 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>icmp_ln61</name>
+						<name>icmp_ln67</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2807,14 +2807,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>61</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -2855,7 +2855,7 @@
 						<name>new_R_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2871,14 +2871,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>61</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -2917,10 +2917,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>icmp_ln62</name>
+						<name>icmp_ln68</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -2936,14 +2936,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>62</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -2981,10 +2981,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>trunc_ln65</name>
+						<name>trunc_ln71</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3000,14 +3000,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>65</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3044,10 +3044,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>select_ln65</name>
+						<name>select_ln71</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3063,14 +3063,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>65</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3109,10 +3109,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>zext_ln65</name>
+						<name>zext_ln71</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3128,14 +3128,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>65</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3175,7 +3175,7 @@
 						<name>delay_buffer_L_addr_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3191,14 +3191,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>65</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3237,10 +3237,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>delay_buffer_L_addr_1_write_ln65</name>
+						<name>delay_buffer_L_addr_1_write_ln71</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3256,14 +3256,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>65</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3302,10 +3302,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>trunc_ln66</name>
+						<name>trunc_ln72</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3321,14 +3321,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>66</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3365,10 +3365,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>select_ln66</name>
+						<name>select_ln72</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3384,14 +3384,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>66</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3433,7 +3433,7 @@
 						<name>delay_buffer_R_addr_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3449,14 +3449,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>66</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3495,10 +3495,10 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>delay_buffer_R_addr_1_write_ln66</name>
+						<name>delay_buffer_R_addr_1_write_ln72</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3514,14 +3514,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>66</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3560,10 +3560,10 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>mul_ln69</name>
+						<name>mul_ln75</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>75</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3579,14 +3579,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>69</second>
+										<second>75</second>
 									</item>
 								</second>
 							</item>
@@ -3627,7 +3627,7 @@
 						<name>tmp</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>76</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3643,14 +3643,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>70</second>
+										<second>76</second>
 									</item>
 								</second>
 							</item>
@@ -3690,10 +3690,10 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>zext_ln70</name>
+						<name>zext_ln76</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>76</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3709,14 +3709,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>70</second>
+										<second>76</second>
 									</item>
 								</second>
 							</item>
@@ -3753,10 +3753,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>sub_ln70</name>
+						<name>sub_ln76</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>76</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3772,14 +3772,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>70</second>
+										<second>76</second>
 									</item>
 								</second>
 							</item>
@@ -3817,10 +3817,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>mul_ln70</name>
+						<name>mul_ln76</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>76</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3836,14 +3836,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>70</second>
+										<second>76</second>
 									</item>
 								</second>
 							</item>
@@ -3884,7 +3884,7 @@
 						<name>tmp_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>71</lineNumber>
+						<lineNumber>77</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3900,14 +3900,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>71</second>
+										<second>77</second>
 									</item>
 								</second>
 							</item>
@@ -3947,10 +3947,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>zext_ln71</name>
+						<name>zext_ln77</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>71</lineNumber>
+						<lineNumber>77</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -3966,14 +3966,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>71</second>
+										<second>77</second>
 									</item>
 								</second>
 							</item>
@@ -4010,10 +4010,10 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>mul_ln71</name>
+						<name>mul_ln77</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>71</lineNumber>
+						<lineNumber>77</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4029,14 +4029,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>71</second>
+										<second>77</second>
 									</item>
 								</second>
 							</item>
@@ -4077,7 +4077,7 @@
 						<name>tmp_2</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4093,14 +4093,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>72</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4140,10 +4140,10 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>zext_ln72</name>
+						<name>zext_ln78</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4159,14 +4159,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>72</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4203,10 +4203,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>mul_ln72</name>
+						<name>mul_ln78</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4222,14 +4222,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>72</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4270,7 +4270,7 @@
 						<name>tmp_3</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>81</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4286,14 +4286,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>75</second>
+										<second>81</second>
 									</item>
 								</second>
 							</item>
@@ -4333,10 +4333,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>zext_ln75_1</name>
+						<name>zext_ln81_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>81</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4352,14 +4352,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>75</second>
+										<second>81</second>
 									</item>
 								</second>
 							</item>
@@ -4396,10 +4396,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>add_ln75</name>
+						<name>add_ln81</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>81</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4415,14 +4415,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>75</second>
+										<second>81</second>
 									</item>
 								</second>
 							</item>
@@ -4460,10 +4460,10 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>zext_ln75</name>
+						<name>zext_ln81</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>81</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4479,14 +4479,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>75</second>
+										<second>81</second>
 									</item>
 								</second>
 							</item>
@@ -4523,10 +4523,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>out_L_write_ln75</name>
+						<name>out_L_write_ln81</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>81</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4542,14 +4542,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>75</second>
+										<second>81</second>
 									</item>
 								</second>
 							</item>
@@ -4588,10 +4588,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>add_ln76</name>
+						<name>add_ln82</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>76</lineNumber>
+						<lineNumber>82</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4607,14 +4607,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>76</second>
+										<second>82</second>
 									</item>
 								</second>
 							</item>
@@ -4652,10 +4652,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>zext_ln76</name>
+						<name>zext_ln82</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>76</lineNumber>
+						<lineNumber>82</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4671,14 +4671,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>76</second>
+										<second>82</second>
 									</item>
 								</second>
 							</item>
@@ -4715,10 +4715,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>out_R_write_ln76</name>
+						<name>out_R_write_ln82</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>76</lineNumber>
+						<lineNumber>82</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4734,14 +4734,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>76</second>
+										<second>82</second>
 									</item>
 								</second>
 							</item>
@@ -4780,10 +4780,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>add_ln79</name>
+						<name>add_ln85</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>79</lineNumber>
+						<lineNumber>85</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4799,14 +4799,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>79</second>
+										<second>85</second>
 									</item>
 								</second>
 							</item>
@@ -4844,10 +4844,10 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>icmp_ln80</name>
+						<name>icmp_ln86</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>80</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4863,14 +4863,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>80</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -4908,10 +4908,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>select_ln80</name>
+						<name>select_ln86</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>80</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4927,14 +4927,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>80</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -4973,10 +4973,10 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>write_index_write_ln80</name>
+						<name>write_index_write_ln86</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>80</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>ping_pong_delay</contextFuncName>
 						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
 						<inlineStackInfo>
@@ -4992,14 +4992,14 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>93</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>ping_pong_delay</second>
 										</first>
-										<second>80</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -5038,10 +5038,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>_ln98</name>
+						<name>_ln104</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>98</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -5057,7 +5057,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>98</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -8499,7 +8499,7 @@
 		<count>56</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
-			<first>add_ln52_fu_336</first>
+			<first>add_ln58_fu_336</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8507,7 +8507,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln56_fu_356</first>
+			<first>add_ln62_fu_356</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8515,7 +8515,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln75_fu_486</first>
+			<first>add_ln81_fu_486</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8523,7 +8523,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln76_fu_497</first>
+			<first>add_ln82_fu_497</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8531,7 +8531,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln79_fu_240</first>
+			<first>add_ln85_fu_240</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8587,7 +8587,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln39_fu_202</first>
+			<first>icmp_ln45_fu_202</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8595,7 +8595,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln59_fu_377</first>
+			<first>icmp_ln65_fu_377</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8603,7 +8603,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln60_fu_425</first>
+			<first>icmp_ln66_fu_425</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8611,7 +8611,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln61_fu_393</first>
+			<first>icmp_ln67_fu_393</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8619,7 +8619,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln62_fu_437</first>
+			<first>icmp_ln68_fu_437</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8627,7 +8627,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln80_fu_246</first>
+			<first>icmp_ln86_fu_246</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8691,7 +8691,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln65_fu_447</first>
+			<first>select_ln71_fu_447</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8699,7 +8699,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln66_fu_465</first>
+			<first>select_ln72_fu_465</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8707,7 +8707,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln80_fu_252</first>
+			<first>select_ln86_fu_252</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8715,7 +8715,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln46_fu_271</first>
+			<first>sext_ln52_fu_271</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8723,7 +8723,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln47_fu_276</first>
+			<first>sext_ln53_fu_276</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8731,7 +8731,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln52_fu_333</first>
+			<first>sext_ln58_fu_333</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8739,7 +8739,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln56_fu_353</first>
+			<first>sext_ln62_fu_353</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8747,7 +8747,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sub_ln42_fu_220</first>
+			<first>sub_ln48_fu_220</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8755,7 +8755,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sub_ln70_fu_281</first>
+			<first>sub_ln76_fu_281</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8811,7 +8811,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln65_fu_443</first>
+			<first>trunc_ln71_fu_443</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8819,7 +8819,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln66_fu_461</first>
+			<first>trunc_ln72_fu_461</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8827,7 +8827,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln87_fu_190</first>
+			<first>trunc_ln93_fu_190</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8835,7 +8835,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln39_fu_208</first>
+			<first>xor_ln45_fu_208</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8843,7 +8843,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln39_fu_198</first>
+			<first>zext_ln45_fu_198</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8851,7 +8851,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln46_fu_266</first>
+			<first>zext_ln52_fu_266</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8859,7 +8859,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln51_1_fu_327</first>
+			<first>zext_ln57_1_fu_327</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8867,7 +8867,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln51_fu_330</first>
+			<first>zext_ln57_fu_330</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8875,7 +8875,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln55_1_fu_347</first>
+			<first>zext_ln61_1_fu_347</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8883,7 +8883,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln55_fu_350</first>
+			<first>zext_ln61_fu_350</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8891,7 +8891,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln65_fu_456</first>
+			<first>zext_ln71_fu_456</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8899,7 +8899,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln70_fu_474</first>
+			<first>zext_ln76_fu_474</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8907,7 +8907,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln71_fu_477</first>
+			<first>zext_ln77_fu_477</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8915,7 +8915,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln72_fu_480</first>
+			<first>zext_ln78_fu_480</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8923,7 +8923,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln75_1_fu_483</first>
+			<first>zext_ln81_1_fu_483</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8931,7 +8931,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln75_fu_492</first>
+			<first>zext_ln81_fu_492</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8939,7 +8939,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln76_fu_503</first>
+			<first>zext_ln82_fu_503</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9041,7 +9041,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln80_store_fu_260</first>
+			<first>store_ln86_store_fu_260</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9065,7 +9065,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln75_write_fu_104</first>
+			<first>write_ln81_write_fu_104</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9073,7 +9073,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln76_write_fu_111</first>
+			<first>write_ln82_write_fu_111</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9307,7 +9307,7 @@
 		<count>23</count>
 		<item_version>0</item_version>
 		<item>
-			<first>add_ln52_reg_604</first>
+			<first>add_ln58_reg_604</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9315,7 +9315,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln56_reg_609</first>
+			<first>add_ln62_reg_609</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9379,7 +9379,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln59_reg_614</first>
+			<first>icmp_ln65_reg_614</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9387,7 +9387,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln61_reg_619</first>
+			<first>icmp_ln67_reg_619</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9419,7 +9419,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln46_reg_550</first>
+			<first>sext_ln52_reg_550</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9427,7 +9427,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln47_reg_556</first>
+			<first>sext_ln53_reg_556</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9435,7 +9435,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sub_ln70_reg_562</first>
+			<first>sub_ln76_reg_562</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

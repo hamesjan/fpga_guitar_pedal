@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sat Nov 29 16:11:53 2025",
- "timestampMillis": "1764461513474",
+ "dateTimestamp": "Sat Nov 29 17:40:43 2025",
+ "timestampMillis": "1764466843432",
  "buildStep": {
-  "cmdId": "019d7c0a-6099-426f-9dfa-c1339c5214c8",
+  "cmdId": "28695e66-909b-4d08-ab78-ce3f315b5c9e",
   "name": "vitis-run",
   "logFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/logs/hls_compile.log",
   "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl",
@@ -25,10 +25,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 16:11:53 2025",
- "timestampMillis": "1764461513475",
+ "dateTimestamp": "Sat Nov 29 17:40:43 2025",
+ "timestampMillis": "1764466843434",
  "status": {
-  "cmdId": "019d7c0a-6099-426f-9dfa-c1339c5214c8",
+  "cmdId": "28695e66-909b-4d08-ab78-ce3f315b5c9e",
   "state": "CS_RUNNING"
  }
 }
@@ -36,8 +36,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sat Nov 29 16:11:53 2025",
- "timestampMillis": "1764461513475",
+ "dateTimestamp": "Sat Nov 29 17:40:43 2025",
+ "timestampMillis": "1764466843434",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -72,10 +72,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sat Nov 29 16:11:53 2025",
- "timestampMillis": "1764461513476",
+ "dateTimestamp": "Sat Nov 29 17:40:43 2025",
+ "timestampMillis": "1764466843435",
  "buildStep": {
-  "cmdId": "26aaee08-146e-4a69-a0fe-64ca865c9705",
+  "cmdId": "ee2be737-c946-4f2d-8fd0-7836f117bba6",
   "name": "csynth_design",
   "logFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/hls.log",
   "commandLine": "csynth_design",
@@ -88,10 +88,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 16:11:53 2025",
- "timestampMillis": "1764461513477",
+ "dateTimestamp": "Sat Nov 29 17:40:43 2025",
+ "timestampMillis": "1764466843436",
  "status": {
-  "cmdId": "26aaee08-146e-4a69-a0fe-64ca865c9705",
+  "cmdId": "ee2be737-c946-4f2d-8fd0-7836f117bba6",
   "state": "CS_RUNNING"
  }
 }
@@ -99,8 +99,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Nov 29 16:11:53 2025",
- "timestampMillis": "1764461513478",
+ "dateTimestamp": "Sat Nov 29 17:40:43 2025",
+ "timestampMillis": "1764466843436",
  "report": {
   "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/hls_data.json",
   "name": "",
@@ -113,8 +113,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Nov 29 16:11:53 2025",
- "timestampMillis": "1764461513479",
+ "dateTimestamp": "Sat Nov 29 17:40:43 2025",
+ "timestampMillis": "1764466843438",
  "report": {
   "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/syn/report/csynth.rpt",
   "name": "",
@@ -127,8 +127,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Nov 29 16:11:53 2025",
- "timestampMillis": "1764461513480",
+ "dateTimestamp": "Sat Nov 29 17:40:43 2025",
+ "timestampMillis": "1764466843439",
  "report": {
   "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/syn/report/csynth.xml",
   "name": "",
@@ -141,8 +141,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Nov 29 16:12:08 2025",
- "timestampMillis": "1764461528321",
+ "dateTimestamp": "Sat Nov 29 17:40:58 2025",
+ "timestampMillis": "1764466858259",
  "report": {
   "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls",
   "name": "",
@@ -155,8 +155,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Nov 29 16:12:08 2025",
- "timestampMillis": "1764461528322",
+ "dateTimestamp": "Sat Nov 29 17:40:58 2025",
+ "timestampMillis": "1764466858260",
  "report": {
   "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls",
   "name": "",
@@ -169,8 +169,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Nov 29 16:12:08 2025",
- "timestampMillis": "1764461528322",
+ "dateTimestamp": "Sat Nov 29 17:40:58 2025",
+ "timestampMillis": "1764466858261",
  "report": {
   "path": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls",
   "name": "",
@@ -183,10 +183,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 16:12:08 2025",
- "timestampMillis": "1764461528322",
+ "dateTimestamp": "Sat Nov 29 17:40:58 2025",
+ "timestampMillis": "1764466858261",
  "status": {
-  "cmdId": "26aaee08-146e-4a69-a0fe-64ca865c9705",
+  "cmdId": "ee2be737-c946-4f2d-8fd0-7836f117bba6",
   "state": "CS_PASSED"
  }
 }
@@ -194,10 +194,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 16:12:08 2025",
- "timestampMillis": "1764461528334",
+ "dateTimestamp": "Sat Nov 29 17:40:58 2025",
+ "timestampMillis": "1764466858273",
  "status": {
-  "cmdId": "019d7c0a-6099-426f-9dfa-c1339c5214c8",
+  "cmdId": "28695e66-909b-4d08-ab78-ce3f315b5c9e",
   "state": "CS_PASSED"
  }
 }
