@@ -40,7 +40,8 @@ int main() {
     // Read directly into temporary float buffer
     std::vector<float> temp(2 * totalFrames);
 
-    ma_decoder_read_pcm_frames(&decoder, temp.data(), totalFrames);
+    ma_uint64 framesRead;
+    ma_decoder_read_pcm_frames(&decoder, temp.data(), totalFrames, &framesRead);
     ma_decoder_uninit(&decoder);
 
     // Convert float → int32_t 24-bit
@@ -53,9 +54,11 @@ int main() {
     }
 
     // Run through your HLS function sample-by-sample
-    uint32_t delay_samples = 500;
-    uint32_t feedback_gain = 0.6 * (1 << 16);
-    uint32_t wet_mix       = 0.7 * (1 << 16);
+    // Use a shorter delay to avoid reading from uninitialized buffer
+    uint32_t delay_samples = 5000;  // ~113ms at 44.1kHz (short delay for testing)
+    // Parameters must be in 0-256 range (where 256 = 100%, 128 = 50%)
+    uint32_t feedback_gain = 0;  // NO feedback - test if static is from feedback
+    uint32_t wet_mix       = (uint32_t)(0.3 * 256);  // 30% wet = 77 (test delay without feedback)
 
     for (ma_uint64 i = 0; i < totalFrames; i++) {
         ping_pong_delay(&outL[i], &outR[i],
@@ -86,7 +89,8 @@ int main() {
         outFloat[2*i + 1] = (float)outR[i] / 0x7FFFFF;
     }
 
-    ma_encoder_write_pcm_frames(&encoder, outFloat.data(), totalFrames);
+    ma_uint64 framesWritten;
+    ma_encoder_write_pcm_frames(&encoder, outFloat.data(), totalFrames, &framesWritten);
     ma_encoder_uninit(&encoder);
 
     std::cout << "Saved: " << outFile << "\n";
