@@ -3,16 +3,16 @@
 // #include <stdint.h>
 
 #include "audio.h"
-#include "ap_int.h"
-#include "hls_stream.h"
+//#include "ap_int.h"
+//#include "hls_stream.h"
 #include <stdint.h>
 
 // configuration parameters
-#define MAX_DELAY_SAMPLES 48000  // 1 second at 48kHz sampling rate
+#define MAX_DELAY_SAMPLES (1 << 16)  // 1 second at 48kHz sampling rate
 
 // static delay buffers and state variables
-static int32_t delay_buffer_L[MAX_DELAY_SAMPLES];
-static int32_t delay_buffer_R[MAX_DELAY_SAMPLES];
+static int32_t delay_buffer_L[MAX_DELAY_SAMPLES] = {0};
+static int32_t delay_buffer_R[MAX_DELAY_SAMPLES] = {0};
 static uint32_t write_index = 0;
 
 // data types for quantization
@@ -35,16 +35,11 @@ void ping_pong_delay(int32_t* out_L, int32_t* out_R,
                      uint32_t wet_mix) {
     
     // Step 1: calculate read index for circular buffer
-    uint32_t read_index;
-    if (write_index >= delay_samples) {
-        read_index = write_index - delay_samples;
-    } else {
-        read_index = MAX_DELAY_SAMPLES - (delay_samples - write_index);
-    }
+    uint32_t read_index = MAX_DELAY_SAMPLES + write_index - delay_samples;
     
     // step 2: Read delayed samples from both channels
-    int32_t delayed_L = delay_buffer_L[read_index];
-    int32_t delayed_R = delay_buffer_R[read_index];
+    int32_t delayed_L = delay_buffer_L[read_index % MAX_DELAY_SAMPLES];
+    int32_t delayed_R = delay_buffer_R[read_index % MAX_DELAY_SAMPLES];
     
     // step 3: Apply cross-channel feedback (the ping pong effect)
     // Left channel gets input + feedback from RIGHT delay
@@ -62,14 +57,14 @@ void ping_pong_delay(int32_t* out_L, int32_t* out_R,
     if (new_R < -8388608) new_R = -8388608;
     
     // Step 5: Write new samples to delay buffers
-    delay_buffer_L[write_index] = (int32_t)new_L;
-    delay_buffer_R[write_index] = (int32_t)new_R;
+    delay_buffer_L[write_index % MAX_DELAY_SAMPLES] = (int32_t)in_L;
+    delay_buffer_R[write_index % MAX_DELAY_SAMPLES] = (int32_t)in_R;
     
     // Step 6: Mix wet (delayed) and dry (original) signals
-    int64_t wet_L = (delayed_L * wet_mix) / 256;
-    int64_t dry_L = (in_L * (256 - wet_mix)) / 256;
-    int64_t wet_R = (delayed_R * wet_mix) / 256;
-    int64_t dry_R = (in_R * (256 - wet_mix)) / 256;
+    int64_t wet_L = ((int64_t)delayed_L * (int64_t)wet_mix) / 256;
+    int64_t dry_L = ((int64_t)in_L * (int64_t)(256 - wet_mix)) / 256;
+    int64_t wet_R = ((int64_t)delayed_R * (int64_t)wet_mix) / 256;
+    int64_t dry_R = ((int64_t)in_R * (int64_t)(256 - wet_mix)) / 256;
     
     // Step 7: Output final mixed signals
     *out_L = (int32_t)(wet_L + dry_L);
@@ -77,9 +72,9 @@ void ping_pong_delay(int32_t* out_L, int32_t* out_R,
     
     // Step 8: Increment write index (circular buffer)
     write_index = write_index + 1;
-    if (write_index >= MAX_DELAY_SAMPLES) {
-        write_index = 0;
-    }
+    //if (write_index >= MAX_DELAY_SAMPLES) {
+    //    write_index = 0;
+    //}
 }
 
 // Top-level function for HLS
