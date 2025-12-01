@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="audio_audio,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.912000,HLS_SYN_LAT=5,HLS_SYN_TPT=none,HLS_SYN_MEM=256,HLS_SYN_DSP=0,HLS_SYN_FF=1638,HLS_SYN_LUT=1212,HLS_VERSION=2024_2}" *)
+(* CORE_GENERATION_INFO="audio_audio,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.912000,HLS_SYN_LAT=5,HLS_SYN_TPT=none,HLS_SYN_MEM=16,HLS_SYN_DSP=0,HLS_SYN_FF=1634,HLS_SYN_LUT=1201,HLS_VERSION=2024_2}" *)
 
 module audio (
         ap_clk,
@@ -87,8 +87,8 @@ wire   [31:0] in_R;
 reg   [31:0] write_index;
 wire   [31:0] delay_buffer_L_q0;
 wire   [31:0] delay_buffer_R_q0;
-wire   [15:0] trunc_ln48_fu_182_p1;
-reg   [15:0] trunc_ln48_reg_453;
+wire   [11:0] trunc_ln48_fu_182_p1;
+reg   [11:0] trunc_ln48_reg_453;
 reg   [31:0] wet_mix_read_reg_468;
 wire    ap_CS_fsm_state2;
 reg  signed [31:0] in_R_read_reg_473;
@@ -127,17 +127,17 @@ wire   [63:0] zext_ln70_fu_210_p1;
 wire   [31:0] add_ln84_fu_198_p2;
 wire    ap_CS_fsm_state6;
 reg    delay_buffer_L_ce0_local;
-reg   [15:0] delay_buffer_L_address0_local;
+reg   [11:0] delay_buffer_L_address0_local;
 reg    delay_buffer_L_we0_local;
 reg    delay_buffer_R_ce0_local;
-reg   [15:0] delay_buffer_R_address0_local;
+reg   [11:0] delay_buffer_R_address0_local;
 reg    delay_buffer_R_we0_local;
 wire   [31:0] grp_fu_158_p0;
 wire   [31:0] grp_fu_162_p0;
 wire   [31:0] grp_fu_166_p1;
 wire   [31:0] grp_fu_170_p1;
-wire   [15:0] trunc_ln34_fu_174_p1;
-wire   [15:0] read_index_fu_186_p2;
+wire   [11:0] trunc_ln34_fu_174_p1;
+wire   [11:0] read_index_fu_186_p2;
 wire   [39:0] sub_ln74_fu_263_p2;
 wire   [39:0] sub_ln75_1_fu_278_p2;
 wire   [39:0] sub_ln76_fu_293_p2;
@@ -175,8 +175,8 @@ end
 
 audio_delay_buffer_L_RAM_AUTO_1R1W #(
     .DataWidth( 32 ),
-    .AddressRange( 65536 ),
-    .AddressWidth( 16 ))
+    .AddressRange( 4096 ),
+    .AddressWidth( 12 ))
 delay_buffer_L_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -189,8 +189,8 @@ delay_buffer_L_U(
 
 audio_delay_buffer_L_RAM_AUTO_1R1W #(
     .DataWidth( 32 ),
-    .AddressRange( 65536 ),
-    .AddressWidth( 16 ))
+    .AddressRange( 4096 ),
+    .AddressWidth( 12 ))
 delay_buffer_R_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -557,9 +557,9 @@ assign tmp_3_fu_410_p3 = mul_ln77_reg_563[32'd63];
 
 assign tmp_fu_323_p3 = mul_ln74_reg_530[32'd63];
 
-assign trunc_ln34_fu_174_p1 = delay_samples[15:0];
+assign trunc_ln34_fu_174_p1 = delay_samples[11:0];
 
-assign trunc_ln48_fu_182_p1 = write_index[15:0];
+assign trunc_ln48_fu_182_p1 = write_index[11:0];
 
 assign trunc_ln74_2_fu_335_p4 = {{mul_ln74_reg_530[39:8]}};
 

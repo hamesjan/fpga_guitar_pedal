@@ -42,7 +42,7 @@ end;
 architecture behav of audio is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "audio_audio,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.912000,HLS_SYN_LAT=5,HLS_SYN_TPT=none,HLS_SYN_MEM=256,HLS_SYN_DSP=0,HLS_SYN_FF=1638,HLS_SYN_LUT=1212,HLS_VERSION=2024_2}";
+    "audio_audio,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.912000,HLS_SYN_LAT=5,HLS_SYN_TPT=none,HLS_SYN_MEM=16,HLS_SYN_DSP=0,HLS_SYN_FF=1634,HLS_SYN_LUT=1201,HLS_VERSION=2024_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (5 downto 0) := "000001";
@@ -84,8 +84,8 @@ architecture behav of audio is
     signal write_index : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal delay_buffer_L_q0 : STD_LOGIC_VECTOR (31 downto 0);
     signal delay_buffer_R_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal trunc_ln48_fu_182_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal trunc_ln48_reg_453 : STD_LOGIC_VECTOR (15 downto 0);
+    signal trunc_ln48_fu_182_p1 : STD_LOGIC_VECTOR (11 downto 0);
+    signal trunc_ln48_reg_453 : STD_LOGIC_VECTOR (11 downto 0);
     signal wet_mix_read_reg_468 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
@@ -129,17 +129,17 @@ architecture behav of audio is
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
     signal delay_buffer_L_ce0_local : STD_LOGIC;
-    signal delay_buffer_L_address0_local : STD_LOGIC_VECTOR (15 downto 0);
+    signal delay_buffer_L_address0_local : STD_LOGIC_VECTOR (11 downto 0);
     signal delay_buffer_L_we0_local : STD_LOGIC;
     signal delay_buffer_R_ce0_local : STD_LOGIC;
-    signal delay_buffer_R_address0_local : STD_LOGIC_VECTOR (15 downto 0);
+    signal delay_buffer_R_address0_local : STD_LOGIC_VECTOR (11 downto 0);
     signal delay_buffer_R_we0_local : STD_LOGIC;
     signal grp_fu_158_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_162_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_166_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_170_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal trunc_ln34_fu_174_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal read_index_fu_186_p2 : STD_LOGIC_VECTOR (15 downto 0);
+    signal trunc_ln34_fu_174_p1 : STD_LOGIC_VECTOR (11 downto 0);
+    signal read_index_fu_186_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal sub_ln74_fu_263_p2 : STD_LOGIC_VECTOR (39 downto 0);
     signal sub_ln75_1_fu_278_p2 : STD_LOGIC_VECTOR (39 downto 0);
     signal sub_ln76_fu_293_p2 : STD_LOGIC_VECTOR (39 downto 0);
@@ -211,7 +211,7 @@ architecture behav of audio is
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        address0 : IN STD_LOGIC_VECTOR (11 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
         d0 : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -263,8 +263,8 @@ begin
     delay_buffer_L_U : component audio_delay_buffer_L_RAM_AUTO_1R1W
     generic map (
         DataWidth => 32,
-        AddressRange => 65536,
-        AddressWidth => 16)
+        AddressRange => 4096,
+        AddressWidth => 12)
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -277,8 +277,8 @@ begin
     delay_buffer_R_U : component audio_delay_buffer_L_RAM_AUTO_1R1W
     generic map (
         DataWidth => 32,
-        AddressRange => 65536,
-        AddressWidth => 16)
+        AddressRange => 4096,
+        AddressWidth => 12)
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -541,11 +541,11 @@ begin
     delay_buffer_L_address0_local_assign_proc : process(ap_CS_fsm_state1, ap_CS_fsm_state2, zext_ln51_fu_192_p1, zext_ln70_fu_210_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            delay_buffer_L_address0_local <= zext_ln70_fu_210_p1(16 - 1 downto 0);
+            delay_buffer_L_address0_local <= zext_ln70_fu_210_p1(12 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state1)) then 
-            delay_buffer_L_address0_local <= zext_ln51_fu_192_p1(16 - 1 downto 0);
+            delay_buffer_L_address0_local <= zext_ln51_fu_192_p1(12 - 1 downto 0);
         else 
-            delay_buffer_L_address0_local <= "XXXXXXXXXXXXXXXX";
+            delay_buffer_L_address0_local <= "XXXXXXXXXXXX";
         end if; 
     end process;
 
@@ -573,11 +573,11 @@ begin
     delay_buffer_R_address0_local_assign_proc : process(ap_CS_fsm_state1, ap_CS_fsm_state2, zext_ln51_fu_192_p1, zext_ln70_fu_210_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            delay_buffer_R_address0_local <= zext_ln70_fu_210_p1(16 - 1 downto 0);
+            delay_buffer_R_address0_local <= zext_ln70_fu_210_p1(12 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state1)) then 
-            delay_buffer_R_address0_local <= zext_ln51_fu_192_p1(16 - 1 downto 0);
+            delay_buffer_R_address0_local <= zext_ln51_fu_192_p1(12 - 1 downto 0);
         else 
-            delay_buffer_R_address0_local <= "XXXXXXXXXXXXXXXX";
+            delay_buffer_R_address0_local <= "XXXXXXXXXXXX";
         end if; 
     end process;
 
@@ -653,8 +653,8 @@ begin
     tmp_2_fu_381_p3 <= mul_ln76_reg_552(63 downto 63);
     tmp_3_fu_410_p3 <= mul_ln77_reg_563(63 downto 63);
     tmp_fu_323_p3 <= mul_ln74_reg_530(63 downto 63);
-    trunc_ln34_fu_174_p1 <= delay_samples(16 - 1 downto 0);
-    trunc_ln48_fu_182_p1 <= write_index(16 - 1 downto 0);
+    trunc_ln34_fu_174_p1 <= delay_samples(12 - 1 downto 0);
+    trunc_ln48_fu_182_p1 <= write_index(12 - 1 downto 0);
     trunc_ln74_2_fu_335_p4 <= mul_ln74_reg_530(39 downto 8);
     trunc_ln74_fu_247_p1 <= grp_fu_166_p2(40 - 1 downto 0);
     trunc_ln75_2_fu_364_p4 <= mul_ln75_reg_541(39 downto 8);
