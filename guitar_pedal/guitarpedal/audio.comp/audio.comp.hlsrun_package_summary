@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/audio.comp.hlsrun_package_summary",
+ "thisFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/audio.comp.hlsrun_package_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,26 +9,26 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sat Nov 29 17:51:52 2025",
- "timestampMillis": "1764467512956",
+ "dateTimestamp": "Sun Nov 30 17:32:52 2025",
+ "timestampMillis": "1764552772547",
  "buildStep": {
-  "cmdId": "1065cf67-eef9-4988-928a-6e799310cfaa",
+  "cmdId": "55eb38fc-4324-4e8f-bc3c-ccc16141c13f",
   "name": "vitis-run",
-  "logFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/logs/hls_run_package.log",
-  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/export_audio.tcl",
+  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/logs/hls_run_package.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/export_audio.tcl",
   "args": [],
   "iniFiles": [],
-  "cwd": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal"
+  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 17:51:52 2025",
- "timestampMillis": "1764467512958",
+ "dateTimestamp": "Sun Nov 30 17:32:52 2025",
+ "timestampMillis": "1764552772547",
  "status": {
-  "cmdId": "1065cf67-eef9-4988-928a-6e799310cfaa",
+  "cmdId": "55eb38fc-4324-4e8f-bc3c-ccc16141c13f",
   "state": "CS_RUNNING"
  }
 }
@@ -36,8 +36,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sat Nov 29 17:51:52 2025",
- "timestampMillis": "1764467512959",
+ "dateTimestamp": "Sun Nov 30 17:32:52 2025",
+ "timestampMillis": "1764552772548",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -56,7 +56,7 @@
      "uuid": ""
     },
     "sources": [
-     "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.cpp"
+     "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -72,26 +72,26 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sat Nov 29 17:51:52 2025",
- "timestampMillis": "1764467512960",
+ "dateTimestamp": "Sun Nov 30 17:32:52 2025",
+ "timestampMillis": "1764552772549",
  "buildStep": {
-  "cmdId": "816c9a2b-1d96-4a4a-a1f8-2451653dc5ec",
+  "cmdId": "4ba142e4-c104-47e7-b069-5cd263f020d7",
   "name": "export_design",
-  "logFile": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/hls.log",
+  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/hls.log",
   "commandLine": "export_design",
   "args": [],
   "iniFiles": [],
-  "cwd": "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal"
+  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 17:51:52 2025",
- "timestampMillis": "1764467512962",
+ "dateTimestamp": "Sun Nov 30 17:32:52 2025",
+ "timestampMillis": "1764552772550",
  "status": {
-  "cmdId": "816c9a2b-1d96-4a4a-a1f8-2451653dc5ec",
+  "cmdId": "4ba142e4-c104-47e7-b069-5cd263f020d7",
   "state": "CS_RUNNING"
  }
 }
@@ -99,10 +99,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 17:52:30 2025",
- "timestampMillis": "1764467550012",
+ "dateTimestamp": "Sun Nov 30 17:33:40 2025",
+ "timestampMillis": "1764552820709",
  "status": {
-  "cmdId": "816c9a2b-1d96-4a4a-a1f8-2451653dc5ec",
+  "cmdId": "4ba142e4-c104-47e7-b069-5cd263f020d7",
   "state": "CS_PASSED"
  }
 }
@@ -110,10 +110,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Nov 29 17:52:30 2025",
- "timestampMillis": "1764467550025",
+ "dateTimestamp": "Sun Nov 30 17:33:40 2025",
+ "timestampMillis": "1764552820718",
  "status": {
-  "cmdId": "1065cf67-eef9-4988-928a-6e799310cfaa",
+  "cmdId": "55eb38fc-4324-4e8f-bc3c-ccc16141c13f",
   "state": "CS_PASSED"
  }
 }

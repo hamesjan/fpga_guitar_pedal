@@ -1,13 +1,13 @@
 <dict>
   <key>main-file</key>
-  <string>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/.autopilot/db/audio.pp.0.cpp</string>
+  <string>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/.autopilot/db/audio.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl</string>
+      <string>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl</string>
       <key>line</key>
       <integer>9</integer>
       <key>column</key>

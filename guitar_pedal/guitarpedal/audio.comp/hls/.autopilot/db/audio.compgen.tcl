@@ -6,12 +6,6 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set name audio_mul_32s_32s_32_2_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler audio_delay_buffer_L_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
@@ -72,7 +66,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 10 \
+			id 5 \
 			corename audio_control_axilite \
 			name audio_control_s_axi \
 			ports {$port_control} \
@@ -95,7 +89,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 11 \
+    id 6 \
     name delay_samples \
     type other \
     dir I \
@@ -110,7 +104,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 12 \
+    id 7 \
     name feedback_gain \
     type other \
     dir I \
@@ -119,21 +113,6 @@ eval "cg_default_interface_gen_dc { \
     corename dc_feedback_gain \
     op interface \
     ports { feedback_gain { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 13 \
-    name wet_mix \
-    type other \
-    dir I \
-    reset_level 0 \
-    sync_rst true \
-    corename dc_wet_mix \
-    op interface \
-    ports { wet_mix { I 32 vector } } \
 } "
 }
 

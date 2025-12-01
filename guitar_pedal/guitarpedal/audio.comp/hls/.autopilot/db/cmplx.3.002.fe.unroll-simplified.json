@@ -6,14 +6,14 @@
     "fileloc": 87,
     "instructions": 7,
     "name": "audio",
-    "total_instructions": 61
+    "total_instructions": 50
   },
   "1": {
     "basicblocks": 1,
     "calls": "",
     "file": "audio.cpp",
     "fileloc": 31,
-    "instructions": 54,
+    "instructions": 43,
     "loads": {
       "G": 3
     },
@@ -22,6 +22,6 @@
       "G": 3,
       "L": 2
     },
-    "total_instructions": 54
+    "total_instructions": 43
   }
 }

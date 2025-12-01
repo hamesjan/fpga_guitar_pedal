@@ -2,7 +2,7 @@
 
 `timescale 1 ns / 1 ps
 
- module audio_mul_32s_32s_32_2_1(clk,ce,reset,din0, din1, dout);
+ module audio_mul_24s_32s_32_2_1(clk,ce,reset,din0, din1, dout);
 parameter ID = 1;
 parameter NUM_STAGE = 0;
 parameter din0_WIDTH = 14;

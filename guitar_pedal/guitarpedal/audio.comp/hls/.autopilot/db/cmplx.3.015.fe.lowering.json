@@ -4,7 +4,7 @@
     "calls": "",
     "file": "audio.cpp",
     "fileloc": 87,
-    "instructions": 73,
+    "instructions": 62,
     "loads": {
       "G": 3
     },
@@ -13,6 +13,6 @@
       "G": 3,
       "T": 2
     },
-    "total_instructions": 73
+    "total_instructions": 62
   }
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'audio'" level="0">
-<item name = "Date">Sat Nov 29 17:50:38 2025
+<item name = "Date">Sun Nov 30 17:32:35 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">audio.comp</item>
@@ -47,14 +47,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 653, -</column>
+<column name="Expression">-, -, 0, 550, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 14, 1178, 596, -</column>
+<column name="Instance">0, 4, 518, 396, -</column>
 <column name="Memory">192, -, 0, 0, 0</column>
 <column name="Multiplexer">-, -, 0, 70, -</column>
-<column name="Register">-, -, 409, -, -</column>
+<column name="Register">-, -, 217, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">68, 6, 1, 2, 0</specialColumn>
+<specialColumn name="Utilization (%)">68, 1, ~0, 1, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -64,10 +64,6 @@
 <column name="control_s_axi_U">control_s_axi, 0, 0, 188, 296, 0</column>
 <column name="mul_24s_32s_32_2_1_U1">mul_24s_32s_32_2_1, 0, 2, 165, 50, 0</column>
 <column name="mul_24s_32s_32_2_1_U2">mul_24s_32s_32_2_1, 0, 2, 165, 50, 0</column>
-<column name="mul_24s_32s_32_2_1_U3">mul_24s_32s_32_2_1, 0, 2, 165, 50, 0</column>
-<column name="mul_24s_32s_32_2_1_U4">mul_24s_32s_32_2_1, 0, 2, 165, 50, 0</column>
-<column name="mul_32s_32s_32_2_1_U5">mul_32s_32s_32_2_1, 0, 3, 165, 50, 0</column>
-<column name="mul_32s_32s_32_2_1_U6">mul_32s_32s_32_2_1, 0, 3, 165, 50, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -86,30 +82,27 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln52_fu_350_p2">+, 0, 0, 39, 32, 32</column>
-<column name="add_ln56_fu_370_p2">+, 0, 0, 39, 32, 32</column>
-<column name="add_ln75_fu_500_p2">+, 0, 0, 32, 25, 25</column>
-<column name="add_ln76_fu_511_p2">+, 0, 0, 32, 25, 25</column>
-<column name="add_ln79_fu_254_p2">+, 0, 0, 23, 16, 1</column>
-<column name="new_L_fu_355_p2">+, 0, 0, 40, 33, 33</column>
-<column name="new_R_fu_375_p2">+, 0, 0, 40, 33, 33</column>
-<column name="read_index_1_fu_240_p2">+, 0, 0, 16, 16, 16</column>
-<column name="read_index_fu_228_p2">-, 0, 0, 23, 16, 16</column>
-<column name="sub_ln42_fu_234_p2">-, 0, 0, 16, 16, 16</column>
-<column name="sub_ln70_fu_295_p2">-, 0, 0, 39, 9, 32</column>
-<column name="icmp_ln39_fu_216_p2">icmp, 0, 0, 39, 32, 32</column>
-<column name="icmp_ln59_fu_391_p2">icmp, 0, 0, 13, 10, 1</column>
-<column name="icmp_ln60_fu_439_p2">icmp, 0, 0, 39, 32, 25</column>
-<column name="icmp_ln61_fu_407_p2">icmp, 0, 0, 13, 10, 1</column>
-<column name="icmp_ln62_fu_451_p2">icmp, 0, 0, 39, 32, 25</column>
-<column name="icmp_ln80_fu_260_p2">icmp, 0, 0, 23, 16, 16</column>
-<column name="new_L_1_fu_433_p3">select, 0, 0, 32, 1, 23</column>
-<column name="new_R_1_fu_445_p3">select, 0, 0, 32, 1, 23</column>
-<column name="read_index_2_fu_246_p3">select, 0, 0, 16, 1, 16</column>
-<column name="select_ln65_fu_461_p3">select, 0, 0, 25, 1, 25</column>
-<column name="select_ln66_fu_479_p3">select, 0, 0, 25, 1, 25</column>
-<column name="select_ln80_fu_266_p3">select, 0, 0, 16, 1, 1</column>
-<column name="xor_ln39_fu_222_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="add_ln52_fu_299_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln56_fu_321_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln79_fu_230_p2">+, 0, 0, 23, 16, 1</column>
+<column name="new_L_fu_305_p2">+, 0, 0, 40, 33, 33</column>
+<column name="new_R_fu_327_p2">+, 0, 0, 40, 33, 33</column>
+<column name="read_index_1_fu_216_p2">+, 0, 0, 16, 16, 16</column>
+<column name="read_index_fu_204_p2">-, 0, 0, 23, 16, 16</column>
+<column name="sub_ln42_fu_210_p2">-, 0, 0, 16, 16, 16</column>
+<column name="icmp_ln39_fu_192_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="icmp_ln59_fu_343_p2">icmp, 0, 0, 13, 10, 1</column>
+<column name="icmp_ln60_fu_371_p2">icmp, 0, 0, 39, 32, 25</column>
+<column name="icmp_ln61_fu_359_p2">icmp, 0, 0, 13, 10, 1</column>
+<column name="icmp_ln62_fu_383_p2">icmp, 0, 0, 39, 32, 25</column>
+<column name="icmp_ln80_fu_236_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="new_L_1_fu_365_p3">select, 0, 0, 32, 1, 23</column>
+<column name="new_R_1_fu_377_p3">select, 0, 0, 32, 1, 23</column>
+<column name="read_index_2_fu_222_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln65_fu_393_p3">select, 0, 0, 25, 1, 25</column>
+<column name="select_ln66_fu_411_p3">select, 0, 0, 25, 1, 25</column>
+<column name="select_ln80_fu_242_p3">select, 0, 0, 16, 1, 1</column>
+<column name="xor_ln39_fu_198_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -121,25 +114,18 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln52_reg_618">32, 0, 32, 0</column>
-<column name="add_ln56_reg_623">32, 0, 32, 0</column>
+<column name="add_ln52_reg_478">32, 0, 32, 0</column>
+<column name="add_ln56_reg_483">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">7, 0, 7, 0</column>
-<column name="delayed_L_reg_542">24, 0, 24, 0</column>
-<column name="delayed_R_reg_547">24, 0, 24, 0</column>
-<column name="feedback_from_L_reg_602">24, 0, 24, 0</column>
-<column name="feedback_from_R_reg_596">24, 0, 24, 0</column>
-<column name="icmp_ln59_reg_628">1, 0, 1, 0</column>
-<column name="icmp_ln61_reg_633">1, 0, 1, 0</column>
-<column name="in_L_read_reg_571">32, 0, 32, 0</column>
-<column name="in_R_read_reg_564">32, 0, 32, 0</column>
-<column name="read_index_2_reg_527">16, 0, 16, 0</column>
-<column name="sub_ln70_reg_590">32, 0, 32, 0</column>
-<column name="tmp_1_reg_638">24, 0, 24, 0</column>
-<column name="tmp_2_reg_613">24, 0, 24, 0</column>
-<column name="tmp_3_reg_643">24, 0, 24, 0</column>
-<column name="tmp_reg_608">24, 0, 24, 0</column>
+<column name="delayed_L_reg_440">24, 0, 24, 0</column>
+<column name="delayed_R_reg_445">24, 0, 24, 0</column>
+<column name="feedback_from_L_reg_472">24, 0, 24, 0</column>
+<column name="feedback_from_R_reg_466">24, 0, 24, 0</column>
+<column name="icmp_ln59_reg_488">1, 0, 1, 0</column>
+<column name="icmp_ln61_reg_493">1, 0, 1, 0</column>
+<column name="read_index_2_reg_425">16, 0, 16, 0</column>
 <column name="write_index">16, 0, 16, 0</column>
-<column name="write_index_load_reg_522">16, 0, 16, 0</column>
+<column name="write_index_load_reg_420">16, 0, 16, 0</column>
 </table>
 </item>
 </section>

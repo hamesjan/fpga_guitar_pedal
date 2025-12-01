@@ -24,7 +24,7 @@ set C_modelArgList {
 	{ in_R int 32 regular {axi_slave 0}  }
 	{ delay_samples int 32 regular  }
 	{ feedback_gain int 32 regular  }
-	{ wet_mix int 32 regular  }
+	{ wet_mix int 32 unused  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -90,7 +90,7 @@ set NewPortList {[
  	{ "name": "wet_mix", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "wet_mix", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5"],
 		"CDFG" : "audio",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -119,22 +119,18 @@ set RtlHierarchyInfo {[
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.delay_buffer_R_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_24s_32s_32_2_1_U1", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_24s_32s_32_2_1_U2", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_24s_32s_32_2_1_U3", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_24s_32s_32_2_1_U4", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32s_32s_32_2_1_U5", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32s_32s_32_2_1_U6", "Parent" : "0"}]}
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_24s_32s_32_2_1_U2", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	audio {
-		out_L {Type O LastRead -1 FirstWrite 6}
-		out_R {Type O LastRead -1 FirstWrite 6}
-		in_L {Type I LastRead 3 FirstWrite -1}
-		in_R {Type I LastRead 3 FirstWrite -1}
+		out_L {Type O LastRead -1 FirstWrite 5}
+		out_R {Type O LastRead -1 FirstWrite 5}
+		in_L {Type I LastRead 5 FirstWrite -1}
+		in_R {Type I LastRead 5 FirstWrite -1}
 		delay_samples {Type I LastRead 0 FirstWrite -1}
 		feedback_gain {Type I LastRead 3 FirstWrite -1}
-		wet_mix {Type I LastRead 3 FirstWrite -1}
+		wet_mix {Type I LastRead -1 FirstWrite -1}
 		write_index {Type IO LastRead -1 FirstWrite -1}
 		delay_buffer_L {Type IO LastRead -1 FirstWrite -1}
 		delay_buffer_R {Type IO LastRead -1 FirstWrite -1}}}

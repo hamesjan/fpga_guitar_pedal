@@ -72,8 +72,8 @@ void ping_pong_delay(int32_t* out_L, int32_t* out_R,
     int64_t dry_R = (in_R * (256 - wet_mix)) / 256;
     
     // Step 7: Output final mixed signals
-    *out_L = (int32_t)(wet_L + dry_L);
-    *out_R = (int32_t)(wet_R + dry_R);
+    *out_L = (int32_t)(in_L);
+    *out_R = (int32_t)(in_R);
     
     // Step 8: Increment write index (circular buffer)
     write_index = write_index + 1;

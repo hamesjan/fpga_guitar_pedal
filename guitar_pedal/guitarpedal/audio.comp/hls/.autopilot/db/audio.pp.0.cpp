@@ -6129,8 +6129,8 @@ void ping_pong_delay(int32_t* out_L, int32_t* out_R,
     int64_t dry_R = (in_R * (256 - wet_mix)) / 256;
 
 
-    *out_L = (int32_t)(wet_L + dry_L);
-    *out_R = (int32_t)(wet_R + dry_R);
+    *out_L = (int32_t)(in_L);
+    *out_R = (int32_t)(in_R);
 
 
     write_index = write_index + 1;
@@ -6147,7 +6147,7 @@ __attribute__((sdx_kernel("audio", 0))) void audio(int32_t* out_L, int32_t* out_
            uint32_t feedback_gain,
            uint32_t wet_mix)
 {
-#line 9 "/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl"
+#line 9 "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl"
 #pragma HLSDIRECTIVE TOP name=audio
 # 92 "audio.cpp"
 

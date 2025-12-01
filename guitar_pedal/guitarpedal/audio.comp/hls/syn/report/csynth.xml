@@ -37,9 +37,9 @@
     <AreaEstimates>
         <Resources>
             <BRAM_18K>192</BRAM_18K>
-            <DSP>14</DSP>
-            <FF>1587</FF>
-            <LUT>1319</LUT>
+            <DSP>4</DSP>
+            <FF>735</FF>
+            <LUT>1016</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -311,7 +311,7 @@
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
             <ModuleName>audio</ModuleName>
-            <BindInstances>icmp_ln39_fu_216_p2 xor_ln39_fu_222_p2 read_index_fu_228_p2 read_index_2_fu_246_p3 mul_24s_32s_32_2_1_U1 add_ln52_fu_350_p2 new_L_fu_355_p2 mul_24s_32s_32_2_1_U2 add_ln56_fu_370_p2 new_R_fu_375_p2 icmp_ln59_fu_391_p2 new_L_1_fu_433_p3 icmp_ln60_fu_439_p2 icmp_ln61_fu_407_p2 new_R_1_fu_445_p3 icmp_ln62_fu_451_p2 select_ln65_fu_461_p3 select_ln66_fu_479_p3 mul_24s_32s_32_2_1_U3 sub_ln70_fu_295_p2 mul_32s_32s_32_2_1_U5 mul_24s_32s_32_2_1_U4 mul_32s_32s_32_2_1_U6 add_ln75_fu_500_p2 add_ln76_fu_511_p2 add_ln79_fu_254_p2 icmp_ln80_fu_260_p2 select_ln80_fu_266_p3 delay_buffer_L_U delay_buffer_R_U control_s_axi_U</BindInstances>
+            <BindInstances>icmp_ln39_fu_192_p2 xor_ln39_fu_198_p2 read_index_fu_204_p2 read_index_2_fu_222_p3 mul_24s_32s_32_2_1_U1 add_ln52_fu_299_p2 new_L_fu_305_p2 mul_24s_32s_32_2_1_U2 add_ln56_fu_321_p2 new_R_fu_327_p2 icmp_ln59_fu_343_p2 new_L_1_fu_365_p3 icmp_ln60_fu_371_p2 icmp_ln61_fu_359_p2 new_R_1_fu_377_p3 icmp_ln62_fu_383_p2 select_ln65_fu_393_p3 select_ln66_fu_411_p3 add_ln79_fu_230_p2 icmp_ln80_fu_236_p2 select_ln80_fu_242_p3 delay_buffer_L_U delay_buffer_R_U control_s_axi_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -344,49 +344,42 @@
                     <BRAM_18K>192</BRAM_18K>
                     <AVAIL_BRAM>280</AVAIL_BRAM>
                     <UTIL_BRAM>68</UTIL_BRAM>
-                    <DSP>14</DSP>
+                    <DSP>4</DSP>
                     <AVAIL_DSP>220</AVAIL_DSP>
-                    <UTIL_DSP>6</UTIL_DSP>
-                    <FF>1587</FF>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>735</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
-                    <UTIL_FF>1</UTIL_FF>
-                    <LUT>1319</LUT>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1016</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
-                    <UTIL_LUT>2</UTIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
                     <URAM>0</URAM>
                     <AVAIL_URAM>0</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln39_fu_216_p2" SOURCE="audio.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln39_fu_222_p2" SOURCE="audio.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln39" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="read_index_fu_228_p2" SOURCE="audio.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="read_index" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="read_index_2_fu_246_p3" SOURCE="audio.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="read_index_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln39_fu_192_p2" SOURCE="audio.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln39_fu_198_p2" SOURCE="audio.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="read_index_fu_204_p2" SOURCE="audio.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="read_index" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="read_index_2_fu_222_p3" SOURCE="audio.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="read_index_2" VISIBLE="false"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_24s_32s_32_2_1_U1" SOURCE="audio.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln51" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_fu_350_p2" SOURCE="audio.cpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln52" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="new_L_fu_355_p2" SOURCE="audio.cpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="new_L" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_fu_299_p2" SOURCE="audio.cpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln52" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="new_L_fu_305_p2" SOURCE="audio.cpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="new_L" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_24s_32s_32_2_1_U2" SOURCE="audio.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln55" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln56_fu_370_p2" SOURCE="audio.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln56" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="new_R_fu_375_p2" SOURCE="audio.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="new_R" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln59_fu_391_p2" SOURCE="audio.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln59" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="new_L_1_fu_433_p3" SOURCE="audio.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="new_L_1" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln60_fu_439_p2" SOURCE="audio.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln60" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln61_fu_407_p2" SOURCE="audio.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln61" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="new_R_1_fu_445_p3" SOURCE="audio.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="new_R_1" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln62_fu_451_p2" SOURCE="audio.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln62" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln65_fu_461_p3" SOURCE="audio.cpp:65" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln65" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln66_fu_479_p3" SOURCE="audio.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln66" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_24s_32s_32_2_1_U3" SOURCE="audio.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln69" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln70_fu_295_p2" SOURCE="audio.cpp:70" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln70" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U5" SOURCE="audio.cpp:70" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln70" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_24s_32s_32_2_1_U4" SOURCE="audio.cpp:71" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln71" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U6" SOURCE="audio.cpp:72" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln72" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln75_fu_500_p2" SOURCE="audio.cpp:75" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln75" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln76_fu_511_p2" SOURCE="audio.cpp:76" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln76" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln79_fu_254_p2" SOURCE="audio.cpp:79" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln79" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln80_fu_260_p2" SOURCE="audio.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln80" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln80_fu_266_p3" SOURCE="audio.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln80" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln56_fu_321_p2" SOURCE="audio.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln56" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="new_R_fu_327_p2" SOURCE="audio.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="new_R" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln59_fu_343_p2" SOURCE="audio.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln59" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="new_L_1_fu_365_p3" SOURCE="audio.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="new_L_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln60_fu_371_p2" SOURCE="audio.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln60" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln61_fu_359_p2" SOURCE="audio.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln61" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="new_R_1_fu_377_p3" SOURCE="audio.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="new_R_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln62_fu_383_p2" SOURCE="audio.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln65_fu_393_p3" SOURCE="audio.cpp:65" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln65" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln66_fu_411_p3" SOURCE="audio.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln66" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln79_fu_230_p2" SOURCE="audio.cpp:79" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln79" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln80_fu_236_p2" SOURCE="audio.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln80" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln80_fu_242_p3" SOURCE="audio.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln80" VISIBLE="false"/>
                 <BindNode BINDTYPE="storage" BRAM="96" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="delay_buffer_L_U" SOURCE="" STORAGESIZE="24 48000 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="delay_buffer_L" VISIBLE="true"/>
                 <BindNode BINDTYPE="storage" BRAM="96" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="delay_buffer_R_U" SOURCE="" STORAGESIZE="24 48000 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="delay_buffer_R" VISIBLE="true"/>
                 <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
