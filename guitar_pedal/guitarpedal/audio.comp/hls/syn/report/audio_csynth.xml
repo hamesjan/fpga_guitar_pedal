@@ -18,32 +18,32 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.198</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.912</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>6</Best-caseLatency>
-<Average-caseLatency>6</Average-caseLatency>
-<Worst-caseLatency>6</Worst-caseLatency>
-<Best-caseRealTimeLatency>60.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>60.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>60.000 ns</Worst-caseRealTimeLatency>
-<Interval-min>7</Interval-min>
-<Interval-max>7</Interval-max>
+<Best-caseLatency>5</Best-caseLatency>
+<Average-caseLatency>5</Average-caseLatency>
+<Worst-caseLatency>5</Worst-caseLatency>
+<Best-caseRealTimeLatency>50.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>50.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>50.000 ns</Worst-caseRealTimeLatency>
+<Interval-min>6</Interval-min>
+<Interval-max>6</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>audio.cpp:87</SourceLocation>
+<SourceLocation>audio.cpp:34</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>192</BRAM_18K>
-<DSP>4</DSP>
-<FF>735</FF>
-<LUT>1016</LUT>
+<BRAM_18K>16</BRAM_18K>
+<DSP>16</DSP>
+<FF>1634</FF>
+<LUT>1201</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

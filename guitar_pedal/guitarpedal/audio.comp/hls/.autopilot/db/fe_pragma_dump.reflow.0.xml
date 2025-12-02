@@ -1,7 +1,7 @@
 <pragmas>
-<pragma file="audio.cpp" line="93" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="audio.cpp" line="95" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="out_L" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="audio.cpp" line="96" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="out_R" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="audio.cpp" line="98" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="in_L" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="audio.cpp" line="99" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="in_R" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="audio.cpp" line="40" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="audio.cpp" line="42" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="out_L" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="audio.cpp" line="43" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="out_R" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="audio.cpp" line="45" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="in_L" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="audio.cpp" line="46" pragmaType="interface" parentfunction="audio" mode="s_axilite" port="in_R" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
 </pragmas>

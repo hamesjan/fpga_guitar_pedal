@@ -760,7 +760,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>adedfc34</spirit:value>
+            <spirit:value>4bc27b6f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -776,7 +776,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d2bb815f</spirit:value>
+            <spirit:value>92764277</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -792,7 +792,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c5fc84a6</spirit:value>
+            <spirit:value>bd113662</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -808,7 +808,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>322019bb</spirit:value>
+            <spirit:value>8e803c70</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1250,7 +1250,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/audio_mul_24s_32s_32_2_1.v</spirit:name>
+        <spirit:name>hdl/verilog/audio_mul_32ns_32s_64_2_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/audio_mul_32s_32ns_64_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1275,7 +1279,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/audio_mul_24s_32s_32_2_1.v</spirit:name>
+        <spirit:name>hdl/verilog/audio_mul_32ns_32s_64_2_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/audio_mul_32s_32ns_64_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1301,13 +1310,17 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/audio_mul_24s_32s_32_2_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/audio_mul_32ns_32s_64_2_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/audio_mul_32s_32ns_64_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/audio.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5c4c8621</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_3d4dbee5</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1323,7 +1336,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/audio_mul_24s_32s_32_2_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/audio_mul_32ns_32s_64_2_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/audio_mul_32s_32ns_64_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1428,11 +1446,11 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">6</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">5</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">7</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">6</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -1445,8 +1463,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Audio</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114371172</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-12-01T01:33:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114372515</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-12-01T23:55:28Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1456,10 +1474,10 @@
       <xilinx:xilinxVersion>2024.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="5c88ffae"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5045619e"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="300842d8"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6406b0c4"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6dcbb0de"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="383b71cc"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="c0ab272b"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="e8d53953"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

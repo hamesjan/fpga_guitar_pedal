@@ -53,12 +53,12 @@ int main() {
     }
 
     // Run through your HLS function sample-by-sample
-    uint32_t delay_samples = 500;
-    uint32_t feedback_gain = 0.6 * (1 << 16);
-    uint32_t wet_mix       = 0.7 * (1 << 16);
+    uint32_t delay_samples = 4000;
+    uint32_t feedback_gain = 0;
+    uint32_t wet_mix       = 80;
 
     for (ma_uint64 i = 0; i < totalFrames; i++) {
-        ping_pong_delay(&outL[i], &outR[i],
+        ping_pong_delay(&outL[s], &outR[i],
                         inL[i], inR[i],
                         delay_samples,
                         feedback_gain,

@@ -265,17 +265,17 @@
 			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>58</count>
+			<count>64</count>
 			<item_version>0</item_version>
 			<item class_id="9" tracking_level="1" version="0" object_id="_8">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>feedback_gain_read</name>
+						<name>wet_mix_read</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>34</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -291,12 +291,12 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>34</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>feedback_gain</originalName>
+						<originalName>wet_mix</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -312,8 +312,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>91</item>
-					<item>92</item>
+					<item>97</item>
+					<item>98</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -321,7 +321,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>20</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_9">
@@ -332,7 +332,7 @@
 						<name>delay_samples_read</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>34</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -348,7 +348,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>34</second>
 									</item>
 								</second>
 							</item>
@@ -369,8 +369,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>93</item>
-					<item>94</item>
+					<item>99</item>
+					<item>100</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -389,7 +389,7 @@
 						<name>in_R_read</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>34</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -405,7 +405,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>34</second>
 									</item>
 								</second>
 							</item>
@@ -426,8 +426,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>96</item>
-					<item>97</item>
+					<item>102</item>
+					<item>103</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -435,7 +435,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.00</m_delay>
-				<m_topoIndex>27</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_11">
@@ -446,7 +446,7 @@
 						<name>in_L_read</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>34</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -462,7 +462,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>34</second>
 									</item>
 								</second>
 							</item>
@@ -483,8 +483,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>98</item>
-					<item>99</item>
+					<item>104</item>
+					<item>105</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -492,7 +492,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.00</m_delay>
-				<m_topoIndex>28</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_12">
@@ -500,10 +500,10 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>trunc_ln87</name>
+						<name>trunc_ln34</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>34</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -519,7 +519,7 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>87</second>
+										<second>34</second>
 									</item>
 								</second>
 							</item>
@@ -535,12 +535,12 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>100</item>
+					<item>106</item>
 				</oprand_edges>
 				<opcode>trunc</opcode>
 				<m_Display>0</m_Display>
@@ -559,30 +559,23 @@
 						<name>write_index_load</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>48</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>39</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -598,12 +591,12 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>101</item>
+					<item>107</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -619,33 +612,26 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>zext_ln39</name>
+						<name>trunc_ln48</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>48</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>39</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -661,14 +647,14 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>102</item>
+					<item>108</item>
 				</oprand_edges>
-				<opcode>zext</opcode>
+				<opcode>trunc</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
@@ -682,38 +668,31 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>icmp_ln39</name>
+						<name>read_index</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>48</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>39</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>read_index</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -724,20 +703,20 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>103</item>
-					<item>104</item>
+					<item>109</item>
+					<item>110</item>
 				</oprand_edges>
-				<opcode>icmp</opcode>
+				<opcode>sub</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
+				<m_delay>1.54</m_delay>
 				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -746,354 +725,26 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>xor_ln39</name>
+						<name>zext_ln51</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>51</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>39</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>105</item>
-					<item>107</item>
-				</oprand_edges>
-				<opcode>xor</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>6</m_topoIndex>
-				<m_clusterGroupNumber>1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_17">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>40</id>
-						<name>read_index</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>40</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>40</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>read_index</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>16</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>108</item>
-					<item>109</item>
-				</oprand_edges>
-				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.07</m_delay>
-				<m_topoIndex>7</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_18">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>41</id>
-						<name>sub_ln42</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>42</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>42</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>16</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>111</item>
-					<item>112</item>
-				</oprand_edges>
-				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>8</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_19">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>42</id>
-						<name>read_index_1</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>42</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>42</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>read_index</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>16</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>113</item>
-					<item>114</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.90</m_delay>
-				<m_topoIndex>9</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_20">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>43</id>
-						<name>read_index_2</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>39</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>39</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>read_index</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>16</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>115</item>
-					<item>116</item>
-					<item>117</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.97</m_delay>
-				<m_topoIndex>10</m_topoIndex>
-				<m_clusterGroupNumber>1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_21">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>44</id>
-						<name>zext_ln46</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>46</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>46</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -1114,7 +765,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>118</item>
+					<item>111</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
 				<m_Display>0</m_Display>
@@ -1122,41 +773,34 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_22">
+			<item class_id_reference="9" object_id="_17">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>45</id>
+						<id>40</id>
 						<name>delay_buffer_L_addr</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>46</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>51</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>46</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -1172,14 +816,14 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>119</item>
-					<item>121</item>
-					<item>122</item>
+					<item>112</item>
+					<item>114</item>
+					<item>115</item>
 				</oprand_edges>
 				<opcode>getelementptr</opcode>
 				<m_Display>0</m_Display>
@@ -1187,41 +831,34 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_23">
+			<item class_id_reference="9" object_id="_18">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>46</id>
+						<id>41</id>
 						<name>delayed_L</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>46</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>51</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>46</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -1237,12 +874,12 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>24</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>123</item>
+					<item>116</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -1250,104 +887,34 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>3.25</m_delay>
-				<m_topoIndex>17</m_topoIndex>
+				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_24">
+			<item class_id_reference="9" object_id="_19">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>47</id>
-						<name>sext_ln46</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>46</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>46</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>124</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>21</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_25">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>48</id>
+						<id>42</id>
 						<name>delay_buffer_R_addr</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>47</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>47</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1363,14 +930,14 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>125</item>
-					<item>126</item>
-					<item>127</item>
+					<item>117</item>
+					<item>118</item>
+					<item>119</item>
 				</oprand_edges>
 				<opcode>getelementptr</opcode>
 				<m_Display>0</m_Display>
@@ -1378,41 +945,34 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_26">
+			<item class_id_reference="9" object_id="_20">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>49</id>
+						<id>43</id>
 						<name>delayed_R</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>47</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>47</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1428,12 +988,12 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>24</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>128</item>
+					<item>120</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -1441,1644 +1001,34 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>3.25</m_delay>
-				<m_topoIndex>19</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_27">
+			<item class_id_reference="9" object_id="_21">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>50</id>
-						<name>sext_ln47</name>
+						<id>44</id>
+						<name>zext_ln70</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>47</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>47</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>129</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_28">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>51</id>
-						<name>mul_ln51</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>51</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>51</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>130</item>
-					<item>131</item>
-				</oprand_edges>
-				<opcode>mul</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>6.91</m_delay>
-				<m_topoIndex>23</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_29">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>52</id>
-						<name>feedback_from_R</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>51</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>51</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>feedback_from_R</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>24</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>133</item>
-					<item>134</item>
-					<item>136</item>
-					<item>138</item>
-				</oprand_edges>
-				<opcode>partselect</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>25</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_30">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>53</id>
-						<name>zext_ln51_1</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>51</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>51</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>139</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>29</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_31">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>54</id>
-						<name>zext_ln51</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>51</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>51</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>33</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>140</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>30</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_32">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>55</id>
-						<name>sext_ln52</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>52</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>52</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>33</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>141</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>31</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_33">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>56</id>
-						<name>add_ln52</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>52</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>52</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>142</item>
-					<item>143</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
-				<m_topoIndex>32</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_34">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>57</id>
-						<name>new_L</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>52</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>52</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>new_L</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>33</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>144</item>
-					<item>145</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
-				<m_topoIndex>33</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_35">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>58</id>
-						<name>mul_ln55</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>55</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>55</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>146</item>
-					<item>147</item>
-				</oprand_edges>
-				<opcode>mul</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>6.91</m_delay>
-				<m_topoIndex>24</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_36">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>59</id>
-						<name>feedback_from_L</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>55</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>55</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>feedback_from_L</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>24</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>148</item>
-					<item>149</item>
-					<item>150</item>
-					<item>151</item>
-				</oprand_edges>
-				<opcode>partselect</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>26</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_37">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>60</id>
-						<name>zext_ln55_1</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>55</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>55</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>152</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>34</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_38">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>61</id>
-						<name>zext_ln55</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>55</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>55</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>33</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>153</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>35</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_39">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>62</id>
-						<name>sext_ln56</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>56</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>56</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>33</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>154</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>36</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_40">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>63</id>
-						<name>add_ln56</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>56</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>56</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>155</item>
-					<item>156</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
-				<m_topoIndex>37</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_41">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>64</id>
-						<name>new_R</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>56</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>56</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>new_R</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>33</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>157</item>
-					<item>158</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
-				<m_topoIndex>38</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_42">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>65</id>
-						<name>tmp</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>160</item>
-					<item>161</item>
-					<item>163</item>
-					<item>165</item>
-				</oprand_edges>
-				<opcode>partselect</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>39</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_43">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>66</id>
-						<name>icmp_ln59</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>166</item>
-					<item>168</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.73</m_delay>
-				<m_topoIndex>40</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_44">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>67</id>
-						<name>new_L_1</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>new_L</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>169</item>
-					<item>171</item>
-					<item>172</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.69</m_delay>
-				<m_topoIndex>45</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_45">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>68</id>
-						<name>icmp_ln60</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>60</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>60</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>173</item>
-					<item>175</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
-				<m_topoIndex>46</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_46">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>69</id>
-						<name>tmp_1</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>61</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>61</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>176</item>
-					<item>177</item>
-					<item>178</item>
-					<item>179</item>
-				</oprand_edges>
-				<opcode>partselect</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>41</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_47">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>70</id>
-						<name>icmp_ln61</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>61</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>61</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>180</item>
-					<item>181</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.73</m_delay>
-				<m_topoIndex>42</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_48">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>71</id>
-						<name>new_R_1</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>61</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>61</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>new_R</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>182</item>
-					<item>183</item>
-					<item>184</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.69</m_delay>
-				<m_topoIndex>47</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_49">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>72</id>
-						<name>icmp_ln62</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>62</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>62</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>185</item>
-					<item>186</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
-				<m_topoIndex>48</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_50">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>73</id>
-						<name>trunc_ln65</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>65</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>24</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>187</item>
-				</oprand_edges>
-				<opcode>trunc</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>49</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_51">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>74</id>
-						<name>select_ln65</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>65</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>24</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>188</item>
-					<item>190</item>
-					<item>191</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.69</m_delay>
-				<m_topoIndex>50</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_52">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>75</id>
-						<name>zext_ln65</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>65</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3099,7 +1049,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>192</item>
+					<item>121</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
 				<m_Display>0</m_Display>
@@ -3107,41 +1057,34 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>51</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_53">
+			<item class_id_reference="9" object_id="_22">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>76</id>
+						<id>45</id>
 						<name>delay_buffer_L_addr_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>65</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3157,14 +1100,14 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>193</item>
-					<item>194</item>
-					<item>195</item>
+					<item>122</item>
+					<item>123</item>
+					<item>124</item>
 				</oprand_edges>
 				<opcode>getelementptr</opcode>
 				<m_Display>0</m_Display>
@@ -3172,41 +1115,34 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>52</m_topoIndex>
+				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_54">
+			<item class_id_reference="9" object_id="_23">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>77</id>
-						<name>delay_buffer_L_addr_1_write_ln65</name>
+						<id>46</id>
+						<name>delay_buffer_L_addr_1_write_ln70</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>65</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>65</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3227,9 +1163,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>196</item>
-					<item>197</item>
-					<item>498</item>
+					<item>125</item>
+					<item>126</item>
+					<item>520</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -3237,41 +1173,34 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>3.25</m_delay>
-				<m_topoIndex>53</m_topoIndex>
+				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_55">
+			<item class_id_reference="9" object_id="_24">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>78</id>
-						<name>trunc_ln66</name>
+						<id>47</id>
+						<name>delay_buffer_R_addr_1</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>66</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>66</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -3287,12 +1216,297 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>24</bitwidth>
+					<bitwidth>12</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>127</item>
+					<item>128</item>
+					<item>129</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>19</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_25">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>48</id>
+						<name>delay_buffer_R_addr_1_write_ln71</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>71</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>130</item>
+					<item>131</item>
+					<item>519</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>20</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_26">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>49</id>
+						<name>sext_ln74</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>198</item>
+					<item>132</item>
+				</oprand_edges>
+				<opcode>sext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>22</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_27">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>50</id>
+						<name>zext_ln74</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>133</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>23</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_28">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>51</id>
+						<name>mul_ln74</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>134</item>
+					<item>135</item>
+				</oprand_edges>
+				<opcode>mul</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>6.91</m_delay>
+				<m_topoIndex>24</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_29">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>52</id>
+						<name>trunc_ln74</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>40</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>136</item>
 				</oprand_edges>
 				<opcode>trunc</opcode>
 				<m_Display>0</m_Display>
@@ -3300,41 +1514,34 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>54</m_topoIndex>
+				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_56">
+			<item class_id_reference="9" object_id="_30">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>79</id>
-						<name>select_ln66</name>
+						<id>53</id>
+						<name>tmp</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>66</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>66</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -3350,184 +1557,337 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>24</bitwidth>
+					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>199</item>
-					<item>200</item>
-					<item>201</item>
+					<item>138</item>
+					<item>139</item>
+					<item>141</item>
+				</oprand_edges>
+				<opcode>bitselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>44</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_31">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>54</id>
+						<name>sub_ln74</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>40</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>143</item>
+					<item>144</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.87</m_delay>
+				<m_topoIndex>36</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_32">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>55</id>
+						<name>trunc_ln74_1</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>146</item>
+					<item>147</item>
+					<item>149</item>
+					<item>151</item>
+				</oprand_edges>
+				<opcode>partselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>37</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_33">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>56</id>
+						<name>sub_ln74_1</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>153</item>
+					<item>154</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.55</m_delay>
+				<m_topoIndex>45</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_34">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>57</id>
+						<name>trunc_ln74_2</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>156</item>
+					<item>157</item>
+					<item>158</item>
+					<item>159</item>
+				</oprand_edges>
+				<opcode>partselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>46</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_35">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>58</id>
+						<name>select_ln74</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>160</item>
+					<item>161</item>
+					<item>162</item>
 				</oprand_edges>
 				<opcode>select</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.69</m_delay>
-				<m_topoIndex>55</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_57">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>80</id>
-						<name>delay_buffer_R_addr_1</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>66</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>66</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>16</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>202</item>
-					<item>203</item>
-					<item>204</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>56</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+				<m_topoIndex>47</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_58">
+			<item class_id_reference="9" object_id="_36">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>81</id>
-						<name>delay_buffer_R_addr_1_write_ln66</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>66</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>66</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>205</item>
-					<item>206</item>
-					<item>497</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
-				<m_topoIndex>57</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_59">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>82</id>
-						<name>out_L_write_ln75</name>
+						<id>59</id>
+						<name>sext_ln75</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
 						<lineNumber>75</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
 										</first>
 										<second>75</second>
 									</item>
@@ -3545,56 +1905,47 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>0</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>1</count>
 					<item_version>0</item_version>
-					<item>208</item>
-					<item>209</item>
-					<item>210</item>
+					<item>163</item>
 				</oprand_edges>
-				<opcode>write</opcode>
+				<opcode>sext</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.00</m_delay>
-				<m_topoIndex>43</m_topoIndex>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_60">
+			<item class_id_reference="9" object_id="_37">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>83</id>
-						<name>out_R_write_ln76</name>
+						<id>60</id>
+						<name>sub_ln75</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>76</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>76</second>
+										<second>75</second>
 									</item>
 								</second>
 							</item>
@@ -3610,120 +1961,217 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>211</item>
-					<item>212</item>
-					<item>213</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.00</m_delay>
-				<m_topoIndex>44</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_61">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>84</id>
-						<name>add_ln79</name>
-						<fileName>audio.cpp</fileName>
-						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>79</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
-										</first>
-										<second>79</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>214</item>
-					<item>216</item>
+					<item>165</item>
+					<item>166</item>
 				</oprand_edges>
-				<opcode>add</opcode>
+				<opcode>sub</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.07</m_delay>
-				<m_topoIndex>11</m_topoIndex>
+				<m_delay>2.55</m_delay>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_62">
+			<item class_id_reference="9" object_id="_38">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>85</id>
-						<name>icmp_ln80</name>
+						<id>61</id>
+						<name>zext_ln75</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>80</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
+										<second>75</second>
 									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>167</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>26</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_39">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>62</id>
+						<name>mul_ln75</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
+											<second>audio</second>
 										</first>
-										<second>80</second>
+										<second>75</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>168</item>
+					<item>169</item>
+				</oprand_edges>
+				<opcode>mul</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>6.91</m_delay>
+				<m_topoIndex>27</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_40">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>63</id>
+						<name>trunc_ln75</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>75</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>40</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>170</item>
+				</oprand_edges>
+				<opcode>trunc</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>33</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_41">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>64</id>
+						<name>tmp_1</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>75</second>
 									</item>
 								</second>
 							</item>
@@ -3742,18 +2190,1226 @@
 					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
-					<item>217</item>
-					<item>219</item>
+					<item>171</item>
+					<item>172</item>
+					<item>173</item>
 				</oprand_edges>
-				<opcode>icmp</opcode>
+				<opcode>bitselect</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.07</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>48</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_42">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>65</id>
+						<name>sub_ln75_1</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>75</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>40</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>174</item>
+					<item>175</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.87</m_delay>
+				<m_topoIndex>38</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_43">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>66</id>
+						<name>trunc_ln75_1</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>75</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>176</item>
+					<item>177</item>
+					<item>178</item>
+					<item>179</item>
+				</oprand_edges>
+				<opcode>partselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>39</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_44">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>67</id>
+						<name>sub_ln75_2</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>75</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>180</item>
+					<item>181</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.55</m_delay>
+				<m_topoIndex>49</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_45">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>68</id>
+						<name>trunc_ln75_2</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>75</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>182</item>
+					<item>183</item>
+					<item>184</item>
+					<item>185</item>
+				</oprand_edges>
+				<opcode>partselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>50</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_46">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>69</id>
+						<name>select_ln75</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>75</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>75</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>186</item>
+					<item>187</item>
+					<item>188</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>51</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_47">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>70</id>
+						<name>sext_ln76</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>189</item>
+				</oprand_edges>
+				<opcode>sext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>28</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_48">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>71</id>
+						<name>mul_ln76</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>190</item>
+					<item>191</item>
+				</oprand_edges>
+				<opcode>mul</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>6.91</m_delay>
+				<m_topoIndex>29</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_49">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>72</id>
+						<name>trunc_ln76</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>40</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>192</item>
+				</oprand_edges>
+				<opcode>trunc</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>34</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_50">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>73</id>
+						<name>tmp_2</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>193</item>
+					<item>194</item>
+					<item>195</item>
+				</oprand_edges>
+				<opcode>bitselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>52</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_51">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>74</id>
+						<name>sub_ln76</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>40</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>196</item>
+					<item>197</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.87</m_delay>
+				<m_topoIndex>40</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_52">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>75</id>
+						<name>trunc_ln76_1</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>198</item>
+					<item>199</item>
+					<item>200</item>
+					<item>201</item>
+				</oprand_edges>
+				<opcode>partselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>41</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_53">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>76</id>
+						<name>sub_ln76_1</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>202</item>
+					<item>203</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.55</m_delay>
+				<m_topoIndex>53</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_54">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>77</id>
+						<name>trunc_ln76_2</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>204</item>
+					<item>205</item>
+					<item>206</item>
+					<item>207</item>
+				</oprand_edges>
+				<opcode>partselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>54</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_55">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>78</id>
+						<name>select_ln76</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>208</item>
+					<item>209</item>
+					<item>210</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>55</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_56">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>79</id>
+						<name>sext_ln77</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>77</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>211</item>
+				</oprand_edges>
+				<opcode>sext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>30</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_57">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>80</id>
+						<name>mul_ln77</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>77</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>212</item>
+					<item>213</item>
+				</oprand_edges>
+				<opcode>mul</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>6.91</m_delay>
+				<m_topoIndex>31</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_58">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>81</id>
+						<name>trunc_ln77</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>77</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>40</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>214</item>
+				</oprand_edges>
+				<opcode>trunc</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>35</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_59">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>82</id>
+						<name>tmp_3</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>77</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>215</item>
+					<item>216</item>
+					<item>217</item>
+				</oprand_edges>
+				<opcode>bitselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>56</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_60">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>83</id>
+						<name>sub_ln77</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>77</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>40</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>218</item>
+					<item>219</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.87</m_delay>
+				<m_topoIndex>42</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_61">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>84</id>
+						<name>trunc_ln77_1</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>77</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>220</item>
+					<item>221</item>
+					<item>222</item>
+					<item>223</item>
+				</oprand_edges>
+				<opcode>partselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>43</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_62">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>85</id>
+						<name>sub_ln77_1</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>77</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>224</item>
+					<item>225</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.55</m_delay>
+				<m_topoIndex>57</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_63">
@@ -3761,31 +3417,141 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>select_ln80</name>
+						<name>trunc_ln77_2</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>80</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>101</second>
+										<second>77</second>
 									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>226</item>
+					<item>227</item>
+					<item>228</item>
+					<item>229</item>
+				</oprand_edges>
+				<opcode>partselect</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>58</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_64">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>87</id>
+						<name>select_ln77</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>77</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
+											<second>audio</second>
+										</first>
+										<second>77</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>230</item>
+					<item>231</item>
+					<item>232</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>59</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_65">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>88</id>
+						<name>add_ln80</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>80</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
 										</first>
 										<second>80</second>
 									</item>
@@ -3803,54 +3569,46 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>220</item>
-					<item>222</item>
-					<item>223</item>
+					<item>233</item>
+					<item>234</item>
 				</oprand_edges>
-				<opcode>select</opcode>
+				<opcode>add</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>13</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+				<m_delay>2.55</m_delay>
+				<m_topoIndex>60</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_64">
+			<item class_id_reference="9" object_id="_66">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>87</id>
-						<name>write_index_write_ln80</name>
+						<id>89</id>
+						<name>out_L_write_ln80</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
 						<lineNumber>80</lineNumber>
-						<contextFuncName>ping_pong_delay</contextFuncName>
-						<contextNormFuncName>ping_pong_delay</contextNormFuncName>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
 								<second>
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>audio.cpp</first>
 											<second>audio</second>
-										</first>
-										<second>101</second>
-									</item>
-									<item>
-										<first>
-											<first>audio.cpp</first>
-											<second>ping_pong_delay</second>
 										</first>
 										<second>80</second>
 									</item>
@@ -3873,28 +3631,28 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>224</item>
-					<item>225</item>
-					<item>499</item>
+					<item>236</item>
+					<item>237</item>
+					<item>238</item>
 				</oprand_edges>
-				<opcode>store</opcode>
+				<opcode>write</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_delay>1.00</m_delay>
+				<m_topoIndex>61</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_65">
+			<item class_id_reference="9" object_id="_67">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>88</id>
-						<name>_ln106</name>
+						<id>90</id>
+						<name>add_ln81</name>
 						<fileName>audio.cpp</fileName>
 						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
-						<lineNumber>106</lineNumber>
+						<lineNumber>81</lineNumber>
 						<contextFuncName>audio</contextFuncName>
 						<contextNormFuncName>audio</contextNormFuncName>
 						<inlineStackInfo>
@@ -3910,7 +3668,237 @@
 											<first>audio.cpp</first>
 											<second>audio</second>
 										</first>
-										<second>106</second>
+										<second>81</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>239</item>
+					<item>240</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.55</m_delay>
+				<m_topoIndex>62</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_68">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>91</id>
+						<name>out_R_write_ln81</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>81</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>81</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>241</item>
+					<item>242</item>
+					<item>243</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.00</m_delay>
+				<m_topoIndex>63</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_69">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>92</id>
+						<name>add_ln84</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>84</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>84</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>244</item>
+					<item>246</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>2.55</m_delay>
+				<m_topoIndex>11</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_70">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>93</id>
+						<name>write_index_write_ln84</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>84</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>84</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>247</item>
+					<item>248</item>
+					<item>521</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>12</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_71">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>94</id>
+						<name>_ln85</name>
+						<fileName>audio.cpp</fileName>
+						<fileDirectory>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</fileDirectory>
+						<lineNumber>85</lineNumber>
+						<contextFuncName>audio</contextFuncName>
+						<contextNormFuncName>audio</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>audio.cpp</first>
+											<second>audio</second>
+										</first>
+										<second>85</second>
 									</item>
 								</second>
 							</item>
@@ -3938,80 +3926,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>58</m_topoIndex>
+				<m_topoIndex>64</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
 		<consts class_id="15" tracking_level="0" version="0">
-			<count>14</count>
+			<count>8</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_66">
+			<item class_id="16" tracking_level="1" version="0" object_id="_72">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>106</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>1</content>
-			</item>
-			<item class_id_reference="16" object_id="_67">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>110</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>16</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>48000</content>
-			</item>
-			<item class_id_reference="16" object_id="_68">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>120</id>
+						<id>113</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -4038,11 +3964,73 @@
 				<const_type>0</const_type>
 				<content>0</content>
 			</item>
-			<item class_id_reference="16" object_id="_69">
+			<item class_id_reference="16" object_id="_73">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>135</id>
+						<id>140</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>63</content>
+			</item>
+			<item class_id_reference="16" object_id="_74">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>142</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>40</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>0</content>
+			</item>
+			<item class_id_reference="16" object_id="_75">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>148</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -4069,11 +4057,11 @@
 				<const_type>0</const_type>
 				<content>8</content>
 			</item>
-			<item class_id_reference="16" object_id="_70">
+			<item class_id_reference="16" object_id="_76">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>137</id>
+						<id>150</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -4098,13 +4086,13 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>31</content>
+				<content>39</content>
 			</item>
-			<item class_id_reference="16" object_id="_71">
+			<item class_id_reference="16" object_id="_77">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>162</id>
+						<id>152</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -4129,9 +4117,9 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>23</content>
+				<content>0</content>
 			</item>
-			<item class_id_reference="16" object_id="_72">
+			<item class_id_reference="16" object_id="_78">
 				<Value>
 					<Obj>
 						<type>2</type>
@@ -4160,199 +4148,13 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>32</content>
-			</item>
-			<item class_id_reference="16" object_id="_73">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>167</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>0</content>
-			</item>
-			<item class_id_reference="16" object_id="_74">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>170</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>8388607</content>
-			</item>
-			<item class_id_reference="16" object_id="_75">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>174</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>4286578688</content>
-			</item>
-			<item class_id_reference="16" object_id="_76">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>189</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>24</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>8388608</content>
-			</item>
-			<item class_id_reference="16" object_id="_77">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>215</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>16</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>1</content>
-			</item>
-			<item class_id_reference="16" object_id="_78">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>218</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>16</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>47999</content>
+				<content>256</content>
 			</item>
 			<item class_id_reference="16" object_id="_79">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>221</id>
+						<id>245</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -4374,10 +4176,10 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>0</content>
+				<content>1</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -4386,7 +4188,7 @@
 			<item class_id="18" tracking_level="1" version="0" object_id="_80">
 				<Obj>
 					<type>3</type>
-					<id>89</id>
+					<id>95</id>
 					<name>audio</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -4409,7 +4211,7 @@
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
-					<count>58</count>
+					<count>64</count>
 					<item_version>0</item_version>
 					<item>11</item>
 					<item>12</item>
@@ -4469,780 +4271,884 @@
 					<item>86</item>
 					<item>87</item>
 					<item>88</item>
+					<item>89</item>
+					<item>90</item>
+					<item>91</item>
+					<item>92</item>
+					<item>93</item>
+					<item>94</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>110</count>
+			<count>124</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_81">
-				<id>92</id>
+				<id>98</id>
 				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
+				<source_obj>7</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_82">
-				<id>94</id>
+				<id>100</id>
 				<edge_type>1</edge_type>
 				<source_obj>5</source_obj>
 				<sink_obj>12</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_83">
-				<id>97</id>
+				<id>103</id>
 				<edge_type>1</edge_type>
 				<source_obj>4</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_84">
-				<id>99</id>
+				<id>105</id>
 				<edge_type>1</edge_type>
 				<source_obj>3</source_obj>
 				<sink_obj>14</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_85">
-				<id>100</id>
+				<id>106</id>
 				<edge_type>1</edge_type>
 				<source_obj>12</source_obj>
 				<sink_obj>15</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_86">
-				<id>101</id>
+				<id>107</id>
 				<edge_type>1</edge_type>
 				<source_obj>8</source_obj>
 				<sink_obj>36</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_87">
-				<id>102</id>
+				<id>108</id>
 				<edge_type>1</edge_type>
 				<source_obj>36</source_obj>
 				<sink_obj>37</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_88">
-				<id>103</id>
+				<id>109</id>
 				<edge_type>1</edge_type>
 				<source_obj>37</source_obj>
 				<sink_obj>38</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_89">
-				<id>104</id>
+				<id>110</id>
 				<edge_type>1</edge_type>
-				<source_obj>12</source_obj>
+				<source_obj>15</source_obj>
 				<sink_obj>38</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_90">
-				<id>105</id>
+				<id>111</id>
 				<edge_type>1</edge_type>
 				<source_obj>38</source_obj>
 				<sink_obj>39</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_91">
-				<id>107</id>
+				<id>112</id>
 				<edge_type>1</edge_type>
-				<source_obj>106</source_obj>
-				<sink_obj>39</sink_obj>
+				<source_obj>9</source_obj>
+				<sink_obj>40</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_92">
-				<id>108</id>
+				<id>114</id>
 				<edge_type>1</edge_type>
-				<source_obj>36</source_obj>
+				<source_obj>113</source_obj>
 				<sink_obj>40</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_93">
-				<id>109</id>
+				<id>115</id>
 				<edge_type>1</edge_type>
-				<source_obj>15</source_obj>
+				<source_obj>39</source_obj>
 				<sink_obj>40</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_94">
-				<id>111</id>
+				<id>116</id>
 				<edge_type>1</edge_type>
-				<source_obj>110</source_obj>
+				<source_obj>40</source_obj>
 				<sink_obj>41</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_95">
-				<id>112</id>
+				<id>117</id>
 				<edge_type>1</edge_type>
-				<source_obj>15</source_obj>
-				<sink_obj>41</sink_obj>
+				<source_obj>10</source_obj>
+				<sink_obj>42</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_96">
-				<id>113</id>
+				<id>118</id>
 				<edge_type>1</edge_type>
-				<source_obj>36</source_obj>
+				<source_obj>113</source_obj>
 				<sink_obj>42</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_97">
-				<id>114</id>
+				<id>119</id>
 				<edge_type>1</edge_type>
-				<source_obj>41</source_obj>
+				<source_obj>39</source_obj>
 				<sink_obj>42</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_98">
-				<id>115</id>
-				<edge_type>1</edge_type>
-				<source_obj>39</source_obj>
-				<sink_obj>43</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_99">
-				<id>116</id>
-				<edge_type>1</edge_type>
-				<source_obj>40</source_obj>
-				<sink_obj>43</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_100">
-				<id>117</id>
+				<id>120</id>
 				<edge_type>1</edge_type>
 				<source_obj>42</source_obj>
 				<sink_obj>43</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_101">
-				<id>118</id>
+			<item class_id_reference="20" object_id="_99">
+				<id>121</id>
 				<edge_type>1</edge_type>
-				<source_obj>43</source_obj>
+				<source_obj>37</source_obj>
 				<sink_obj>44</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_102">
-				<id>119</id>
+			<item class_id_reference="20" object_id="_100">
+				<id>122</id>
 				<edge_type>1</edge_type>
 				<source_obj>9</source_obj>
 				<sink_obj>45</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_103">
-				<id>121</id>
+			<item class_id_reference="20" object_id="_101">
+				<id>123</id>
 				<edge_type>1</edge_type>
-				<source_obj>120</source_obj>
+				<source_obj>113</source_obj>
 				<sink_obj>45</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_104">
-				<id>122</id>
+			<item class_id_reference="20" object_id="_102">
+				<id>124</id>
 				<edge_type>1</edge_type>
 				<source_obj>44</source_obj>
 				<sink_obj>45</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_105">
-				<id>123</id>
+			<item class_id_reference="20" object_id="_103">
+				<id>125</id>
+				<edge_type>1</edge_type>
+				<source_obj>14</source_obj>
+				<sink_obj>46</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_104">
+				<id>126</id>
 				<edge_type>1</edge_type>
 				<source_obj>45</source_obj>
 				<sink_obj>46</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_106">
-				<id>124</id>
+			<item class_id_reference="20" object_id="_105">
+				<id>127</id>
 				<edge_type>1</edge_type>
-				<source_obj>46</source_obj>
+				<source_obj>10</source_obj>
+				<sink_obj>47</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_106">
+				<id>128</id>
+				<edge_type>1</edge_type>
+				<source_obj>113</source_obj>
 				<sink_obj>47</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_107">
-				<id>125</id>
+				<id>129</id>
 				<edge_type>1</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>48</sink_obj>
+				<source_obj>44</source_obj>
+				<sink_obj>47</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_108">
-				<id>126</id>
+				<id>130</id>
 				<edge_type>1</edge_type>
-				<source_obj>120</source_obj>
+				<source_obj>13</source_obj>
 				<sink_obj>48</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_109">
-				<id>127</id>
+				<id>131</id>
 				<edge_type>1</edge_type>
-				<source_obj>44</source_obj>
+				<source_obj>47</source_obj>
 				<sink_obj>48</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_110">
-				<id>128</id>
+				<id>132</id>
 				<edge_type>1</edge_type>
-				<source_obj>48</source_obj>
+				<source_obj>41</source_obj>
 				<sink_obj>49</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_111">
-				<id>129</id>
+				<id>133</id>
 				<edge_type>1</edge_type>
-				<source_obj>49</source_obj>
+				<source_obj>11</source_obj>
 				<sink_obj>50</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_112">
-				<id>130</id>
+				<id>134</id>
+				<edge_type>1</edge_type>
+				<source_obj>49</source_obj>
+				<sink_obj>51</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_113">
+				<id>135</id>
 				<edge_type>1</edge_type>
 				<source_obj>50</source_obj>
 				<sink_obj>51</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_113">
-				<id>131</id>
-				<edge_type>1</edge_type>
-				<source_obj>11</source_obj>
-				<sink_obj>51</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
 			<item class_id_reference="20" object_id="_114">
-				<id>134</id>
+				<id>136</id>
 				<edge_type>1</edge_type>
 				<source_obj>51</source_obj>
 				<sink_obj>52</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_115">
-				<id>136</id>
-				<edge_type>1</edge_type>
-				<source_obj>135</source_obj>
-				<sink_obj>52</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_116">
-				<id>138</id>
-				<edge_type>1</edge_type>
-				<source_obj>137</source_obj>
-				<sink_obj>52</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_117">
 				<id>139</id>
 				<edge_type>1</edge_type>
-				<source_obj>52</source_obj>
+				<source_obj>51</source_obj>
 				<sink_obj>53</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
+			<item class_id_reference="20" object_id="_116">
+				<id>141</id>
+				<edge_type>1</edge_type>
+				<source_obj>140</source_obj>
+				<sink_obj>53</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_117">
+				<id>143</id>
+				<edge_type>1</edge_type>
+				<source_obj>142</source_obj>
+				<sink_obj>54</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
 			<item class_id_reference="20" object_id="_118">
-				<id>140</id>
+				<id>144</id>
 				<edge_type>1</edge_type>
 				<source_obj>52</source_obj>
 				<sink_obj>54</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_119">
-				<id>141</id>
+				<id>147</id>
 				<edge_type>1</edge_type>
-				<source_obj>14</source_obj>
+				<source_obj>54</source_obj>
 				<sink_obj>55</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_120">
-				<id>142</id>
+				<id>149</id>
 				<edge_type>1</edge_type>
-				<source_obj>53</source_obj>
-				<sink_obj>56</sink_obj>
+				<source_obj>148</source_obj>
+				<sink_obj>55</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_121">
-				<id>143</id>
+				<id>151</id>
 				<edge_type>1</edge_type>
-				<source_obj>14</source_obj>
-				<sink_obj>56</sink_obj>
+				<source_obj>150</source_obj>
+				<sink_obj>55</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_122">
-				<id>144</id>
+				<id>153</id>
 				<edge_type>1</edge_type>
-				<source_obj>54</source_obj>
-				<sink_obj>57</sink_obj>
+				<source_obj>152</source_obj>
+				<sink_obj>56</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_123">
-				<id>145</id>
+				<id>154</id>
 				<edge_type>1</edge_type>
 				<source_obj>55</source_obj>
-				<sink_obj>57</sink_obj>
+				<sink_obj>56</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_124">
-				<id>146</id>
+				<id>157</id>
 				<edge_type>1</edge_type>
-				<source_obj>47</source_obj>
-				<sink_obj>58</sink_obj>
+				<source_obj>51</source_obj>
+				<sink_obj>57</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_125">
-				<id>147</id>
+				<id>158</id>
 				<edge_type>1</edge_type>
-				<source_obj>11</source_obj>
-				<sink_obj>58</sink_obj>
+				<source_obj>148</source_obj>
+				<sink_obj>57</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_126">
-				<id>149</id>
+				<id>159</id>
 				<edge_type>1</edge_type>
-				<source_obj>58</source_obj>
-				<sink_obj>59</sink_obj>
+				<source_obj>150</source_obj>
+				<sink_obj>57</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_127">
-				<id>150</id>
+				<id>160</id>
 				<edge_type>1</edge_type>
-				<source_obj>135</source_obj>
-				<sink_obj>59</sink_obj>
+				<source_obj>53</source_obj>
+				<sink_obj>58</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_128">
-				<id>151</id>
+				<id>161</id>
 				<edge_type>1</edge_type>
-				<source_obj>137</source_obj>
-				<sink_obj>59</sink_obj>
+				<source_obj>56</source_obj>
+				<sink_obj>58</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_129">
-				<id>152</id>
+				<id>162</id>
 				<edge_type>1</edge_type>
-				<source_obj>59</source_obj>
-				<sink_obj>60</sink_obj>
+				<source_obj>57</source_obj>
+				<sink_obj>58</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_130">
-				<id>153</id>
+				<id>163</id>
 				<edge_type>1</edge_type>
-				<source_obj>59</source_obj>
-				<sink_obj>61</sink_obj>
+				<source_obj>14</source_obj>
+				<sink_obj>59</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_131">
-				<id>154</id>
+				<id>165</id>
 				<edge_type>1</edge_type>
-				<source_obj>13</source_obj>
-				<sink_obj>62</sink_obj>
+				<source_obj>164</source_obj>
+				<sink_obj>60</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_132">
-				<id>155</id>
+				<id>166</id>
 				<edge_type>1</edge_type>
-				<source_obj>60</source_obj>
-				<sink_obj>63</sink_obj>
+				<source_obj>11</source_obj>
+				<sink_obj>60</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_133">
-				<id>156</id>
+				<id>167</id>
 				<edge_type>1</edge_type>
-				<source_obj>13</source_obj>
-				<sink_obj>63</sink_obj>
+				<source_obj>60</source_obj>
+				<sink_obj>61</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_134">
-				<id>157</id>
+				<id>168</id>
 				<edge_type>1</edge_type>
 				<source_obj>61</source_obj>
-				<sink_obj>64</sink_obj>
+				<sink_obj>62</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_135">
-				<id>158</id>
+				<id>169</id>
+				<edge_type>1</edge_type>
+				<source_obj>59</source_obj>
+				<sink_obj>62</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_136">
+				<id>170</id>
+				<edge_type>1</edge_type>
+				<source_obj>62</source_obj>
+				<sink_obj>63</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_137">
+				<id>172</id>
 				<edge_type>1</edge_type>
 				<source_obj>62</source_obj>
 				<sink_obj>64</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_136">
-				<id>161</id>
-				<edge_type>1</edge_type>
-				<source_obj>57</source_obj>
-				<sink_obj>65</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_137">
-				<id>163</id>
-				<edge_type>1</edge_type>
-				<source_obj>162</source_obj>
-				<sink_obj>65</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
 			<item class_id_reference="20" object_id="_138">
-				<id>165</id>
+				<id>173</id>
 				<edge_type>1</edge_type>
-				<source_obj>164</source_obj>
-				<sink_obj>65</sink_obj>
+				<source_obj>140</source_obj>
+				<sink_obj>64</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_139">
-				<id>166</id>
+				<id>174</id>
+				<edge_type>1</edge_type>
+				<source_obj>142</source_obj>
+				<sink_obj>65</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_140">
+				<id>175</id>
+				<edge_type>1</edge_type>
+				<source_obj>63</source_obj>
+				<sink_obj>65</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_141">
+				<id>177</id>
 				<edge_type>1</edge_type>
 				<source_obj>65</source_obj>
 				<sink_obj>66</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_140">
-				<id>168</id>
+			<item class_id_reference="20" object_id="_142">
+				<id>178</id>
 				<edge_type>1</edge_type>
-				<source_obj>167</source_obj>
+				<source_obj>148</source_obj>
 				<sink_obj>66</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_141">
-				<id>169</id>
+			<item class_id_reference="20" object_id="_143">
+				<id>179</id>
+				<edge_type>1</edge_type>
+				<source_obj>150</source_obj>
+				<sink_obj>66</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_144">
+				<id>180</id>
+				<edge_type>1</edge_type>
+				<source_obj>152</source_obj>
+				<sink_obj>67</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_145">
+				<id>181</id>
 				<edge_type>1</edge_type>
 				<source_obj>66</source_obj>
 				<sink_obj>67</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_142">
-				<id>171</id>
-				<edge_type>1</edge_type>
-				<source_obj>170</source_obj>
-				<sink_obj>67</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_143">
-				<id>172</id>
-				<edge_type>1</edge_type>
-				<source_obj>56</source_obj>
-				<sink_obj>67</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_144">
-				<id>173</id>
-				<edge_type>1</edge_type>
-				<source_obj>67</source_obj>
-				<sink_obj>68</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_145">
-				<id>175</id>
-				<edge_type>1</edge_type>
-				<source_obj>174</source_obj>
-				<sink_obj>68</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
 			<item class_id_reference="20" object_id="_146">
-				<id>177</id>
+				<id>183</id>
+				<edge_type>1</edge_type>
+				<source_obj>62</source_obj>
+				<sink_obj>68</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_147">
+				<id>184</id>
+				<edge_type>1</edge_type>
+				<source_obj>148</source_obj>
+				<sink_obj>68</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_148">
+				<id>185</id>
+				<edge_type>1</edge_type>
+				<source_obj>150</source_obj>
+				<sink_obj>68</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_149">
+				<id>186</id>
 				<edge_type>1</edge_type>
 				<source_obj>64</source_obj>
 				<sink_obj>69</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_147">
-				<id>178</id>
-				<edge_type>1</edge_type>
-				<source_obj>162</source_obj>
-				<sink_obj>69</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_148">
-				<id>179</id>
-				<edge_type>1</edge_type>
-				<source_obj>164</source_obj>
-				<sink_obj>69</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_149">
-				<id>180</id>
-				<edge_type>1</edge_type>
-				<source_obj>69</source_obj>
-				<sink_obj>70</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
 			<item class_id_reference="20" object_id="_150">
-				<id>181</id>
+				<id>187</id>
 				<edge_type>1</edge_type>
-				<source_obj>167</source_obj>
-				<sink_obj>70</sink_obj>
+				<source_obj>67</source_obj>
+				<sink_obj>69</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_151">
-				<id>182</id>
+				<id>188</id>
+				<edge_type>1</edge_type>
+				<source_obj>68</source_obj>
+				<sink_obj>69</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_152">
+				<id>189</id>
+				<edge_type>1</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>70</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_153">
+				<id>190</id>
 				<edge_type>1</edge_type>
 				<source_obj>70</source_obj>
 				<sink_obj>71</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_152">
-				<id>183</id>
-				<edge_type>1</edge_type>
-				<source_obj>170</source_obj>
-				<sink_obj>71</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_153">
-				<id>184</id>
-				<edge_type>1</edge_type>
-				<source_obj>63</source_obj>
-				<sink_obj>71</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
 			<item class_id_reference="20" object_id="_154">
-				<id>185</id>
+				<id>191</id>
 				<edge_type>1</edge_type>
-				<source_obj>71</source_obj>
-				<sink_obj>72</sink_obj>
+				<source_obj>50</source_obj>
+				<sink_obj>71</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_155">
-				<id>186</id>
+				<id>192</id>
 				<edge_type>1</edge_type>
-				<source_obj>174</source_obj>
+				<source_obj>71</source_obj>
 				<sink_obj>72</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_156">
-				<id>187</id>
+				<id>194</id>
 				<edge_type>1</edge_type>
-				<source_obj>67</source_obj>
+				<source_obj>71</source_obj>
 				<sink_obj>73</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_157">
-				<id>188</id>
+				<id>195</id>
 				<edge_type>1</edge_type>
-				<source_obj>68</source_obj>
-				<sink_obj>74</sink_obj>
+				<source_obj>140</source_obj>
+				<sink_obj>73</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_158">
-				<id>190</id>
+				<id>196</id>
 				<edge_type>1</edge_type>
-				<source_obj>189</source_obj>
+				<source_obj>142</source_obj>
 				<sink_obj>74</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_159">
-				<id>191</id>
+				<id>197</id>
 				<edge_type>1</edge_type>
-				<source_obj>73</source_obj>
+				<source_obj>72</source_obj>
 				<sink_obj>74</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_160">
-				<id>192</id>
+				<id>199</id>
 				<edge_type>1</edge_type>
-				<source_obj>36</source_obj>
+				<source_obj>74</source_obj>
 				<sink_obj>75</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_161">
-				<id>193</id>
+				<id>200</id>
 				<edge_type>1</edge_type>
-				<source_obj>9</source_obj>
-				<sink_obj>76</sink_obj>
+				<source_obj>148</source_obj>
+				<sink_obj>75</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_162">
-				<id>194</id>
+				<id>201</id>
 				<edge_type>1</edge_type>
-				<source_obj>120</source_obj>
-				<sink_obj>76</sink_obj>
+				<source_obj>150</source_obj>
+				<sink_obj>75</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_163">
-				<id>195</id>
+				<id>202</id>
 				<edge_type>1</edge_type>
-				<source_obj>75</source_obj>
+				<source_obj>152</source_obj>
 				<sink_obj>76</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_164">
-				<id>196</id>
+				<id>203</id>
 				<edge_type>1</edge_type>
-				<source_obj>74</source_obj>
-				<sink_obj>77</sink_obj>
+				<source_obj>75</source_obj>
+				<sink_obj>76</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_165">
-				<id>197</id>
+				<id>205</id>
 				<edge_type>1</edge_type>
-				<source_obj>76</source_obj>
+				<source_obj>71</source_obj>
 				<sink_obj>77</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_166">
-				<id>198</id>
+				<id>206</id>
 				<edge_type>1</edge_type>
-				<source_obj>71</source_obj>
-				<sink_obj>78</sink_obj>
+				<source_obj>148</source_obj>
+				<sink_obj>77</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_167">
-				<id>199</id>
+				<id>207</id>
 				<edge_type>1</edge_type>
-				<source_obj>72</source_obj>
-				<sink_obj>79</sink_obj>
+				<source_obj>150</source_obj>
+				<sink_obj>77</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_168">
-				<id>200</id>
+				<id>208</id>
 				<edge_type>1</edge_type>
-				<source_obj>189</source_obj>
-				<sink_obj>79</sink_obj>
+				<source_obj>73</source_obj>
+				<sink_obj>78</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_169">
-				<id>201</id>
+				<id>209</id>
 				<edge_type>1</edge_type>
-				<source_obj>78</source_obj>
-				<sink_obj>79</sink_obj>
+				<source_obj>76</source_obj>
+				<sink_obj>78</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_170">
-				<id>202</id>
+				<id>210</id>
 				<edge_type>1</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>80</sink_obj>
+				<source_obj>77</source_obj>
+				<sink_obj>78</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_171">
-				<id>203</id>
+				<id>211</id>
 				<edge_type>1</edge_type>
-				<source_obj>120</source_obj>
-				<sink_obj>80</sink_obj>
+				<source_obj>13</source_obj>
+				<sink_obj>79</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_172">
-				<id>204</id>
+				<id>212</id>
 				<edge_type>1</edge_type>
-				<source_obj>75</source_obj>
+				<source_obj>61</source_obj>
 				<sink_obj>80</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_173">
-				<id>205</id>
+				<id>213</id>
 				<edge_type>1</edge_type>
 				<source_obj>79</source_obj>
-				<sink_obj>81</sink_obj>
+				<sink_obj>80</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_174">
-				<id>206</id>
+				<id>214</id>
 				<edge_type>1</edge_type>
 				<source_obj>80</source_obj>
 				<sink_obj>81</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_175">
-				<id>209</id>
+				<id>216</id>
 				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
+				<source_obj>80</source_obj>
 				<sink_obj>82</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_176">
-				<id>210</id>
+				<id>217</id>
 				<edge_type>1</edge_type>
-				<source_obj>14</source_obj>
+				<source_obj>140</source_obj>
 				<sink_obj>82</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_177">
-				<id>212</id>
+				<id>218</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
+				<source_obj>142</source_obj>
 				<sink_obj>83</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_178">
-				<id>213</id>
+				<id>219</id>
 				<edge_type>1</edge_type>
-				<source_obj>13</source_obj>
+				<source_obj>81</source_obj>
 				<sink_obj>83</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_179">
-				<id>214</id>
+				<id>221</id>
 				<edge_type>1</edge_type>
-				<source_obj>36</source_obj>
+				<source_obj>83</source_obj>
 				<sink_obj>84</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_180">
-				<id>216</id>
+				<id>222</id>
 				<edge_type>1</edge_type>
-				<source_obj>215</source_obj>
+				<source_obj>148</source_obj>
 				<sink_obj>84</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_181">
-				<id>217</id>
+				<id>223</id>
 				<edge_type>1</edge_type>
-				<source_obj>84</source_obj>
-				<sink_obj>85</sink_obj>
+				<source_obj>150</source_obj>
+				<sink_obj>84</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_182">
-				<id>219</id>
+				<id>224</id>
 				<edge_type>1</edge_type>
-				<source_obj>218</source_obj>
+				<source_obj>152</source_obj>
 				<sink_obj>85</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_183">
-				<id>220</id>
+				<id>225</id>
 				<edge_type>1</edge_type>
-				<source_obj>85</source_obj>
-				<sink_obj>86</sink_obj>
+				<source_obj>84</source_obj>
+				<sink_obj>85</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_184">
-				<id>222</id>
+				<id>227</id>
 				<edge_type>1</edge_type>
-				<source_obj>221</source_obj>
+				<source_obj>80</source_obj>
 				<sink_obj>86</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_185">
-				<id>223</id>
+				<id>228</id>
 				<edge_type>1</edge_type>
-				<source_obj>84</source_obj>
+				<source_obj>148</source_obj>
 				<sink_obj>86</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_186">
-				<id>224</id>
+				<id>229</id>
+				<edge_type>1</edge_type>
+				<source_obj>150</source_obj>
+				<sink_obj>86</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_187">
+				<id>230</id>
+				<edge_type>1</edge_type>
+				<source_obj>82</source_obj>
+				<sink_obj>87</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_188">
+				<id>231</id>
+				<edge_type>1</edge_type>
+				<source_obj>85</source_obj>
+				<sink_obj>87</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_189">
+				<id>232</id>
 				<edge_type>1</edge_type>
 				<source_obj>86</source_obj>
 				<sink_obj>87</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_187">
-				<id>225</id>
+			<item class_id_reference="20" object_id="_190">
+				<id>233</id>
+				<edge_type>1</edge_type>
+				<source_obj>69</source_obj>
+				<sink_obj>88</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_191">
+				<id>234</id>
+				<edge_type>1</edge_type>
+				<source_obj>58</source_obj>
+				<sink_obj>88</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_192">
+				<id>237</id>
+				<edge_type>1</edge_type>
+				<source_obj>1</source_obj>
+				<sink_obj>89</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_193">
+				<id>238</id>
+				<edge_type>1</edge_type>
+				<source_obj>88</source_obj>
+				<sink_obj>89</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_194">
+				<id>239</id>
+				<edge_type>1</edge_type>
+				<source_obj>87</source_obj>
+				<sink_obj>90</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_195">
+				<id>240</id>
+				<edge_type>1</edge_type>
+				<source_obj>78</source_obj>
+				<sink_obj>90</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_196">
+				<id>242</id>
+				<edge_type>1</edge_type>
+				<source_obj>2</source_obj>
+				<sink_obj>91</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_197">
+				<id>243</id>
+				<edge_type>1</edge_type>
+				<source_obj>90</source_obj>
+				<sink_obj>91</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_198">
+				<id>244</id>
+				<edge_type>1</edge_type>
+				<source_obj>36</source_obj>
+				<sink_obj>92</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_199">
+				<id>246</id>
+				<edge_type>1</edge_type>
+				<source_obj>245</source_obj>
+				<sink_obj>92</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_200">
+				<id>247</id>
+				<edge_type>1</edge_type>
+				<source_obj>92</source_obj>
+				<sink_obj>93</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_201">
+				<id>248</id>
 				<edge_type>1</edge_type>
 				<source_obj>8</source_obj>
-				<sink_obj>87</sink_obj>
+				<sink_obj>93</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_188">
-				<id>497</id>
+			<item class_id_reference="20" object_id="_202">
+				<id>519</id>
 				<edge_type>4</edge_type>
-				<source_obj>49</source_obj>
-				<sink_obj>81</sink_obj>
+				<source_obj>43</source_obj>
+				<sink_obj>48</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_189">
-				<id>498</id>
+			<item class_id_reference="20" object_id="_203">
+				<id>520</id>
 				<edge_type>4</edge_type>
-				<source_obj>46</source_obj>
-				<sink_obj>77</sink_obj>
+				<source_obj>41</source_obj>
+				<sink_obj>46</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_190">
-				<id>499</id>
+			<item class_id_reference="20" object_id="_204">
+				<id>521</id>
 				<edge_type>4</edge_type>
 				<source_obj>36</source_obj>
-				<sink_obj>87</sink_obj>
+				<sink_obj>93</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -5250,7 +5156,7 @@
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_191">
+		<item class_id="22" tracking_level="1" version="0" object_id="_205">
 			<mId>1</mId>
 			<mTag>audio</mTag>
 			<mNormTag>audio</mNormTag>
@@ -5262,14 +5168,14 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>89</item>
+				<item>95</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>6</mMinLatency>
-			<mMaxLatency>6</mMaxLatency>
+			<mMinLatency>5</mMinLatency>
+			<mMaxLatency>5</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5277,12 +5183,12 @@
 	<fsm class_id="-1"></fsm>
 	<res class_id="-1"></res>
 	<node_label_latency class_id="26" tracking_level="0" version="0">
-		<count>58</count>
+		<count>64</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
 			<first>11</first>
 			<second class_id="28" tracking_level="0" version="0">
-				<first>3</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5296,14 +5202,14 @@
 		<item>
 			<first>13</first>
 			<second>
-				<first>5</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>14</first>
 			<second>
-				<first>5</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5353,7 +5259,7 @@
 			<first>41</first>
 			<second>
 				<first>0</first>
-				<second>0</second>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
@@ -5367,7 +5273,7 @@
 			<first>43</first>
 			<second>
 				<first>0</first>
-				<second>0</second>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
@@ -5388,13 +5294,13 @@
 			<first>46</first>
 			<second>
 				<first>1</first>
-				<second>1</second>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>47</first>
 			<second>
-				<first>3</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5408,28 +5314,28 @@
 		<item>
 			<first>49</first>
 			<second>
-				<first>1</first>
-				<second>1</second>
+				<first>2</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>52</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5443,14 +5349,14 @@
 		<item>
 			<first>54</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>55</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5471,42 +5377,42 @@
 		<item>
 			<first>58</first>
 			<second>
-				<first>3</first>
-				<second>1</second>
+				<first>5</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>59</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>60</first>
 			<second>
-				<first>5</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>61</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>62</first>
 			<second>
-				<first>5</first>
-				<second>0</second>
+				<first>2</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>63</first>
 			<second>
-				<first>5</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5520,28 +5426,28 @@
 		<item>
 			<first>65</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>66</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>67</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>68</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5555,84 +5461,84 @@
 		<item>
 			<first>70</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>71</first>
 			<second>
-				<first>6</first>
-				<second>0</second>
+				<first>2</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>72</first>
 			<second>
-				<first>6</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>73</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>74</first>
 			<second>
-				<first>6</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>75</first>
 			<second>
-				<first>6</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>76</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>77</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>78</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>79</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>80</first>
 			<second>
-				<first>6</first>
-				<second>0</second>
+				<first>2</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>81</first>
 			<second>
-				<first>6</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5646,42 +5552,84 @@
 		<item>
 			<first>83</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>84</first>
 			<second>
-				<first>0</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>85</first>
 			<second>
-				<first>0</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>86</first>
 			<second>
-				<first>0</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>87</first>
 			<second>
-				<first>0</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>88</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>89</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>90</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>91</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>92</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>93</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>94</first>
+			<second>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5690,10 +5638,10 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="30" tracking_level="0" version="0">
-			<first>89</first>
+			<first>95</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>6</second>
+				<second>5</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

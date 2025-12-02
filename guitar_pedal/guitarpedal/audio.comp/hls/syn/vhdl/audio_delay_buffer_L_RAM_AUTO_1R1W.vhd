@@ -11,9 +11,9 @@ use ieee.std_logic_unsigned.all;
 entity audio_delay_buffer_L_RAM_AUTO_1R1W is 
     generic(
         MEM_TYPE        : string    := "auto"; 
-        DataWidth       : integer   := 24; 
-        AddressWidth    : integer   := 16;
-        AddressRange    : integer   := 48000
+        DataWidth       : integer   := 32; 
+        AddressWidth    : integer   := 12;
+        AddressRange    : integer   := 4096
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

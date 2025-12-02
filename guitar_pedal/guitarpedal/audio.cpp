@@ -8,7 +8,7 @@
 #include <stdint.h>
 
 // configuration parameters
-#define MAX_DELAY_SAMPLES (1 << 16)  // 1 second at 48kHz sampling rate
+#define MAX_DELAY_SAMPLES (1 << 12)  // 1 second at 48kHz sampling rate
 
 // static delay buffers and state variables
 static int32_t delay_buffer_L[MAX_DELAY_SAMPLES] = {0};
