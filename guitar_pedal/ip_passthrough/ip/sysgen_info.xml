@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdditionalInfo>
+  <CTypeInfo>
+      <RtlPort>
+        <name>delay_samples</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>feedback_gain</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>wet_mix</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+  </CTypeInfo>
+  <DesignConstraint>
+    <clk_period>10</clk_period>
+  </DesignConstraint>
+  <Machine>64</Machine>
+  <modelParameters>
+    <combinational>0</combinational>
+    <latency>5</latency>
+    <II>6</II>
+  </modelParameters>
+</AdditionalInfo>
