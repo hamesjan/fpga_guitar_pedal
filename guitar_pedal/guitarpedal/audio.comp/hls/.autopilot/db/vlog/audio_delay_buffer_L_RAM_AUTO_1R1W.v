@@ -12,9 +12,9 @@ module audio_delay_buffer_L_RAM_AUTO_1R1W (
      
     reset, clk);
 
-parameter DataWidth = 24;
-parameter AddressWidth = 16;
-parameter AddressRange = 48000;
+parameter DataWidth = 32;
+parameter AddressWidth = 12;
+parameter AddressRange = 4096;
  
 input[AddressWidth-1:0] address0;
 input ce0;

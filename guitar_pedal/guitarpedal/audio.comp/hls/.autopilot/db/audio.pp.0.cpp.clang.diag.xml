@@ -1,13 +1,13 @@
 <dict>
   <key>main-file</key>
-  <string>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/.autopilot/db/audio.pp.0.cpp</string>
+  <string>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.comp/hls/.autopilot/db/audio.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>/home/linux/ieng6/students/401/bmscott/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl</string>
+      <string>/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/guitarpedal/audio.tcl</string>
       <key>line</key>
       <integer>9</integer>
       <key>column</key>
@@ -25,7 +25,7 @@
       <key>filename</key>
       <string>audio.cpp</string>
       <key>line</key>
-      <integer>93</integer>
+      <integer>40</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -41,7 +41,7 @@
       <key>filename</key>
       <string>audio.cpp</string>
       <key>line</key>
-      <integer>95</integer>
+      <integer>42</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -57,7 +57,7 @@
       <key>filename</key>
       <string>audio.cpp</string>
       <key>line</key>
-      <integer>96</integer>
+      <integer>43</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -73,7 +73,7 @@
       <key>filename</key>
       <string>audio.cpp</string>
       <key>line</key>
-      <integer>98</integer>
+      <integer>45</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -89,7 +89,7 @@
       <key>filename</key>
       <string>audio.cpp</string>
       <key>line</key>
-      <integer>99</integer>
+      <integer>46</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>

@@ -8,7 +8,7 @@
 #include <stdint.h>
 
 // configuration parameters
-#define MAX_DELAY_SAMPLES (1 << 16)  // 1 second at 48kHz sampling rate
+#define MAX_DELAY_SAMPLES (1 << 12)  // 1 second at 48kHz sampling rate
 
 // static delay buffers and state variables
 static int32_t delay_buffer_L[MAX_DELAY_SAMPLES] = {0};
@@ -28,13 +28,23 @@ static uint32_t write_index = 0;
 //
 // outputs:
 //   out_L, out_R: processed stereo output samples
-void ping_pong_delay(int32_t* out_L, int32_t* out_R, 
-                     int32_t in_L, int32_t in_R,
-                     uint32_t delay_samples,
-                     uint32_t feedback_gain,
-                     uint32_t wet_mix) {
-    
-    // Step 1: calculate read index for circular buffer
+
+// Top-level function for HLS
+// NOTE: match the signature used in audio_hls_test.cpp!
+void audio(int32_t* out_L, int32_t* out_R,
+           int32_t in_L, int32_t in_R,
+           uint32_t delay_samples,
+           uint32_t feedback_gain,
+           uint32_t wet_mix)
+{
+    #pragma HLS INTERFACE mode=s_axilite port=return
+
+    #pragma HLS INTERFACE mode=s_axilite port=out_L
+    #pragma HLS INTERFACE mode=s_axilite port=out_R
+
+    #pragma HLS INTERFACE mode=s_axilite port=in_L
+    #pragma HLS INTERFACE mode=s_axilite port=in_R
+// Step 1: calculate read index for circular buffer
     uint32_t read_index = MAX_DELAY_SAMPLES + write_index - delay_samples;
     
     // step 2: Read delayed samples from both channels
@@ -72,32 +82,6 @@ void ping_pong_delay(int32_t* out_L, int32_t* out_R,
     
     // Step 8: Increment write index (circular buffer)
     write_index = write_index + 1;
-    //if (write_index >= MAX_DELAY_SAMPLES) {
-    //    write_index = 0;
-    //}
-}
-
-// Top-level function for HLS
-// NOTE: match the signature used in audio_hls_test.cpp!
-void audio(int32_t* out_L, int32_t* out_R,
-           int32_t in_L, int32_t in_R,
-           uint32_t delay_samples,
-           uint32_t feedback_gain,
-           uint32_t wet_mix)
-{
-    #pragma HLS INTERFACE mode=s_axilite port=return
-
-    #pragma HLS INTERFACE mode=s_axilite port=out_L
-    #pragma HLS INTERFACE mode=s_axilite port=out_R
-
-    #pragma HLS INTERFACE mode=s_axilite port=in_L
-    #pragma HLS INTERFACE mode=s_axilite port=in_R
-
-    ping_pong_delay(out_L, out_R,
-                    in_L, in_R,
-                    delay_samples,
-                    feedback_gain,
-                    wet_mix);
 }
 
 // // Test function with typical settings

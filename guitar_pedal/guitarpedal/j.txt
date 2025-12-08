@@ -1,0 +1,1 @@
+g++ -std=c++11 -I. audio_hrt_test.cpp audio.cpp -o audio_hrt_test 2>&1 && ./audio_hrt_test 2>&1

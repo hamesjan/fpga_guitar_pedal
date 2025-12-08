@@ -1,0 +1,7 @@
+audio.cpp:11:9: warning: 'MAX_DELAY_SAMPLES' macro redefined [-Wmacro-redefined]
+#define MAX_DELAY_SAMPLES (1 << 12)  // 1 second at 48kHz sampling rate
+        ^
+./audio.h:11:9: note: previous definition is here
+#define MAX_DELAY_SAMPLES 48000
+        ^
+1 warning generated.
