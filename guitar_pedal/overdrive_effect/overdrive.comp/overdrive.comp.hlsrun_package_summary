@@ -1,0 +1,120 @@
+<ENTRY>
+{
+ "thisFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/overdrive_effect/overdrive.comp/overdrive.comp.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Dec  8 12:27:02 2025",
+ "timestampMillis": "1765225622351",
+ "buildStep": {
+  "cmdId": "2f36b279-014d-48a5-8fd7-f69a42cd4f59",
+  "name": "vitis-run",
+  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/overdrive_effect/logs/hls_run_package.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/overdrive_effect/export_overdrive.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/overdrive_effect"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec  8 12:27:02 2025",
+ "timestampMillis": "1765225622352",
+ "status": {
+  "cmdId": "2f36b279-014d-48a5-8fd7-f69a42cd4f59",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Dec  8 12:27:02 2025",
+ "timestampMillis": "1765225622352",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "overdrive",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/overdrive_effect/overdrive.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Dec  8 12:27:02 2025",
+ "timestampMillis": "1765225622354",
+ "buildStep": {
+  "cmdId": "d433f169-e0ef-43e5-a0f6-08fa146b383c",
+  "name": "export_design",
+  "logFile": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/overdrive_effect/overdrive.comp/hls/hls.log",
+  "commandLine": "export_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/students/298/jjhan/fa25-cse237c-projects/guitar_pedal/overdrive_effect"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec  8 12:27:02 2025",
+ "timestampMillis": "1765225622354",
+ "status": {
+  "cmdId": "d433f169-e0ef-43e5-a0f6-08fa146b383c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec  8 12:27:39 2025",
+ "timestampMillis": "1765225659247",
+ "status": {
+  "cmdId": "d433f169-e0ef-43e5-a0f6-08fa146b383c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec  8 12:27:39 2025",
+ "timestampMillis": "1765225659256",
+ "status": {
+  "cmdId": "2f36b279-014d-48a5-8fd7-f69a42cd4f59",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
